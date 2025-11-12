@@ -21,7 +21,7 @@
         "category": "chat",
         "description": "OpenAI's powerful conversational AI with GPT-4 and web browsing capabilities. Most popular AI chatbot worldwide.",
         "icon": "💬",
-        "logo": "https://assets.openai.com/logo.png",
+        "logo": "https://assets.website-files.com/5d5b6845f88d23f2a63a3d10/61a5e2b5e5e5e5e5e5e5e5e5.png",
         "pricing": "freemium",
         "url": "https://chat.openai.com",
         "features": [
@@ -84,7 +84,7 @@
         "category": "chat",
         "description": "Meta's AI assistant available across Facebook, Instagram, and WhatsApp.",
         "icon": "🔵",
-        "logo": "https://brand.meta.com/assets/meta-logo.png",
+        "logo": "https://ai.meta.com/assets/meta-ai-logo.png",
         "pricing": "freemium",
         "url": "https://ai.meta.com",
         "features": [
@@ -146,7 +146,7 @@
         "category": "image",
         "description": "Open-source image generation with full control and customization. Run locally or in the cloud.",
         "icon": "🌈",
-        "logo": "https://stability.ai/static/stable-diffusion-logo.svg",
+        "logo": "https://stability.ai/favicon.ico",
         "pricing": "freemium",
         "url": "https://stability.ai",
         "features": [
@@ -162,7 +162,7 @@
         "category": "image",
         "description": "AI art platform with consistent character creation and fine-tuned models for game assets and design.",
         "icon": "👑",
-        "logo": "https://leonardo.ai/logo.png",
+        "logo": "https://leonardo.ai/favicon.ico",
         "pricing": "freemium",
         "url": "https://leonardo.ai",
         "features": [
@@ -516,8 +516,8 @@
         "category": "audio",
         "description": "AI-powered audio recording and editing for podcasts. Studio-quality sound from any microphone.",
         "icon": "🎧",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/2560px-Adobe_Systems_logo_and_wordmark.svg.png",
-        "pricing": "free",
+        "logo": "https://blog.adobe.com/media_id/adobeblog/uploads/2019/11/Adobe_Podcast_Logo_Color_RGB.svg",
+        "pricing": "freemium",
         "url": "https://podcast.adobe.com",
         "features": [
             "Noise removal",
@@ -719,7 +719,7 @@
         "category": "writing",
         "description": "AI writing assistant for grammar, clarity, and tone. Used by 30 million people daily.",
         "icon": "📖",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Grammarly_logo.svg/2560px-Grammarly_logo.svg.png",
+        "logo": "https://www.grammarly.com/assets/img/logo.svg",
         "pricing": "freemium",
         "url": "https://grammarly.com",
         "features": [
@@ -1085,8 +1085,8 @@
         "category": "productivity",
         "description": "Work OS with AI-powered project management and automation.",
         "icon": "📊",
-        "logo": "https://monday.com/static/images/logo-monday.png",
-        "pricing": "paid",
+        "logo": "https://monday.com/static/images/logo.png",
+        "pricing": "freemium",
         "url": "https://monday.com",
         "features": [
             "Project management",
@@ -1856,7 +1856,7 @@
         "category": "dating",
         "description": "AI-powered dating assistant for better conversations",
         "icon": "💘",
-        "logo": "https://logo.clearbit.com/deepgram.com",
+        "logo": "https://deepgram.com/assets/img/logo.svg",
         "pricing": "freemium",
         "url": "https://deepgram.com/ai-apps/winggg",
         "features": [
