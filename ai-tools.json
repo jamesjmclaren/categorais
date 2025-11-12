@@ -34,9 +34,9 @@
     },
     {
         "name": "Gemini",
-        "category": "chat",
+        "category": "productivity",
         "description": "Google's multimodal AI assistant with advanced reasoning and seamless Google Workspace integration.",
-        "icon": "✨",
+        "icon": "⚙️",
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png",
         "pricing": "free",
         "url": "https://gemini.google.com",
@@ -50,10 +50,10 @@
     },
     {
         "name": "Perplexity AI",
-        "category": "chat",
+        "category": "research",
         "description": "AI-powered search engine that provides sourced answers with citations. Perfect for research and fact-checking.",
-        "icon": "🔍",
-        "logo": "https://logo.clearbit.com/perplexity.ai",
+        "icon": "🔬",
+        "logo": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/perplexity-ai-icon.png",
         "pricing": "freemium",
         "url": "https://perplexity.ai",
         "features": [
@@ -66,10 +66,10 @@
     },
     {
         "name": "Grok",
-        "category": "chat",
+        "category": "productivity",
         "description": "Elon Musk's AI assistant integrated with X (Twitter). Real-time access to social media data.",
-        "icon": "⚡",
-        "logo": "https://logo.clearbit.com/grok.x.ai",
+        "icon": "⚙️",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/X_icon_2.svg/2048px-X_icon_2.svg.png",
         "pricing": "paid",
         "url": "https://grok.x.ai",
         "features": [
@@ -130,7 +130,7 @@
         "category": "image",
         "description": "OpenAI's image generator with exceptional prompt following and detail. Integrated with ChatGPT Plus.",
         "icon": "🖼️",
-        "logo": "https://logo.clearbit.com/openai.com",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
         "pricing": "paid",
         "url": "https://openai.com/dall-e-3",
         "features": [
@@ -287,7 +287,7 @@
         "category": "video",
         "description": "Create talking avatar videos with AI voices and automatic translation. Perfect for marketing and training.",
         "icon": "🗣️",
-        "logo": "https://static.heygen.ai/heygen/asset/heygen-logo.svg",
+        "logo": "https://logo.clearbit.com/heygen.com",
         "pricing": "freemium",
         "url": "https://heygen.com",
         "features": [
@@ -303,7 +303,7 @@
         "category": "video",
         "description": "AI-powered video and podcast editing. Edit videos by editing text transcripts.",
         "icon": "📹",
-        "logo": "https://assets-global.website-files.com/62ea40eb46c4ea08d1c76a61/62ea422fb8dffc81ee7c42b4_descript-logo-black.svg",
+        "logo": "https://logo.clearbit.com/descript.com",
         "pricing": "freemium",
         "url": "https://descript.com",
         "features": [
@@ -703,7 +703,7 @@
         "category": "writing",
         "description": "Generate marketing copy and content in seconds. 90+ tools for every marketing need.",
         "icon": "📝",
-        "logo": "https://www.copy.ai/favicon.svg",
+        "logo": "https://logo.clearbit.com/copy.ai",
         "pricing": "freemium",
         "url": "https://copy.ai",
         "features": [
@@ -841,7 +841,7 @@
         "category": "productivity",
         "description": "AI meeting assistant with real-time transcription and note-taking. Never miss important details.",
         "icon": "🦦",
-        "logo": "https://otter.ai/favicon.svg",
+        "logo": "https://logo.clearbit.com/otter.ai",
         "pricing": "freemium",
         "url": "https://otter.ai",
         "features": [
@@ -1750,23 +1750,6 @@
         "sponsored": false
     },
     {
-        "name": "Top Apps AI: Discover top AI web apps for creativity, productivity, and media creation",
-        "category": "writing",
-        "description": "AI-assisted writing tools",
-        "icon": "📝",
-        "logo": "https://logo.clearbit.com/topapps.ai",
-        "pricing": "freemium",
-        "url": "https://topapps.ai/",
-        "features": [
-            "AI-generated content",
-            "Content suggestions",
-            "Writing assistance",
-            "Content optimization",
-            "Text editing"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "ai-search.io",
         "category": "research",
         "description": "AI tool search engine",
@@ -1886,23 +1869,6 @@
         "sponsored": false
     },
     {
-        "name": "Build a Dating App Like Tinder for iOS & Android - Builder.ai",
-        "category": "dating",
-        "description": "AI-powered dating app builder",
-        "icon": "💻",
-        "logo": "https://logo.clearbit.com/builder.ai",
-        "pricing": "paid",
-        "url": "https://www.builder.ai/app-builder/dating-app",
-        "features": [
-            "App Development",
-            "iOS Support",
-            "Android Support",
-            "Customization",
-            "AI-powered"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Microsoft AI Tools and Solutions",
         "category": "productivity",
         "description": "AI tools for task automation",
@@ -1916,57 +1882,6 @@
             "AI-powered operations scaling",
             "Automated task management",
             "AI governance and compliance"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Tools Directory",
-        "category": "directory",
-        "description": "AI tool directory for entrepreneurs",
-        "icon": "📚",
-        "logo": "https://logo.clearbit.com/aitoolsdirectory.com",
-        "pricing": "freemium",
-        "url": "https://aitoolsdirectory.com/",
-        "features": [
-            "Curated AI software list",
-            "Featured Tools Premium Placement",
-            "AI Tools Blog",
-            "AI Trends updates",
-            "Community exploration"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Frameworks & Tools",
-        "category": "enterprise",
-        "description": "AI platform for hybrid cloud infrastructure",
-        "icon": "📈",
-        "logo": "https://logo.clearbit.com/intel.com",
-        "pricing": "paid",
-        "url": "https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/frameworks-tools.html",
-        "features": [
-            "End-to-end enterprise AI platform",
-            "Hybrid cloud infrastructure support",
-            "Seamless integration with Intel AI hardware",
-            "Collaboration with Red Hat OpenShift AI",
-            "Support for various AI frameworks and tools"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Chatbot App",
-        "category": "productivity",
-        "description": "Access multiple AI models",
-        "icon": "💻",
-        "logo": "https://logo.clearbit.com/chatbotapp.ai",
-        "pricing": "paid",
-        "url": "https://chatbotapp.ai/",
-        "features": [
-            "Multi-language model support",
-            "Intuitive interface",
-            "Affordable membership",
-            "GPT-4o integration",
-            "Google Gemini support"
         ],
         "sponsored": false
     },
@@ -1988,23 +1903,6 @@
         "sponsored": false
     },
     {
-        "name": "Free AI Chat",
-        "category": "chat",
-        "description": "AI-powered chat for brainstorming",
-        "icon": "💬",
-        "logo": "https://logo.clearbit.com/quillbot.com",
-        "pricing": "free",
-        "url": "https://quillbot.com/ai-chat",
-        "features": [
-            "Context-aware responses",
-            "Instant answers",
-            "Brainstorming assistance",
-            "Problem-solving help",
-            "Conversational interface"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Zobot™",
         "category": "customer-service",
         "description": "AI chatbot builder for automating customer conversations",
@@ -2022,23 +1920,6 @@
         "sponsored": false
     },
     {
-        "name": "AI Chat",
-        "category": "writing",
-        "description": "AI chatbot for writing text",
-        "icon": "💬",
-        "logo": "https://logo.clearbit.com/deepai.org",
-        "pricing": "free",
-        "url": "https://deepai.org/chat",
-        "features": [
-            "Text generation",
-            "Story writing",
-            "Message composition",
-            "Code writing",
-            "Conversational interface"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Conversational AI Platform for Enterprise",
         "category": "customer-service",
         "description": "Conversational AI for enterprises",
@@ -2052,23 +1933,6 @@
             "Team empowerment features",
             "Enterprise integration options",
             "Customizable AI models"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Chatbot",
-        "category": "customer-service",
-        "description": "AI chatbot for customer support",
-        "icon": "🤖",
-        "logo": "https://logo.clearbit.com/cloud.google.com",
-        "pricing": "paid",
-        "url": "https://cloud.google.com/use-cases/ai-chatbot",
-        "features": [
-            "Gemini AI model integration",
-            "Customizable chatbot workflows",
-            "Natural language processing",
-            "Integration with Google Cloud services",
-            "Scalable chatbot deployment"
         ],
         "sponsored": false
     },
@@ -2103,23 +1967,6 @@
             "animation design",
             "image enhancer",
             "online photo editing"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Everything you need to create images with AI",
-        "category": "design",
-        "description": "AI-powered image creation",
-        "icon": "🎨",
-        "logo": "https://logo.clearbit.com/getimg.ai",
-        "pricing": "freemium",
-        "url": "https://getimg.ai/",
-        "features": [
-            "Text-to-image generation",
-            "Image editing",
-            "Video generation",
-            "Custom AI model building",
-            "Prompt-based creation"
         ],
         "sponsored": false
     },
@@ -2175,40 +2022,6 @@
         "sponsored": false
     },
     {
-        "name": "Free AI Image Generator: Create AI Images Online",
-        "category": "image",
-        "description": "AI image generator",
-        "icon": "📸",
-        "logo": "https://logo.clearbit.com/piclumen.com",
-        "pricing": "free",
-        "url": "https://www.piclumen.com/",
-        "features": [
-            "Text-to-image",
-            "AI-powered",
-            "Online generator",
-            "Customizable",
-            "Free usage"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Image Generator",
-        "category": "design",
-        "description": "AI image generator",
-        "icon": "🎨",
-        "logo": "https://logo.clearbit.com/deepai.org",
-        "pricing": "free",
-        "url": "https://deepai.org/machine-learning-model/text2img",
-        "features": [
-            "Text-to-image conversion",
-            "Cutting-edge AI technology",
-            "No design experience needed",
-            "Fast image generation",
-            "Free online access"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "ImagineArt",
         "category": "design",
         "description": "AI creative suite for images, videos, voice",
@@ -2226,23 +2039,6 @@
         "sponsored": false
     },
     {
-        "name": "Free AI Image Generator: Text to Image Online",
-        "category": "design",
-        "description": "AI image generator from text",
-        "icon": "🖼️",
-        "logo": "https://logo.clearbit.com/fotor.com",
-        "pricing": "free",
-        "url": "https://www.fotor.com/ai-image-generator/",
-        "features": [
-            "Text to image conversion",
-            "Style selection",
-            "Image ratio adjustment",
-            "Quantity control",
-            "Instant image generation"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Pictory",
         "category": "video",
         "description": "AI video generator",
@@ -2256,23 +2052,6 @@
             "AI voiceovers",
             "Multi-platform support",
             "Long-form and short-form video creation"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "No.1 AI Video Generator",
-        "category": "video",
-        "description": "AI video generator from text prompts",
-        "icon": "📹",
-        "logo": "https://logo.clearbit.com/steve.ai",
-        "pricing": "paid",
-        "url": "https://www.steve.ai/",
-        "features": [
-            "Text-to-video conversion",
-            "Fast video creation",
-            "Simple and accessible interface",
-            "Engaging video output",
-            "Script-based video generation"
         ],
         "sponsored": false
     },
@@ -2379,20 +2158,6 @@
         "sponsored": false
     },
     {
-        "name": "Create FREE AI Videos 10X Faster Online",
-        "category": "video",
-        "description": "<strong>Zebracat</strong> is an AI-powered platform that creates fully edited, high-performing videos automatically. It&#x27;s designed for creators, marketers, and businesses who want to grow with vi",
-        "icon": "🎬",
-        "logo": "https://logo.clearbit.com/zebracat.ai",
-        "pricing": "freemium",
-        "url": "https://www.zebracat.ai/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Elai.io",
         "category": "video",
         "description": "AI video generator",
@@ -2459,20 +2224,6 @@
         "logo": "https://logo.clearbit.com/typecast.ai",
         "pricing": "freemium",
         "url": "https://typecast.ai/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Voice Generator",
-        "category": "audio",
-        "description": "Discover Respeecher’s AI voice generator for realistic text-to-speech. Explore free AI voice tools and AI-generated text solutions for creative and professional projects.",
-        "icon": "🎙️",
-        "logo": "https://logo.clearbit.com/respeecher.com",
-        "pricing": "freemium",
-        "url": "https://www.respeecher.com/",
         "features": [
             "AI-powered",
             "Easy to use"
@@ -2640,20 +2391,6 @@
         "sponsored": false
     },
     {
-        "name": "Top 11 AI Music Generators to Try in 2025",
-        "category": "audio",
-        "description": "Overall, if you need background music for your presentations, projects, social media content, etc, Mubert could be an interesting tool for you. Pricing: The free plan lets you generate 25 soundtracks ",
-        "icon": "🎙️",
-        "logo": "https://logo.clearbit.com/kripeshadwani.com",
-        "pricing": "freemium",
-        "url": "https://kripeshadwani.com/ai-music-generators/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "AI Music Generator Online (Free, No Sign",
         "category": "audio",
         "description": "<strong>AIMusicGen.ai</strong> is an AI music generator that transforms your ideas into songs instantly, creating AI-generated music with custom text or lyrics.",
@@ -2692,23 +2429,6 @@
         "features": [
             "AI-powered",
             "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Generate Free AI Music Online with MusicHero.ai’s AI Music Generator",
-        "category": "audio",
-        "description": "AI music generator",
-        "icon": "🎵",
-        "logo": "https://logo.clearbit.com/musichero.ai",
-        "pricing": "free",
-        "url": "https://musichero.ai/",
-        "features": [
-            "Generate AI music from text",
-            "Remove vocals",
-            "Generate AI lyrics",
-            "Create royalty-free music",
-            "Create MP4 music videos"
         ],
         "sponsored": false
     },
@@ -3086,20 +2806,6 @@
         "sponsored": false
     },
     {
-        "name": "AI Tools for Research",
-        "category": "chat",
-        "description": "OpenAI Deep Research Assistant · Introduction to Deep Research · OpenAI deep research in practice · Basic Info · How to Use · Scispace · <strong>SciSpace AI Super Agent</strong> links 150+ research to",
-        "icon": "💬",
-        "logo": "https://logo.clearbit.com/guides.lib.purdue.edu",
-        "pricing": "freemium",
-        "url": "https://guides.lib.purdue.edu/c.php?g=1371380&p=10592801",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Designs AI",
         "category": "chat",
         "description": "Absolutely, <strong>Designs.AI</strong> is perfect for creating designs online for commercial projects. Utilize our AI tools, including the logo generator, create video online features, and more for p",
@@ -3114,20 +2820,6 @@
         "sponsored": false
     },
     {
-        "name": "AI Tools For Designers",
-        "category": "design",
-        "description": "<strong>Luma AI</strong> - 3D Scan and generate 3D models a... by ... Spline - 3D Design Tool in the Browser wit...",
-        "icon": "🎯",
-        "logo": "https://logo.clearbit.com/awwwards.com",
-        "pricing": "freemium",
-        "url": "https://www.awwwards.com/awwwards/collections/ai-tools-for-designers/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Visily",
         "category": "chat",
         "description": "Visily faciliates collaboration with features like on-canvas chat, comments, and our Figma plugin, while providing you the tools for you to fully develop your ideas. This means no premature hand-offs ",
@@ -3135,34 +2827,6 @@
         "logo": "https://logo.clearbit.com/visily.ai",
         "pricing": "freemium",
         "url": "https://www.visily.ai/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "14 AI Design Tools for Creative Professionals",
-        "category": "code",
-        "description": "AI design tools are <strong>software applications that use artificial intelligence to assist and enhance design processes</strong>, leveraging machine learning, natural language processing, and other ",
-        "icon": "💻",
-        "logo": "https://logo.clearbit.com/digitalocean.com",
-        "pricing": "freemium",
-        "url": "https://www.digitalocean.com/resources/articles/ai-design-tools",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "I tested 8 AI tools for graphic design — here are my prompts, results, and recommendations",
-        "category": "image",
-        "description": "38% of marketers use AI to create image-based and video content for social media, print, and more. Tools like <strong>ChatGPT, Veo-3, Canva</strong>, etc., can render scenes faster, create assets, and",
-        "icon": "🎨",
-        "logo": "https://logo.clearbit.com/blog.hubspot.com",
-        "pricing": "freemium",
-        "url": "https://blog.hubspot.com/marketing/ai-for-graphic-design",
         "features": [
             "AI-powered",
             "Easy to use"
@@ -3284,20 +2948,6 @@
             "Personalized feedback",
             "Health tracking",
             "Specialized care"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Introducing Numan’s AI Health Assistant",
-        "category": "chat",
-        "description": "Discover <strong>Numan&#x27;s AI Health Assistant</strong>, an innovative, ethical tool designed to empower patients with personalized 24/7 healthcare support. Learn about its development, challenges,",
-        "icon": "💬",
-        "logo": "https://logo.clearbit.com/numan.com",
-        "pricing": "freemium",
-        "url": "https://www.numan.com/numan-news/numan-ai-health-assistant",
-        "features": [
-            "AI-powered",
-            "Easy to use"
         ],
         "sponsored": false
     },
