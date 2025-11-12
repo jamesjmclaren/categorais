@@ -7,7 +7,13 @@
         "logo": "https://claude.ai/images/claude_app_icon.png",
         "pricing": "freemium",
         "url": "https://claude.ai",
-        "features": ["200K context", "Code generation", "Analysis", "Creative writing", "Vision capabilities"],
+        "features": [
+            "200K context",
+            "Code generation",
+            "Analysis",
+            "Creative writing",
+            "Vision capabilities"
+        ],
         "sponsored": true
     },
     {
@@ -18,7 +24,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
         "pricing": "freemium",
         "url": "https://chat.openai.com",
-        "features": ["GPT-4o", "DALL-E integration", "Web browsing", "Code interpreter", "Custom GPTs"]
+        "features": [
+            "GPT-4o",
+            "DALL-E integration",
+            "Web browsing",
+            "Code interpreter",
+            "Custom GPTs"
+        ]
     },
     {
         "name": "Gemini",
@@ -28,7 +40,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png",
         "pricing": "free",
         "url": "https://gemini.google.com",
-        "features": ["Multimodal AI", "Google integration", "Real-time info", "Free access", "YouTube integration"]
+        "features": [
+            "Multimodal AI",
+            "Google integration",
+            "Real-time info",
+            "Free access",
+            "YouTube integration"
+        ]
     },
     {
         "name": "Perplexity AI",
@@ -38,7 +56,13 @@
         "logo": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/perplexity-ai-icon.png",
         "pricing": "freemium",
         "url": "https://perplexity.ai",
-        "features": ["Research focused", "Real-time citations", "Follow-up questions", "Pro search", "Academic mode"]
+        "features": [
+            "Research focused",
+            "Real-time citations",
+            "Follow-up questions",
+            "Pro search",
+            "Academic mode"
+        ]
     },
     {
         "name": "Grok",
@@ -48,7 +72,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/X_icon_2.svg/2048px-X_icon_2.svg.png",
         "pricing": "paid",
         "url": "https://grok.x.ai",
-        "features": ["X integration", "Real-time data", "Conversational", "Social insights"]
+        "features": [
+            "X integration",
+            "Real-time data",
+            "Conversational",
+            "Social insights"
+        ]
     },
     {
         "name": "Meta AI",
@@ -58,7 +87,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Meta_Platforms_Inc._logo.svg/2560px-Meta_Platforms_Inc._logo.svg.png",
         "pricing": "free",
         "url": "https://ai.meta.com",
-        "features": ["Social integration", "Image generation", "Multi-platform", "Free access"]
+        "features": [
+            "Social integration",
+            "Image generation",
+            "Multi-platform",
+            "Free access"
+        ]
     },
     {
         "name": "DeepSeek",
@@ -68,7 +102,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9d/DeepSeek_logo.svg",
         "pricing": "freemium",
         "url": "https://deepseek.com",
-        "features": ["Deep reasoning", "Research", "Analysis", "Coding"]
+        "features": [
+            "Deep reasoning",
+            "Research",
+            "Analysis",
+            "Coding"
+        ]
     },
     {
         "name": "Midjourney",
@@ -78,7 +117,13 @@
         "logo": "https://seeklogo.com/images/M/midjourney-logo-3BAF817FF7-seeklogo.com.png",
         "pricing": "paid",
         "url": "https://midjourney.com",
-        "features": ["Artistic excellence", "V6 model", "Style mixing", "High resolution", "Commercial use"]
+        "features": [
+            "Artistic excellence",
+            "V6 model",
+            "Style mixing",
+            "High resolution",
+            "Commercial use"
+        ]
     },
     {
         "name": "DALL-E 3",
@@ -88,7 +133,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
         "pricing": "paid",
         "url": "https://openai.com/dall-e-3",
-        "features": ["Precise prompts", "Text rendering", "Safe content", "ChatGPT integration", "4K quality"]
+        "features": [
+            "Precise prompts",
+            "Text rendering",
+            "Safe content",
+            "ChatGPT integration",
+            "4K quality"
+        ]
     },
     {
         "name": "Stable Diffusion",
@@ -98,7 +149,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Stability_AI_logo.svg/2560px-Stability_AI_logo.svg.png",
         "pricing": "free",
         "url": "https://stability.ai",
-        "features": ["Open source", "Local running", "Model training", "Full control", "Active community"]
+        "features": [
+            "Open source",
+            "Local running",
+            "Model training",
+            "Full control",
+            "Active community"
+        ]
     },
     {
         "name": "Leonardo AI",
@@ -108,7 +165,13 @@
         "logo": "https://seeklogo.com/images/L/leonardo-ai-logo-51A2F6F29E-seeklogo.com.png",
         "pricing": "freemium",
         "url": "https://leonardo.ai",
-        "features": ["Character consistency", "Game assets", "Fine-tuned models", "Canvas editor", "3D textures"]
+        "features": [
+            "Character consistency",
+            "Game assets",
+            "Fine-tuned models",
+            "Canvas editor",
+            "3D textures"
+        ]
     },
     {
         "name": "Adobe Firefly",
@@ -118,7 +181,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/2560px-Adobe_Systems_logo_and_wordmark.svg.png",
         "pricing": "freemium",
         "url": "https://firefly.adobe.com",
-        "features": ["Text to image", "Generative fill", "Text effects", "Commercial safe", "Adobe integration"]
+        "features": [
+            "Text to image",
+            "Generative fill",
+            "Text effects",
+            "Commercial safe",
+            "Adobe integration"
+        ]
     },
     {
         "name": "FLUX.1",
@@ -128,7 +197,12 @@
         "logo": "https://cdn.prod.website-files.com/65e876a22bb5d23bd42c5727/66c6e2f94f0eb67c3b8cf06a_black_forest_labs_logo_black.svg",
         "pricing": "free",
         "url": "https://blackforestlabs.ai",
-        "features": ["Open source", "High quality", "Fast generation", "API access"]
+        "features": [
+            "Open source",
+            "High quality",
+            "Fast generation",
+            "API access"
+        ]
     },
     {
         "name": "Ideogram",
@@ -138,7 +212,12 @@
         "logo": "https://ideogram.ai/assets/image/logo.svg",
         "pricing": "freemium",
         "url": "https://ideogram.ai",
-        "features": ["Text in images", "Typography", "Design focus", "Magic Prompt"]
+        "features": [
+            "Text in images",
+            "Typography",
+            "Design focus",
+            "Magic Prompt"
+        ]
     },
     {
         "name": "Recraft",
@@ -148,7 +227,12 @@
         "logo": "https://cdn.recraft.ai/recraft-logo.svg",
         "pricing": "freemium",
         "url": "https://recraft.ai",
-        "features": ["Brand consistency", "Vector graphics", "Design system", "Color control"]
+        "features": [
+            "Brand consistency",
+            "Vector graphics",
+            "Design system",
+            "Color control"
+        ]
     },
     {
         "name": "Runway",
@@ -158,7 +242,13 @@
         "logo": "https://seeklogo.com/images/R/runway-logo-3847553E3E-seeklogo.com.png",
         "pricing": "freemium",
         "url": "https://runwayml.com",
-        "features": ["Gen-3 video AI", "Motion tracking", "Green screen", "Style transfer", "Frame interpolation"]
+        "features": [
+            "Gen-3 video AI",
+            "Motion tracking",
+            "Green screen",
+            "Style transfer",
+            "Frame interpolation"
+        ]
     },
     {
         "name": "Pika",
@@ -168,7 +258,13 @@
         "logo": "https://pika.art/pika-logo.png",
         "pricing": "freemium",
         "url": "https://pika.art",
-        "features": ["Text to video", "Image animation", "Video editing", "Fast generation", "Lip sync"]
+        "features": [
+            "Text to video",
+            "Image animation",
+            "Video editing",
+            "Fast generation",
+            "Lip sync"
+        ]
     },
     {
         "name": "Synthesia",
@@ -178,7 +274,13 @@
         "logo": "https://seeklogo.com/images/S/synthesia-logo-3F8F6B7A91-seeklogo.com.png",
         "pricing": "paid",
         "url": "https://synthesia.io",
-        "features": ["140+ AI avatars", "60+ languages", "Custom avatars", "Screen recording", "Templates"]
+        "features": [
+            "140+ AI avatars",
+            "60+ languages",
+            "Custom avatars",
+            "Screen recording",
+            "Templates"
+        ]
     },
     {
         "name": "HeyGen",
@@ -188,7 +290,13 @@
         "logo": "https://static.heygen.ai/heygen/asset/heygen-logo.svg",
         "pricing": "freemium",
         "url": "https://heygen.com",
-        "features": ["AI avatars", "Voice cloning", "Video translation", "Lip sync", "40+ languages"]
+        "features": [
+            "AI avatars",
+            "Voice cloning",
+            "Video translation",
+            "Lip sync",
+            "40+ languages"
+        ]
     },
     {
         "name": "Descript",
@@ -198,7 +306,12 @@
         "logo": "https://assets-global.website-files.com/62ea40eb46c4ea08d1c76a61/62ea422fb8dffc81ee7c42b4_descript-logo-black.svg",
         "pricing": "freemium",
         "url": "https://descript.com",
-        "features": ["Text-based editing", "Overdub", "Studio sound", "Screen recording"]
+        "features": [
+            "Text-based editing",
+            "Overdub",
+            "Studio sound",
+            "Screen recording"
+        ]
     },
     {
         "name": "Haiper AI",
@@ -208,7 +321,12 @@
         "logo": "https://haiper.ai/logo.svg",
         "pricing": "freemium",
         "url": "https://haiper.ai",
-        "features": ["Text to video", "Animation", "Creative effects", "Easy to use"]
+        "features": [
+            "Text to video",
+            "Animation",
+            "Creative effects",
+            "Easy to use"
+        ]
     },
     {
         "name": "InVideo AI",
@@ -218,7 +336,12 @@
         "logo": "https://invideo.io/static/images/new-homepage/invideo-logo.svg",
         "pricing": "freemium",
         "url": "https://invideo.ai",
-        "features": ["Text to video", "Stock footage", "Voiceovers", "Templates"]
+        "features": [
+            "Text to video",
+            "Stock footage",
+            "Voiceovers",
+            "Templates"
+        ]
     },
     {
         "name": "Kling",
@@ -228,7 +351,12 @@
         "logo": "https://static.kling.ai/kling/web/static/favicon.png",
         "pricing": "freemium",
         "url": "https://kling.ai",
-        "features": ["Realistic motion", "Long videos", "High quality", "Multiple styles"]
+        "features": [
+            "Realistic motion",
+            "Long videos",
+            "High quality",
+            "Multiple styles"
+        ]
     },
     {
         "name": "Krea AI",
@@ -238,7 +366,12 @@
         "logo": "https://www.krea.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://krea.ai",
-        "features": ["Real-time generation", "Video creation", "Pattern generation", "Upscaling"]
+        "features": [
+            "Real-time generation",
+            "Video creation",
+            "Pattern generation",
+            "Upscaling"
+        ]
     },
     {
         "name": "LTX Studio",
@@ -248,7 +381,12 @@
         "logo": "https://ltx.studio/images/ltx-logo.svg",
         "pricing": "freemium",
         "url": "https://ltx.studio",
-        "features": ["Storyboarding", "Shot generation", "Character consistency", "Full production"]
+        "features": [
+            "Storyboarding",
+            "Shot generation",
+            "Character consistency",
+            "Full production"
+        ]
     },
     {
         "name": "Luma AI",
@@ -258,7 +396,12 @@
         "logo": "https://lumalabs.ai/logo.svg",
         "pricing": "freemium",
         "url": "https://lumalabs.ai",
-        "features": ["Dream Machine", "3D capture", "Cinematic quality", "Camera movement"]
+        "features": [
+            "Dream Machine",
+            "3D capture",
+            "Cinematic quality",
+            "Camera movement"
+        ]
     },
     {
         "name": "Sora",
@@ -268,7 +411,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
         "pricing": "paid",
         "url": "https://openai.com/sora",
-        "features": ["Long videos", "High fidelity", "Complex scenes", "OpenAI quality"]
+        "features": [
+            "Long videos",
+            "High fidelity",
+            "Complex scenes",
+            "OpenAI quality"
+        ]
     },
     {
         "name": "Veed.io",
@@ -278,7 +426,12 @@
         "logo": "https://www.veed.io/favicon.svg",
         "pricing": "freemium",
         "url": "https://veed.io",
-        "features": ["Auto subtitles", "Video translation", "AI editing", "Stock library"]
+        "features": [
+            "Auto subtitles",
+            "Video translation",
+            "AI editing",
+            "Stock library"
+        ]
     },
     {
         "name": "OpusClip",
@@ -288,7 +441,12 @@
         "logo": "https://www.opus.pro/logo.svg",
         "pricing": "freemium",
         "url": "https://opus.pro",
-        "features": ["Clip extraction", "Auto captions", "Viral score", "Social optimization"]
+        "features": [
+            "Clip extraction",
+            "Auto captions",
+            "Viral score",
+            "Social optimization"
+        ]
     },
     {
         "name": "Grain",
@@ -298,7 +456,12 @@
         "logo": "https://grain.com/_next/static/media/grain-logo.svg",
         "pricing": "freemium",
         "url": "https://grain.com",
-        "features": ["Meeting insights", "Auto highlights", "Clips", "Integrations"]
+        "features": [
+            "Meeting insights",
+            "Auto highlights",
+            "Clips",
+            "Integrations"
+        ]
     },
     {
         "name": "ElevenLabs",
@@ -308,7 +471,13 @@
         "logo": "https://seeklogo.com/images/E/elevenlabs-logo-8DB349FD2F-seeklogo.com.png",
         "pricing": "freemium",
         "url": "https://elevenlabs.io",
-        "features": ["Voice cloning", "32 languages", "Emotional control", "Ultra-realistic", "API access"]
+        "features": [
+            "Voice cloning",
+            "32 languages",
+            "Emotional control",
+            "Ultra-realistic",
+            "API access"
+        ]
     },
     {
         "name": "Suno",
@@ -318,7 +487,13 @@
         "logo": "https://play-lh.googleusercontent.com/5UR_1gDasYzAjJYSdx9onJ5FT68TVzxcV6O_FjTS2X_95_qHgexX__mCa_23lUIgWlU",
         "pricing": "freemium",
         "url": "https://suno.ai",
-        "features": ["Full songs", "Custom lyrics", "Various genres", "V4 model", "Commercial use"]
+        "features": [
+            "Full songs",
+            "Custom lyrics",
+            "Various genres",
+            "V4 model",
+            "Commercial use"
+        ]
     },
     {
         "name": "Murf AI",
@@ -328,7 +503,13 @@
         "logo": "https://murf.ai/static/images/murf-logo.svg",
         "pricing": "freemium",
         "url": "https://murf.ai",
-        "features": ["120+ voices", "Voice cloning", "Video sync", "Pronunciation editor", "Emphasis control"]
+        "features": [
+            "120+ voices",
+            "Voice cloning",
+            "Video sync",
+            "Pronunciation editor",
+            "Emphasis control"
+        ]
     },
     {
         "name": "Adobe Podcast",
@@ -338,7 +519,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/2560px-Adobe_Systems_logo_and_wordmark.svg.png",
         "pricing": "free",
         "url": "https://podcast.adobe.com",
-        "features": ["Noise removal", "Enhancement", "Transcription", "Easy editing", "Free forever"]
+        "features": [
+            "Noise removal",
+            "Enhancement",
+            "Transcription",
+            "Easy editing",
+            "Free forever"
+        ]
     },
     {
         "name": "GitHub Copilot",
@@ -348,7 +535,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/2048px-GitHub_Invertocat_Logo.svg.png",
         "pricing": "paid",
         "url": "https://github.com/features/copilot",
-        "features": ["Code completion", "All languages", "Context-aware", "IDE integration", "Chat interface"]
+        "features": [
+            "Code completion",
+            "All languages",
+            "Context-aware",
+            "IDE integration",
+            "Chat interface"
+        ]
     },
     {
         "name": "Cursor",
@@ -358,7 +551,13 @@
         "logo": "https://cursor.sh/favicon.svg",
         "pricing": "freemium",
         "url": "https://cursor.sh",
-        "features": ["Chat with code", "Auto-fix errors", "Natural language", "VSCode compatible", "Privacy mode"]
+        "features": [
+            "Chat with code",
+            "Auto-fix errors",
+            "Natural language",
+            "VSCode compatible",
+            "Privacy mode"
+        ]
     },
     {
         "name": "Replit",
@@ -368,7 +567,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Replit_logo.svg/2048px-Replit_logo.svg.png",
         "pricing": "freemium",
         "url": "https://replit.com",
-        "features": ["AI code generation", "Instant deployment", "Collaboration", "All languages", "Mobile coding"]
+        "features": [
+            "AI code generation",
+            "Instant deployment",
+            "Collaboration",
+            "All languages",
+            "Mobile coding"
+        ]
     },
     {
         "name": "Tabnine",
@@ -378,7 +583,13 @@
         "logo": "https://seeklogo.com/images/T/tabnine-logo-1DD3EB1BD7-seeklogo.com.png",
         "pricing": "freemium",
         "url": "https://tabnine.com",
-        "features": ["Local AI option", "Team learning", "Privacy focused", "All IDEs", "All languages"]
+        "features": [
+            "Local AI option",
+            "Team learning",
+            "Privacy focused",
+            "All IDEs",
+            "All languages"
+        ]
     },
     {
         "name": "Codeium",
@@ -388,7 +599,13 @@
         "logo": "https://codeium.com/favicon.svg",
         "pricing": "free",
         "url": "https://codeium.com",
-        "features": ["Free forever", "70+ languages", "All IDEs", "Chat", "Search"]
+        "features": [
+            "Free forever",
+            "70+ languages",
+            "All IDEs",
+            "Chat",
+            "Search"
+        ]
     },
     {
         "name": "Windsurf",
@@ -398,7 +615,12 @@
         "logo": "https://codeium.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://codeium.com/windsurf",
-        "features": ["Real-time coding", "Agentic AI", "Multi-file editing", "Flow state"]
+        "features": [
+            "Real-time coding",
+            "Agentic AI",
+            "Multi-file editing",
+            "Flow state"
+        ]
     },
     {
         "name": "Replit Ghostwriter",
@@ -408,7 +630,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Replit_logo.svg/2048px-Replit_logo.svg.png",
         "pricing": "paid",
         "url": "https://replit.com/ghostwriter",
-        "features": ["Code generation", "Debugging", "Explanations", "Integrated"]
+        "features": [
+            "Code generation",
+            "Debugging",
+            "Explanations",
+            "Integrated"
+        ]
     },
     {
         "name": "Qodo",
@@ -418,7 +645,12 @@
         "logo": "https://www.qodo.ai/favicon.ico",
         "pricing": "freemium",
         "url": "https://qodo.ai",
-        "features": ["Test generation", "Code review", "Bug detection", "Quality assurance"]
+        "features": [
+            "Test generation",
+            "Code review",
+            "Bug detection",
+            "Quality assurance"
+        ]
     },
     {
         "name": "Codiga",
@@ -428,7 +660,12 @@
         "logo": "https://www.codiga.io/favicon.ico",
         "pricing": "freemium",
         "url": "https://codiga.io",
-        "features": ["Code analysis", "Automated reviews", "Security", "Best practices"]
+        "features": [
+            "Code analysis",
+            "Automated reviews",
+            "Security",
+            "Best practices"
+        ]
     },
     {
         "name": "Askcodi",
@@ -438,7 +675,12 @@
         "logo": "https://www.askcodi.com/favicon.ico",
         "pricing": "freemium",
         "url": "https://askcodi.com",
-        "features": ["Code generation", "Bug fixes", "Optimization", "Multiple languages"]
+        "features": [
+            "Code generation",
+            "Bug fixes",
+            "Optimization",
+            "Multiple languages"
+        ]
     },
     {
         "name": "Jasper",
@@ -448,7 +690,13 @@
         "logo": "https://seeklogo.com/images/J/jasper-ai-logo-08A50FEC06-seeklogo.com.png",
         "pricing": "paid",
         "url": "https://jasper.ai",
-        "features": ["Marketing copy", "SEO content", "Brand voice", "50+ templates", "Browser extension"]
+        "features": [
+            "Marketing copy",
+            "SEO content",
+            "Brand voice",
+            "50+ templates",
+            "Browser extension"
+        ]
     },
     {
         "name": "Copy.ai",
@@ -458,7 +706,13 @@
         "logo": "https://www.copy.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://copy.ai",
-        "features": ["90+ templates", "Blog posts", "Social media", "Product copy", "25+ languages"]
+        "features": [
+            "90+ templates",
+            "Blog posts",
+            "Social media",
+            "Product copy",
+            "25+ languages"
+        ]
     },
     {
         "name": "Grammarly",
@@ -468,7 +722,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Grammarly_logo.svg/2560px-Grammarly_logo.svg.png",
         "pricing": "freemium",
         "url": "https://grammarly.com",
-        "features": ["Grammar check", "Tone detection", "Plagiarism", "Style guide", "All platforms"]
+        "features": [
+            "Grammar check",
+            "Tone detection",
+            "Plagiarism",
+            "Style guide",
+            "All platforms"
+        ]
     },
     {
         "name": "Notion AI",
@@ -478,7 +738,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png",
         "pricing": "paid",
         "url": "https://notion.so",
-        "features": ["Content generation", "Summarization", "Translation", "Brainstorming", "Q&A"]
+        "features": [
+            "Content generation",
+            "Summarization",
+            "Translation",
+            "Brainstorming",
+            "Q&A"
+        ]
     },
     {
         "name": "Quillbot",
@@ -488,7 +754,12 @@
         "logo": "https://quillbot.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://quillbot.com",
-        "features": ["Paraphrasing", "Grammar check", "Summarizer", "Citation generator"]
+        "features": [
+            "Paraphrasing",
+            "Grammar check",
+            "Summarizer",
+            "Citation generator"
+        ]
     },
     {
         "name": "Rytr",
@@ -498,7 +769,12 @@
         "logo": "https://rytr.me/favicon.svg",
         "pricing": "freemium",
         "url": "https://rytr.me",
-        "features": ["40+ use cases", "30+ languages", "Tone customization", "Plagiarism check"]
+        "features": [
+            "40+ use cases",
+            "30+ languages",
+            "Tone customization",
+            "Plagiarism check"
+        ]
     },
     {
         "name": "Sudowrite",
@@ -508,7 +784,12 @@
         "logo": "https://www.sudowrite.com/favicon.svg",
         "pricing": "paid",
         "url": "https://sudowrite.com",
-        "features": ["Fiction writing", "Story development", "Character creation", "Plot assistance"]
+        "features": [
+            "Fiction writing",
+            "Story development",
+            "Character creation",
+            "Plot assistance"
+        ]
     },
     {
         "name": "Writesonic",
@@ -518,7 +799,12 @@
         "logo": "https://writesonic.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://writesonic.com",
-        "features": ["Article writing", "Ad copy", "Product descriptions", "SEO optimization"]
+        "features": [
+            "Article writing",
+            "Ad copy",
+            "Product descriptions",
+            "SEO optimization"
+        ]
     },
     {
         "name": "Quarkle",
@@ -528,7 +814,12 @@
         "logo": "https://www.quarkle.ai/favicon.ico",
         "pricing": "freemium",
         "url": "https://quarkle.ai",
-        "features": ["Creative writing", "Content generation", "Style control", "Multiple formats"]
+        "features": [
+            "Creative writing",
+            "Content generation",
+            "Style control",
+            "Multiple formats"
+        ]
     },
     {
         "name": "JotBot",
@@ -538,7 +829,12 @@
         "logo": "https://myjotbot.com/favicon.ico",
         "pricing": "freemium",
         "url": "https://jotbot.ai",
-        "features": ["Style matching", "Document writing", "Research help", "Source citations"]
+        "features": [
+            "Style matching",
+            "Document writing",
+            "Research help",
+            "Source citations"
+        ]
     },
     {
         "name": "Otter.ai",
@@ -548,7 +844,13 @@
         "logo": "https://otter.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://otter.ai",
-        "features": ["Real-time transcription", "Meeting notes", "Action items", "Speaker ID", "Integrations"]
+        "features": [
+            "Real-time transcription",
+            "Meeting notes",
+            "Action items",
+            "Speaker ID",
+            "Integrations"
+        ]
     },
     {
         "name": "Reclaim AI",
@@ -558,7 +860,13 @@
         "logo": "https://reclaim.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://reclaim.ai",
-        "features": ["Smart scheduling", "Habit building", "Time blocking", "Calendar sync", "Auto-prioritization"]
+        "features": [
+            "Smart scheduling",
+            "Habit building",
+            "Time blocking",
+            "Calendar sync",
+            "Auto-prioritization"
+        ]
     },
     {
         "name": "Superhuman",
@@ -568,7 +876,13 @@
         "logo": "https://seeklogo.com/images/S/superhuman-logo-45439DD32C-seeklogo.com.png",
         "pricing": "paid",
         "url": "https://superhuman.com",
-        "features": ["AI triage", "Quick responses", "Keyboard shortcuts", "Read receipts", "Snippets"]
+        "features": [
+            "AI triage",
+            "Quick responses",
+            "Keyboard shortcuts",
+            "Read receipts",
+            "Snippets"
+        ]
     },
     {
         "name": "Motion",
@@ -578,7 +892,13 @@
         "logo": "https://usemotion.com/favicon.svg",
         "pricing": "paid",
         "url": "https://usemotion.com",
-        "features": ["Auto-scheduling", "Task management", "Meeting booking", "Team planning", "Integrations"]
+        "features": [
+            "Auto-scheduling",
+            "Task management",
+            "Meeting booking",
+            "Team planning",
+            "Integrations"
+        ]
     },
     {
         "name": "Calendly",
@@ -588,7 +908,12 @@
         "logo": "https://calendly.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://calendly.com",
-        "features": ["Easy scheduling", "Calendar integration", "Team scheduling", "Reminders"]
+        "features": [
+            "Easy scheduling",
+            "Calendar integration",
+            "Team scheduling",
+            "Reminders"
+        ]
     },
     {
         "name": "Clockwise",
@@ -598,7 +923,12 @@
         "logo": "https://www.getclockwise.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://clockwise.com",
-        "features": ["Focus time", "Meeting optimization", "Auto-scheduling", "Analytics"]
+        "features": [
+            "Focus time",
+            "Meeting optimization",
+            "Auto-scheduling",
+            "Analytics"
+        ]
     },
     {
         "name": "Trevor AI",
@@ -608,7 +938,12 @@
         "logo": "https://trevorai.com/favicon.ico",
         "pricing": "freemium",
         "url": "https://trevorai.com",
-        "features": ["Task scheduling", "Time blocking", "Calendar integration", "Daily planning"]
+        "features": [
+            "Task scheduling",
+            "Time blocking",
+            "Calendar integration",
+            "Daily planning"
+        ]
     },
     {
         "name": "Taskade",
@@ -618,7 +953,12 @@
         "logo": "https://www.taskade.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://taskade.com",
-        "features": ["AI workflows", "Team collaboration", "Project templates", "Video chat"]
+        "features": [
+            "AI workflows",
+            "Team collaboration",
+            "Project templates",
+            "Video chat"
+        ]
     },
     {
         "name": "Avoma",
@@ -628,7 +968,12 @@
         "logo": "https://www.avoma.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://avoma.com",
-        "features": ["Meeting transcription", "AI notes", "Analytics", "CRM integration"]
+        "features": [
+            "Meeting transcription",
+            "AI notes",
+            "Analytics",
+            "CRM integration"
+        ]
     },
     {
         "name": "Equal Time",
@@ -638,7 +983,12 @@
         "logo": "https://www.equaltime.io/favicon.ico",
         "pricing": "freemium",
         "url": "https://equaltime.com",
-        "features": ["Meeting transcription", "Action items", "Summaries", "Integrations"]
+        "features": [
+            "Meeting transcription",
+            "Action items",
+            "Summaries",
+            "Integrations"
+        ]
     },
     {
         "name": "Fathom",
@@ -648,7 +998,12 @@
         "logo": "https://fathom.video/favicon.svg",
         "pricing": "free",
         "url": "https://fathom.video",
-        "features": ["Free forever", "Auto-transcription", "Summaries", "All meeting platforms"]
+        "features": [
+            "Free forever",
+            "Auto-transcription",
+            "Summaries",
+            "All meeting platforms"
+        ]
     },
     {
         "name": "Fellow.app",
@@ -658,7 +1013,12 @@
         "logo": "https://fellow.app/favicon.svg",
         "pricing": "freemium",
         "url": "https://fellow.app",
-        "features": ["Meeting agendas", "Action items", "1-on-1s", "OKRs"]
+        "features": [
+            "Meeting agendas",
+            "Action items",
+            "1-on-1s",
+            "OKRs"
+        ]
     },
     {
         "name": "Fireflies",
@@ -668,7 +1028,12 @@
         "logo": "https://fireflies.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://fireflies.ai",
-        "features": ["Auto-record", "Transcription", "Search", "CRM integration"]
+        "features": [
+            "Auto-record",
+            "Transcription",
+            "Search",
+            "CRM integration"
+        ]
     },
     {
         "name": "Krisp",
@@ -678,7 +1043,12 @@
         "logo": "https://krisp.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://krisp.ai",
-        "features": ["Noise cancellation", "Meeting transcription", "Background removal", "All apps"]
+        "features": [
+            "Noise cancellation",
+            "Meeting transcription",
+            "Background removal",
+            "All apps"
+        ]
     },
     {
         "name": "Integrately",
@@ -688,7 +1058,12 @@
         "logo": "https://integrately.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://integrately.com",
-        "features": ["1-click automation", "1000+ apps", "AI workflows", "Easy setup"]
+        "features": [
+            "1-click automation",
+            "1000+ apps",
+            "AI workflows",
+            "Easy setup"
+        ]
     },
     {
         "name": "Make",
@@ -698,7 +1073,12 @@
         "logo": "https://www.make.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://make.com",
-        "features": ["Visual workflows", "Advanced automation", "API connections", "Powerful"]
+        "features": [
+            "Visual workflows",
+            "Advanced automation",
+            "API connections",
+            "Powerful"
+        ]
     },
     {
         "name": "Monday.com",
@@ -708,7 +1088,12 @@
         "logo": "https://monday.com/favicon.svg",
         "pricing": "paid",
         "url": "https://monday.com",
-        "features": ["Project management", "Automation", "Team collaboration", "Custom workflows"]
+        "features": [
+            "Project management",
+            "Automation",
+            "Team collaboration",
+            "Custom workflows"
+        ]
     },
     {
         "name": "N8n",
@@ -718,7 +1103,12 @@
         "logo": "https://n8n.io/favicon.svg",
         "pricing": "free",
         "url": "https://n8n.io",
-        "features": ["Open source", "Self-hosted", "Advanced workflows", "API integrations"]
+        "features": [
+            "Open source",
+            "Self-hosted",
+            "Advanced workflows",
+            "API integrations"
+        ]
     },
     {
         "name": "Wrike",
@@ -728,7 +1118,12 @@
         "logo": "https://www.wrike.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://wrike.com",
-        "features": ["Project management", "AI insights", "Resource management", "Reporting"]
+        "features": [
+            "Project management",
+            "AI insights",
+            "Resource management",
+            "Reporting"
+        ]
     },
     {
         "name": "Zapier",
@@ -738,7 +1133,12 @@
         "logo": "https://cdn.zapier.com/zapier/images/favicon.ico",
         "pricing": "freemium",
         "url": "https://zapier.com",
-        "features": ["5000+ integrations", "AI workflows", "Easy automation", "Templates"]
+        "features": [
+            "5000+ integrations",
+            "AI workflows",
+            "Easy automation",
+            "Templates"
+        ]
     },
     {
         "name": "Clippit.ai",
@@ -748,7 +1148,12 @@
         "logo": "https://clippit.ai/favicon.ico",
         "pricing": "freemium",
         "url": "https://clippit.ai",
-        "features": ["Email automation", "Smart replies", "Inbox management", "Templates"]
+        "features": [
+            "Email automation",
+            "Smart replies",
+            "Inbox management",
+            "Templates"
+        ]
     },
     {
         "name": "Friday",
@@ -758,7 +1163,12 @@
         "logo": "https://friday.app/favicon.svg",
         "pricing": "freemium",
         "url": "https://friday.app",
-        "features": ["Team collaboration", "Weekly planning", "Check-ins", "Goals tracking"]
+        "features": [
+            "Team collaboration",
+            "Weekly planning",
+            "Check-ins",
+            "Goals tracking"
+        ]
     },
     {
         "name": "Mailmaestro",
@@ -768,7 +1178,12 @@
         "logo": "https://www.mailmaestro.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://mailmaestro.com",
-        "features": ["Email writing", "Templates", "Tone control", "Outlook integration"]
+        "features": [
+            "Email writing",
+            "Templates",
+            "Tone control",
+            "Outlook integration"
+        ]
     },
     {
         "name": "Shortwave",
@@ -778,7 +1193,12 @@
         "logo": "https://www.shortwave.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://shortwave.com",
-        "features": ["AI email summaries", "Smart search", "Fast interface", "Team collaboration"]
+        "features": [
+            "AI email summaries",
+            "Smart search",
+            "Fast interface",
+            "Team collaboration"
+        ]
     },
     {
         "name": "Consensus",
@@ -788,7 +1208,13 @@
         "logo": "https://consensus.app/favicon.svg",
         "pricing": "freemium",
         "url": "https://consensus.app",
-        "features": ["200M+ papers", "Citations", "Summaries", "Evidence-based", "Study snapshots"]
+        "features": [
+            "200M+ papers",
+            "Citations",
+            "Summaries",
+            "Evidence-based",
+            "Study snapshots"
+        ]
     },
     {
         "name": "Elicit",
@@ -798,7 +1224,13 @@
         "logo": "https://elicit.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://elicit.org",
-        "features": ["Paper analysis", "Data extraction", "Brainstorming", "Literature review", "125M+ papers"]
+        "features": [
+            "Paper analysis",
+            "Data extraction",
+            "Brainstorming",
+            "Literature review",
+            "125M+ papers"
+        ]
     },
     {
         "name": "Semantic Scholar",
@@ -808,7 +1240,13 @@
         "logo": "https://seeklogo.com/images/S/semantic-scholar-logo-2772EC014D-seeklogo.com.png",
         "pricing": "free",
         "url": "https://semanticscholar.org",
-        "features": ["200M+ papers", "Citation analysis", "Paper recommendations", "TLDR summaries", "API access"]
+        "features": [
+            "200M+ papers",
+            "Citation analysis",
+            "Paper recommendations",
+            "TLDR summaries",
+            "API access"
+        ]
     },
     {
         "name": "ChatPDF",
@@ -818,7 +1256,13 @@
         "logo": "https://www.chatpdf.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://chatpdf.com",
-        "features": ["PDF chat", "Summarization", "Citations", "Multi-file", "All languages"]
+        "features": [
+            "PDF chat",
+            "Summarization",
+            "Citations",
+            "Multi-file",
+            "All languages"
+        ]
     },
     {
         "name": "SciSpace Copilot",
@@ -828,7 +1272,12 @@
         "logo": "https://scispace.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://scispace.com",
-        "features": ["Paper explanation", "Summarization", "Q&A", "Literature review"]
+        "features": [
+            "Paper explanation",
+            "Summarization",
+            "Q&A",
+            "Literature review"
+        ]
     },
     {
         "name": "NotebookLM",
@@ -838,7 +1287,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
         "pricing": "free",
         "url": "https://notebooklm.google",
-        "features": ["Document analysis", "Note generation", "Source grounding", "Free"]
+        "features": [
+            "Document analysis",
+            "Note generation",
+            "Source grounding",
+            "Free"
+        ]
     },
     {
         "name": "GoodInside AI",
@@ -848,7 +1302,12 @@
         "logo": "https://www.goodinside.com/favicon.ico",
         "pricing": "freemium",
         "url": "https://goodinside.com",
-        "features": ["Parenting advice", "Expert guidance", "Personalized", "Evidence-based"]
+        "features": [
+            "Parenting advice",
+            "Expert guidance",
+            "Personalized",
+            "Evidence-based"
+        ]
     },
     {
         "name": "Mem",
@@ -858,7 +1317,12 @@
         "logo": "https://get.mem.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://mem.ai",
-        "features": ["Smart notes", "Knowledge graph", "AI search", "Auto-organization"]
+        "features": [
+            "Smart notes",
+            "Knowledge graph",
+            "AI search",
+            "Auto-organization"
+        ]
     },
     {
         "name": "Tettra",
@@ -868,7 +1332,12 @@
         "logo": "https://tettra.com/favicon.svg",
         "pricing": "paid",
         "url": "https://tettra.com",
-        "features": ["Knowledge base", "Team docs", "Q&A", "Integrations"]
+        "features": [
+            "Knowledge base",
+            "Team docs",
+            "Q&A",
+            "Integrations"
+        ]
     },
     {
         "name": "Persona",
@@ -878,7 +1347,12 @@
         "logo": "https://www.persona.ai/favicon.ico",
         "pricing": "freemium",
         "url": "https://persona.ai",
-        "features": ["Agent builder", "Interactive AI", "Custom personas", "Engagement"]
+        "features": [
+            "Agent builder",
+            "Interactive AI",
+            "Custom personas",
+            "Engagement"
+        ]
     },
     {
         "name": "Canva",
@@ -888,7 +1362,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/2048px-Canva_icon_2021.svg.png",
         "pricing": "freemium",
         "url": "https://canva.com",
-        "features": ["Magic Design", "Background remover", "250K+ templates", "Brand kit", "Collaboration"]
+        "features": [
+            "Magic Design",
+            "Background remover",
+            "250K+ templates",
+            "Brand kit",
+            "Collaboration"
+        ]
     },
     {
         "name": "Figma",
@@ -898,7 +1378,13 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png",
         "pricing": "freemium",
         "url": "https://figma.com",
-        "features": ["AI plugins", "Auto layout", "Prototyping", "Collaboration", "Dev mode"]
+        "features": [
+            "AI plugins",
+            "Auto layout",
+            "Prototyping",
+            "Collaboration",
+            "Dev mode"
+        ]
     },
     {
         "name": "Uizard",
@@ -908,7 +1394,13 @@
         "logo": "https://uizard.io/favicon.svg",
         "pricing": "freemium",
         "url": "https://uizard.io",
-        "features": ["Screenshot to design", "Hand-drawn to digital", "Design assistant", "Templates", "Collaboration"]
+        "features": [
+            "Screenshot to design",
+            "Hand-drawn to digital",
+            "Design assistant",
+            "Templates",
+            "Collaboration"
+        ]
     },
     {
         "name": "AutoDraw",
@@ -918,7 +1410,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
         "pricing": "free",
         "url": "https://autodraw.com",
-        "features": ["AI drawing", "Shape recognition", "Free", "Quick sketches"]
+        "features": [
+            "AI drawing",
+            "Shape recognition",
+            "Free",
+            "Quick sketches"
+        ]
     },
     {
         "name": "Design.com",
@@ -928,7 +1425,12 @@
         "logo": "https://www.design.com/favicon.ico",
         "pricing": "paid",
         "url": "https://design.com",
-        "features": ["Logo design", "Brand kits", "Social media", "Business cards"]
+        "features": [
+            "Logo design",
+            "Brand kits",
+            "Social media",
+            "Business cards"
+        ]
     },
     {
         "name": "Framer",
@@ -938,7 +1440,12 @@
         "logo": "https://www.framer.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://framer.com",
-        "features": ["Website builder", "AI design", "No code", "Publishing"]
+        "features": [
+            "Website builder",
+            "AI design",
+            "No code",
+            "Publishing"
+        ]
     },
     {
         "name": "Microsoft Designer",
@@ -948,7 +1455,12 @@
         "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png",
         "pricing": "free",
         "url": "https://designer.microsoft.com",
-        "features": ["AI generation", "Templates", "Free", "Social graphics"]
+        "features": [
+            "AI generation",
+            "Templates",
+            "Free",
+            "Social graphics"
+        ]
     },
     {
         "name": "Deckpilot",
@@ -958,7 +1470,12 @@
         "logo": "https://www.deckpilot.com/favicon.ico",
         "pricing": "freemium",
         "url": "https://deckpilot.com",
-        "features": ["Deck generation", "Data visualization", "Templates", "AI design"]
+        "features": [
+            "Deck generation",
+            "Data visualization",
+            "Templates",
+            "AI design"
+        ]
     },
     {
         "name": "Flourish",
@@ -968,7 +1485,12 @@
         "logo": "https://flourish.studio/favicon.svg",
         "pricing": "freemium",
         "url": "https://flourish.studio",
-        "features": ["Data viz", "Interactive charts", "Storytelling", "Templates"]
+        "features": [
+            "Data viz",
+            "Interactive charts",
+            "Storytelling",
+            "Templates"
+        ]
     },
     {
         "name": "Julius",
@@ -978,7 +1500,12 @@
         "logo": "https://julius.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://julius.ai",
-        "features": ["Data analysis", "Visualizations", "Natural language", "Charts"]
+        "features": [
+            "Data analysis",
+            "Visualizations",
+            "Natural language",
+            "Charts"
+        ]
     },
     {
         "name": "Visme",
@@ -988,7 +1515,12 @@
         "logo": "https://www.visme.co/favicon.svg",
         "pricing": "freemium",
         "url": "https://visme.co",
-        "features": ["Presentations", "Infographics", "Documents", "Animations"]
+        "features": [
+            "Presentations",
+            "Infographics",
+            "Documents",
+            "Animations"
+        ]
     },
     {
         "name": "Zing Data",
@@ -998,7 +1530,12 @@
         "logo": "https://getzingdata.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://getzingdata.com",
-        "features": ["Mobile BI", "Data viz", "Collaboration", "SQL queries"]
+        "features": [
+            "Mobile BI",
+            "Data viz",
+            "Collaboration",
+            "SQL queries"
+        ]
     },
     {
         "name": "Beautiful.ai",
@@ -1008,7 +1545,12 @@
         "logo": "https://www.beautiful.ai/favicon.svg",
         "pricing": "freemium",
         "url": "https://beautiful.ai",
-        "features": ["Smart templates", "Auto-formatting", "Team collaboration", "Brand consistency"]
+        "features": [
+            "Smart templates",
+            "Auto-formatting",
+            "Team collaboration",
+            "Brand consistency"
+        ]
     },
     {
         "name": "Gamma",
@@ -1018,7 +1560,12 @@
         "logo": "https://gamma.app/favicon.svg",
         "pricing": "freemium",
         "url": "https://gamma.app",
-        "features": ["AI generation", "One-click designs", "Collaborative", "Web publishing"]
+        "features": [
+            "AI generation",
+            "One-click designs",
+            "Collaborative",
+            "Web publishing"
+        ]
     },
     {
         "name": "Pitch",
@@ -1028,7 +1575,12 @@
         "logo": "https://pitch.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://pitch.com",
-        "features": ["Real-time collaboration", "Templates", "Analytics", "Integrations"]
+        "features": [
+            "Real-time collaboration",
+            "Templates",
+            "Analytics",
+            "Integrations"
+        ]
     },
     {
         "name": "Plus AI",
@@ -1038,7 +1590,12 @@
         "logo": "https://www.plusdocs.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://plusdocs.com",
-        "features": ["Google Slides", "AI generation", "Formatting", "Quick creation"]
+        "features": [
+            "Google Slides",
+            "AI generation",
+            "Formatting",
+            "Quick creation"
+        ]
     },
     {
         "name": "PopAI",
@@ -1048,7 +1605,12 @@
         "logo": "https://www.popai.pro/favicon.ico",
         "pricing": "freemium",
         "url": "https://popai.pro",
-        "features": ["AI slides", "Templates", "Quick generation", "Export options"]
+        "features": [
+            "AI slides",
+            "Templates",
+            "Quick generation",
+            "Export options"
+        ]
     },
     {
         "name": "Presentation.ai",
@@ -1058,7 +1620,12 @@
         "logo": "https://www.presentations.ai/favicon.ico",
         "pricing": "freemium",
         "url": "https://presentation.ai",
-        "features": ["AI design", "Templates", "Brand consistency", "Collaboration"]
+        "features": [
+            "AI design",
+            "Templates",
+            "Brand consistency",
+            "Collaboration"
+        ]
     },
     {
         "name": "Slidesgo",
@@ -1068,7 +1635,12 @@
         "logo": "https://slidesgo.com/favicon.svg",
         "pricing": "free",
         "url": "https://slidesgo.com",
-        "features": ["Free templates", "AI customization", "Google Slides", "PowerPoint"]
+        "features": [
+            "Free templates",
+            "AI customization",
+            "Google Slides",
+            "PowerPoint"
+        ]
     },
     {
         "name": "Tome",
@@ -1078,7 +1650,12 @@
         "logo": "https://tome.app/favicon.svg",
         "pricing": "freemium",
         "url": "https://tome.app",
-        "features": ["AI generation", "Storytelling", "Interactive", "Beautiful design"]
+        "features": [
+            "AI generation",
+            "Storytelling",
+            "Interactive",
+            "Beautiful design"
+        ]
     },
     {
         "name": "Bricks",
@@ -1088,7 +1665,12 @@
         "logo": "https://www.bricks.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://bricks.com",
-        "features": ["AI spreadsheet", "Auto-visuals", "Formula writing", "Data cleaning"]
+        "features": [
+            "AI spreadsheet",
+            "Auto-visuals",
+            "Formula writing",
+            "Data cleaning"
+        ]
     },
     {
         "name": "Formula Bot",
@@ -1098,7 +1680,12 @@
         "logo": "https://formulabot.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://formulabot.com",
-        "features": ["Formula generation", "Natural language", "Excel & Sheets", "Explanations"]
+        "features": [
+            "Formula generation",
+            "Natural language",
+            "Excel & Sheets",
+            "Explanations"
+        ]
     },
     {
         "name": "Gigasheet",
@@ -1108,7 +1695,12 @@
         "logo": "https://www.gigasheet.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://gigasheet.com",
-        "features": ["Big data", "No coding", "AI analysis", "Collaboration"]
+        "features": [
+            "Big data",
+            "No coding",
+            "AI analysis",
+            "Collaboration"
+        ]
     },
     {
         "name": "Rows AI",
@@ -1118,7 +1710,12 @@
         "logo": "https://rows.com/favicon.svg",
         "pricing": "freemium",
         "url": "https://rows.com",
-        "features": ["AI analysis", "Data integrations", "Automation", "Sharing"]
+        "features": [
+            "AI analysis",
+            "Data integrations",
+            "Automation",
+            "Sharing"
+        ]
     },
     {
         "name": "SheetAI",
@@ -1128,6 +1725,71 @@
         "logo": "https://www.sheetai.app/favicon.ico",
         "pricing": "freemium",
         "url": "https://sheetai.app",
-        "features": ["Sheets add-on", "AI functions", "Data processing", "Automation"]
+        "features": [
+            "Sheets add-on",
+            "AI functions",
+            "Data processing",
+            "Automation"
+        ]
+    },
+    {
+        "name": "DeepL",
+        "category": "writing",
+        "description": "AI-powered translation tool for accurate translations",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/explodingtopics.com",
+        "pricing": "paid",
+        "url": "https://explodingtopics.com/blog/most-popular-ai-tools",
+        "features": [
+            "Natural-sounding translations",
+            "Language support",
+            "AI-powered engine"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Hostinger website builder",
+        "category": "design",
+        "description": "AI-backed website builder for easy design and launch",
+        "icon": "📈",
+        "logo": "https://logo.clearbit.com/techradar.com",
+        "pricing": "freemium",
+        "url": "https://www.techradar.com/best/best-ai-tools",
+        "features": [
+            "User-friendly interface",
+            "AI-powered design",
+            "Easy website launch"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "CapCut",
+        "category": "video",
+        "description": "AI-powered video editing tool",
+        "icon": "📹",
+        "logo": "https://logo.clearbit.com/learn.g2.com",
+        "pricing": "freemium",
+        "url": "https://learn.g2.com/most-popular-ai-tools",
+        "features": [
+            "AI video creation",
+            "Video editing",
+            "Automated editing tasks"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Jupyter Notebook",
+        "category": "code",
+        "description": "Interactive computing environment for AI and data science",
+        "icon": "📝",
+        "logo": "https://logo.clearbit.com/viso.ai",
+        "pricing": "free",
+        "url": "https://viso.ai/deep-learning/ai-software/",
+        "features": [
+            "Web-based interface",
+            "Supports AI and data science tasks",
+            "Interactive computing environment"
+        ],
+        "sponsored": false
     }
 ]

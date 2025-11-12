@@ -86,6 +86,8 @@ header.scrolled {
     padding: 150px 50px 80px;
     text-align: center;
     background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -140,6 +142,8 @@ header.scrolled {
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .categories::-webkit-scrollbar {
