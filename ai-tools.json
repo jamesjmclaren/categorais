@@ -3062,5 +3062,731 @@
             "Easy to use"
         ],
         "sponsored": false
+    },
+    {
+        "name": "AI Tools Directory",
+        "category": "directory",
+        "description": "AI tool directory for entrepreneurs",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/aitoolsdirectory.com",
+        "pricing": "freemium",
+        "url": "https://aitoolsdirectory.com/",
+        "features": [
+            "Tool submissions",
+            "Featured tools",
+            "AI trends",
+            "Community exploration",
+            "AI blog"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI Frameworks & Tools",
+        "category": "enterprise",
+        "description": "AI platform for hybrid cloud infrastructure",
+        "icon": "📈",
+        "logo": "https://logo.clearbit.com/intel.com",
+        "pricing": "paid",
+        "url": "https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/frameworks-tools.html",
+        "features": [
+            "End-to-end enterprise AI platform",
+            "Hybrid cloud infrastructure support",
+            "Seamless integration with Intel AI hardware",
+            "Collaboration with Red Hat OpenShift AI",
+            "Enterprise-level AI solutions"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Chatbot App",
+        "category": "productivity",
+        "description": "Access multiple AI models",
+        "icon": "💻",
+        "logo": "https://logo.clearbit.com/chatbotapp.ai",
+        "pricing": "paid",
+        "url": "https://chatbotapp.ai/",
+        "features": [
+            "Multiple large language models",
+            "Intuitive interface",
+            "Affordable membership",
+            "GPT-4o support",
+            "Google Gemini integration"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI Chat",
+        "category": "writing",
+        "description": "AI chatbot for writing text",
+        "icon": "💬",
+        "logo": "https://logo.clearbit.com/deepai.org",
+        "pricing": "free",
+        "url": "https://deepai.org/chat",
+        "features": [
+            "Text generation",
+            "Story writing",
+            "Message composition",
+            "Code writing",
+            "Customizable output"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI Chatbot",
+        "category": "chat",
+        "description": "Build and use AI chatbots built on Google&#x27;s leading AI technology and models like Gemini.",
+        "icon": "💬",
+        "logo": "https://logo.clearbit.com/cloud.google.com",
+        "pricing": "freemium",
+        "url": "https://cloud.google.com/use-cases/ai-chatbot",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Everything you need to create images with AI",
+        "category": "writing",
+        "description": "Use text prompts to create and edit images, generate videos, or build your own AI models.",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/getimg.ai",
+        "pricing": "freemium",
+        "url": "https://getimg.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Free AI Image Generator: Create AI Images Online",
+        "category": "image",
+        "description": "Create your AI images with <strong>PicLumen&#x27;s AI image generator</strong>. Join the best AI image creator and turn your text to images freely.",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/piclumen.com",
+        "pricing": "freemium",
+        "url": "https://www.piclumen.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Free AI Image Generator: Text to Image Online",
+        "category": "image",
+        "description": "Generate unique AI images from a text prompt with <strong>Fotor free AI image generator</strong>. Input a prompt or upload an image, set the style, ratio and quantity, and get stunning images instantl",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/fotor.com",
+        "pricing": "freemium",
+        "url": "https://www.fotor.com/ai-image-generator/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "No.1 AI Video Generator",
+        "category": "video",
+        "description": "<strong>Steve AI</strong> is an AI video generation tool that converts any text or script into engaging videos within minutes. Our AI video creator is designed to make video creation fast, simple, and",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/steve.ai",
+        "pricing": "freemium",
+        "url": "https://www.steve.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Create FREE AI Videos 10X Faster Online",
+        "category": "video",
+        "description": "<strong>Zebracat</strong> is an AI-powered platform that creates fully edited, high-performing videos automatically. It&#x27;s designed for creators, marketers, and businesses who want to grow with vi",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/zebracat.ai",
+        "pricing": "freemium",
+        "url": "https://www.zebracat.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Award Winning AI Video Editor: Free, Online, No Watermark",
+        "category": "video",
+        "description": "Create and edit videos using <strong>Vmaker AI Video Editor</strong>. Its 24 AI editing features turn raw footage into publish-ready videos. Generate shorts, add subtitles, create highlights, and more",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/vmaker.com",
+        "pricing": "freemium",
+        "url": "https://www.vmaker.com/ai-video-editor",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI Voice Generator",
+        "category": "audio",
+        "description": "Discover Respeecher’s AI voice generator for realistic text-to-speech. Explore free AI voice tools and AI-generated text solutions for creative and professional projects.",
+        "icon": "🎙️",
+        "logo": "https://logo.clearbit.com/respeecher.com",
+        "pricing": "freemium",
+        "url": "https://www.respeecher.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "WellSaid Home",
+        "category": "audio",
+        "description": "Create professional-quality voice overs in any dialect or production style with our secure AI voices. Try WellSaid’s text-to-speech AI voices for free today.",
+        "icon": "🎙️",
+        "logo": "https://logo.clearbit.com/wellsaid.io",
+        "pricing": "freemium",
+        "url": "https://www.wellsaid.io/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Top 11 AI Music Generators to Try in 2025",
+        "category": "audio",
+        "description": "Overall, if you need background music for your presentations, projects, social media content, etc, Mubert could be an interesting tool for you. Pricing: The free plan lets you generate 25 soundtracks ",
+        "icon": "🎙️",
+        "logo": "https://logo.clearbit.com/kripeshadwani.com",
+        "pricing": "freemium",
+        "url": "https://kripeshadwani.com/ai-music-generators/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Generate Free AI Music Online with MusicHero.ai’s AI Music Generator",
+        "category": "audio",
+        "description": "Easily generate AI music from text with <strong>MusicHero</strong>. Try the AI music generator free online with no sign-up required. Create royalty-free music, remove vocals, generate AI lyrics, and c",
+        "icon": "🎙️",
+        "logo": "https://logo.clearbit.com/musichero.ai",
+        "pricing": "freemium",
+        "url": "https://musichero.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI Tools For Designers",
+        "category": "design",
+        "description": "<strong>Luma AI</strong> - 3D Scan and generate 3D models a... by ... Spline - 3D Design Tool in the Browser wit...",
+        "icon": "🎯",
+        "logo": "https://logo.clearbit.com/awwwards.com",
+        "pricing": "freemium",
+        "url": "https://www.awwwards.com/awwwards/collections/ai-tools-for-designers/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "14 AI Design Tools for Creative Professionals",
+        "category": "code",
+        "description": "AI design tools are <strong>software applications that use artificial intelligence to assist and enhance design processes</strong>, leveraging machine learning, natural language processing, and other ",
+        "icon": "💻",
+        "logo": "https://logo.clearbit.com/digitalocean.com",
+        "pricing": "freemium",
+        "url": "https://www.digitalocean.com/resources/articles/ai-design-tools",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "I tested 8 AI tools for graphic design — here are my prompts, results, and recommendations",
+        "category": "image",
+        "description": "38% of marketers use AI to create image-based and video content for social media, print, and more. Tools like <strong>ChatGPT, Veo-3, Canva</strong>, etc., can render scenes faster, create assets, and",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/blog.hubspot.com",
+        "pricing": "freemium",
+        "url": "https://blog.hubspot.com/marketing/ai-for-graphic-design",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI for Educators",
+        "category": "productivity",
+        "description": "AI for educators: <strong>MagicSchool</strong> is the leading AI for teachers, schools, and students. Loved by over 6 million teachers and their students, <strong>MagicSchool</strong> provides 80+ tea",
+        "icon": "⚙️",
+        "logo": "https://logo.clearbit.com/magicschool.ai",
+        "pricing": "freemium",
+        "url": "https://www.magicschool.ai",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Eduaide.Ai: AI Created for Teachers",
+        "category": "design",
+        "description": "<strong>AI for Teachers: Eduaide</strong> offers AI tools to create graphic organizers, engaging educational games, lesson plans, and high-quality instructional materials.",
+        "icon": "🎯",
+        "logo": "https://logo.clearbit.com/eduaide.ai",
+        "pricing": "freemium",
+        "url": "https://www.eduaide.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Microsoft 365 AI Education Tools",
+        "category": "chat",
+        "description": "Explore the potential for AI in education, enhance teaching and learning with <strong>Microsoft 365 Copilot Chat</strong>, and equip learners with AI tools from Microsoft.",
+        "icon": "💬",
+        "logo": "https://logo.clearbit.com/microsoft.com",
+        "pricing": "freemium",
+        "url": "https://www.microsoft.com/en-us/education/ai-in-education",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Meet Khanmigo: Khan Academy's AI",
+        "category": "chat",
+        "description": "Khanmigo is an AI-powered personal tutor and teaching assistant from trusted education nonprofit Khan Academy. Khanmigo offers engaging, on-topic, and effective learning for students, and is ethically",
+        "icon": "💬",
+        "logo": "https://logo.clearbit.com/khanmigo.ai",
+        "pricing": "freemium",
+        "url": "https://www.khanmigo.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "TeacherMatic",
+        "category": "education",
+        "description": "<strong>TeacherMatic</strong> is the AI-powered platform built by educators for the entire education sector. With 100+ smart generators, it helps teachers, senior leaders, administrators, HR, and mark",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/teachermatic.com",
+        "pricing": "freemium",
+        "url": "https://teachermatic.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI for education",
+        "category": "education",
+        "description": "... <strong>The toolkit unlocks generative AI safely and responsibly in your classroom to create an immersive and effective learning experience for educators and learners aged 13-15 years</strong>.",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/learn.microsoft.com",
+        "pricing": "freemium",
+        "url": "https://learn.microsoft.com/en-us/training/educator-center/topics/ai-for-education",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Reach Every Student, Every Day",
+        "category": "education",
+        "description": "From lesson planning to student assessment, district oversight to parent communication. Professional-grade tools that handle every part of your educational workflow.",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/schoolai.com",
+        "pricing": "freemium",
+        "url": "https://schoolai.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Free AI Tools for Teachers and Educators – Brisk Teaching",
+        "category": "education",
+        "description": "<strong>Brisk</strong> is the best AI for teachers and schools, offering free AI tools for education that fit seamlessly into your routine. With an AI lesson plan generator and tools for instruction, ",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/briskteaching.com",
+        "pricing": "freemium",
+        "url": "https://www.briskteaching.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Kira",
+        "category": "education",
+        "description": "<strong>Kira is the first AI platform that delivers personalized education at scale</strong>. Use Kira alongside your existing tools, or as your complete AI-powered teaching solution",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/kira-learning.com",
+        "pricing": "freemium",
+        "url": "https://www.kira-learning.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "AI",
+        "category": "education",
+        "description": "Discover AI-powered tools specifically designed to amplify teaching and simplify learning in higher education. Only from Pearson.",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/pearson.com",
+        "pricing": "freemium",
+        "url": "https://www.pearson.com/en-us/higher-education/products-services/aistudytool.html",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Unity AI: AI Game Development Tools & RT3D Software",
+        "category": "chat",
+        "description": "Use third-party AI models inside Unity. No manual setup or switching apps. Get quick, focused help with your GameObjects, scripts, Prefabs, and more–just drop them into Assistant without having to spe",
+        "icon": "💬",
+        "logo": "https://logo.clearbit.com/unity.com",
+        "pricing": "freemium",
+        "url": "https://unity.com/products/ai",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Create hit games with the power of AI with Ludo.ai",
+        "category": "writing",
+        "description": "<strong>Ludo.ai&#x27;s Game Concept tool</strong> isn&#x27;t just a document editor – it&#x27;s your AI-powered co-writer. Structure your game&#x27;s details with customizable templates, then use AI s",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/ludo.ai",
+        "pricing": "freemium",
+        "url": "https://ludo.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "modl.ai",
+        "category": "gaming",
+        "description": "AI-driven bots discover bugs, crashes, and performance issues and embody player behavior for more personalized game experiences.",
+        "icon": "🎮",
+        "logo": "https://logo.clearbit.com/modl.ai",
+        "pricing": "freemium",
+        "url": "https://modl.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Scenario",
+        "category": "writing",
+        "description": "Generate custom AI models, images, videos, and 3D assets for gaming, media, and marketing. Scale your creative operations with production-ready AI tools.",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/scenario.com",
+        "pricing": "freemium",
+        "url": "https://www.scenario.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Five Ways AI Can Help Gamers",
+        "category": "video",
+        "description": "Learn about how AI can assist outside of active gameplay along with several ways <strong>Copilot in Microsoft Edge</strong> can act as your personal AI video game coach. ... AI tools like Copilot in E",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/microsoft.com",
+        "pricing": "freemium",
+        "url": "https://www.microsoft.com/en-us/edge/learning-center/five-ways-ai-can-help-online-gamers",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "5 AI Tools Transforming Game Development",
+        "category": "gaming",
+        "description": "<strong>Charisma AI</strong> also integrates with several different engines (Unreal Engine, Unity, Javascript, React, etc.)., making its application that much easier and more impactful on game develop",
+        "icon": "🎮",
+        "logo": "https://logo.clearbit.com/iotforall.com",
+        "pricing": "freemium",
+        "url": "https://www.iotforall.com/5-ai-tools-transforming-game-development",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "️ Gaming",
+        "category": "gaming",
+        "description": "We cannot provide a description for this page right now",
+        "icon": "🎮",
+        "logo": "https://logo.clearbit.com/gpte.ai",
+        "pricing": "freemium",
+        "url": "https://gpte.ai/tag/gaming/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Rogo",
+        "category": "finance",
+        "description": "<strong>Rogo is the secure generative AI platform built for elite financial institutions</strong>. Save time, unlock insights and automate workflows in days.",
+        "icon": "💰",
+        "logo": "https://logo.clearbit.com/rogo.ai",
+        "pricing": "freemium",
+        "url": "https://rogo.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Aleph",
+        "category": "code",
+        "description": "&quot;I&#x27;ve been born and bred in FP&amp;A for almost 20 years, and kudos to Aleph who built the tool I&#x27;ve always wanted.&quot; ... Unlock the confidence and process improvements you need to ",
+        "icon": "💻",
+        "logo": "https://logo.clearbit.com/getaleph.com",
+        "pricing": "freemium",
+        "url": "https://www.getaleph.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "FinanceGPT",
+        "category": "code",
+        "description": "<strong>FinanceGPT&#x27;s financial analysis software and AI financial tools suite</strong> accelerate financial data analytics, investment portfolio optimization, financial workflow automation and ad",
+        "icon": "💻",
+        "logo": "https://logo.clearbit.com/financegpt.uk",
+        "pricing": "freemium",
+        "url": "https://financegpt.uk/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Tripplanner.ai",
+        "category": "travel",
+        "description": "Example: Planning a week in Rome? <strong>Trip Planner AI</strong> suggests a 7-day itinerary that balances classics like the Colosseum and Vatican with hidden gems like Trastevere and local trattoria",
+        "icon": "✈️",
+        "logo": "https://logo.clearbit.com/tripplanner.ai",
+        "pricing": "freemium",
+        "url": "https://tripplanner.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Meet Layla: AI Trip Planner 2025",
+        "category": "chat",
+        "description": "The world&#x27;s best AI travel planner 4.9★ . Get tailored itineraries &amp; epic road trips. From chat to checkout.",
+        "icon": "💬",
+        "logo": "https://logo.clearbit.com/layla.ai",
+        "pricing": "freemium",
+        "url": "https://layla.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Free Trip Planner & AI Itinerary Builder",
+        "category": "travel",
+        "description": "Discover and save millions of top-rated attractions, activities, restaurants and places to stay with Trips, <strong>Tripadvisor&#x27;s free trip planner</strong>. Add your favorites to an online itine",
+        "icon": "✈️",
+        "logo": "https://logo.clearbit.com/tripadvisor.com",
+        "pricing": "freemium",
+        "url": "https://www.tripadvisor.com/Trips",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Plantrip: Trip Planner AI. Get an itinerary in seconds.",
+        "category": "travel",
+        "description": "Create a custom travel plan for anywhere in the world in seconds. <strong>Plantrip is the most accurate AI trip planner</strong>.",
+        "icon": "✈️",
+        "logo": "https://logo.clearbit.com/plantrip.io",
+        "pricing": "freemium",
+        "url": "https://plantrip.io/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "iplan.ai",
+        "category": "travel",
+        "description": "We’ll create your smart itinerary with the help of artificial intelligence - View plans on a travel map (like Roadtrippers and Wanderlog) - Get directions on your favorite application (Google map, App",
+        "icon": "✈️",
+        "logo": "https://logo.clearbit.com/apps.apple.com",
+        "pricing": "freemium",
+        "url": "https://apps.apple.com/us/app/iplan-ai-ai-travel-planner/id1611716564",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "iMean AI",
+        "category": "travel",
+        "description": "Just tell iMean where you want to go. From cheap flights to hotel options, our AI understands your travel needs in seconds.Start Planning Now",
+        "icon": "✈️",
+        "logo": "https://logo.clearbit.com/imean.ai",
+        "pricing": "freemium",
+        "url": "https://www.imean.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Home",
+        "category": "design",
+        "description": "Generalist AI travel planner at your command, with real-time, user-centric recommendations. ... Design complex itineraries with our easy-to-use, interactive planning tool.",
+        "icon": "🎯",
+        "logo": "https://logo.clearbit.com/usevacay.com",
+        "pricing": "freemium",
+        "url": "https://www.usevacay.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Roam Around",
+        "category": "travel",
+        "description": "&quot;We are looking for a nice tool to help us plan our family vacation. I found <strong>Roam around</strong> to be perfect for this! All we had to do was pick where we are going, when and how long. ",
+        "icon": "✈️",
+        "logo": "https://logo.clearbit.com/roamaround.app",
+        "pricing": "freemium",
+        "url": "https://roamaround.app/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Aicotravel",
+        "category": "travel",
+        "description": "Create personalized AI travel itineraries with <strong>Aicotravel</strong>. Your intelligent guide to unforgettable journeys, tailored to your preferences for any dream destination.",
+        "icon": "✈️",
+        "logo": "https://logo.clearbit.com/aicotravel.com",
+        "pricing": "freemium",
+        "url": "https://aicotravel.com/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "HumanGO",
+        "category": "productivity",
+        "description": "<strong>HumanGO</strong> is the final big step in making effective training accessible to everyone. No other platform creates an individualized plan that constantly evolves according to goal events, a",
+        "icon": "⚙️",
+        "logo": "https://logo.clearbit.com/humango.ai",
+        "pricing": "freemium",
+        "url": "https://humango.ai/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Spurfit",
+        "category": "health",
+        "description": "<strong>Spurfit</strong> helps fitness coaches save time with AI-generated plans, real-time progress tracking, and tools to grow your coaching business — all in one place.",
+        "icon": "🏥",
+        "logo": "https://logo.clearbit.com/spur.fit",
+        "pricing": "freemium",
+        "url": "https://www.spur.fit/",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "Workout Smarter with AI Fitness Coaching",
+        "category": "health",
+        "description": "Transform your workouts with <strong>Copilot</strong>, your AI personal trainer. Generate exercise workout plans, track progress, and get nutrition tips with AI fitness apps.",
+        "icon": "🏥",
+        "logo": "https://logo.clearbit.com/microsoft.com",
+        "pricing": "freemium",
+        "url": "https://www.microsoft.com/en-us/microsoft-copilot/for-individuals/do-more-with-ai/ai-for-daily-life/workout-smarter-with-ai-fitness-coaching",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
+    },
+    {
+        "name": "iFit AI Coach",
+        "category": "writing",
+        "description": "Build life changing habits with our <strong>iFIT AI Coach</strong>— an artificial intelligence tool that generates content customized to your fitness needs.",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/ifit.com",
+        "pricing": "freemium",
+        "url": "https://www.ifit.com/aicoach",
+        "features": [
+            "AI-powered",
+            "Easy to use"
+        ],
+        "sponsored": false
     }
 ]
