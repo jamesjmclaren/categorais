@@ -21,7 +21,7 @@
         "category": "chat",
         "description": "OpenAI's powerful conversational AI with GPT-4 and web browsing capabilities. Most popular AI chatbot worldwide.",
         "icon": "💬",
-        "logo": "https://assets.openai.com/logo.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
         "pricing": "freemium",
         "url": "https://chat.openai.com",
         "features": [
@@ -37,7 +37,7 @@
         "category": "chat",
         "description": "Google's multimodal AI assistant with advanced reasoning and seamless Google Workspace integration.",
         "icon": "✨",
-        "logo": "https://assets.google.com/images/gemini-logo.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png",
         "pricing": "free",
         "url": "https://gemini.google.com",
         "features": [
@@ -53,7 +53,7 @@
         "category": "chat",
         "description": "AI-powered search engine that provides sourced answers with citations. Perfect for research and fact-checking.",
         "icon": "🔍",
-        "logo": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/perplexity-ai-icon.png",
+        "logo": "https://logo.clearbit.com/perplexity.ai",
         "pricing": "freemium",
         "url": "https://perplexity.ai",
         "features": [
@@ -69,7 +69,7 @@
         "category": "chat",
         "description": "Elon Musk's AI assistant integrated with X (Twitter). Real-time access to social media data.",
         "icon": "⚡",
-        "logo": "https://grok.x.ai/logo.png",
+        "logo": "https://logo.clearbit.com/grok.x.ai",
         "pricing": "paid",
         "url": "https://grok.x.ai",
         "features": [
@@ -84,7 +84,7 @@
         "category": "chat",
         "description": "Meta's AI assistant available across Facebook, Instagram, and WhatsApp.",
         "icon": "🔵",
-        "logo": "https://brand.meta.com/assets/meta-logo.png",
+        "logo": "https://logo.clearbit.com/ai.meta.com",
         "pricing": "freemium",
         "url": "https://ai.meta.com",
         "features": [
@@ -99,7 +99,7 @@
         "category": "chat",
         "description": "Advanced AI chatbot with deep reasoning and research capabilities.",
         "icon": "🌊",
-        "logo": "https://deepseek.com/assets/logo.png",
+        "logo": "https://logo.clearbit.com/deepseek.com",
         "pricing": "freemium",
         "url": "https://deepseek.com",
         "features": [
@@ -114,7 +114,7 @@
         "category": "image",
         "description": "Leading AI art generator known for stunning, artistic image creation. Industry standard for creative professionals.",
         "icon": "🎨",
-        "logo": "https://midjourney.com/favicon.ico",
+        "logo": "https://seeklogo.com/images/M/midjourney-logo-3BAF817FF7-seeklogo.com.png",
         "pricing": "paid",
         "url": "https://midjourney.com",
         "features": [
@@ -130,7 +130,7 @@
         "category": "image",
         "description": "OpenAI's image generator with exceptional prompt following and detail. Integrated with ChatGPT Plus.",
         "icon": "🖼️",
-        "logo": "https://openai.com/static/images/logo.png",
+        "logo": "https://logo.clearbit.com/openai.com",
         "pricing": "paid",
         "url": "https://openai.com/dall-e-3",
         "features": [
@@ -146,7 +146,7 @@
         "category": "image",
         "description": "Open-source image generation with full control and customization. Run locally or in the cloud.",
         "icon": "🌈",
-        "logo": "https://stability.ai/favicon.ico",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Stability_AI_logo.svg/2560px-Stability_AI_logo.svg.png",
         "pricing": "freemium",
         "url": "https://stability.ai",
         "features": [
@@ -162,7 +162,7 @@
         "category": "image",
         "description": "AI art platform with consistent character creation and fine-tuned models for game assets and design.",
         "icon": "👑",
-        "logo": "https://leonardo.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/leonardo.ai",
         "pricing": "freemium",
         "url": "https://leonardo.ai",
         "features": [
@@ -178,7 +178,7 @@
         "category": "image",
         "description": "Adobe's AI for creative image generation. Commercially safe generative AI for enterprises.",
         "icon": "🔥",
-        "logo": "https://firefly.adobe.com/assets/firefly-logo.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/2560px-Adobe_Systems_logo_and_wordmark.svg.png",
         "pricing": "freemium",
         "url": "https://firefly.adobe.com",
         "features": [
@@ -194,7 +194,7 @@
         "category": "image",
         "description": "Advanced open-source image generation model with high quality output by Black Forest Labs.",
         "icon": "⚡",
-        "logo": "https://blackforestlabs.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/blackforestlabs.ai",
         "pricing": "freemium",
         "url": "https://blackforestlabs.ai",
         "features": [
@@ -209,7 +209,7 @@
         "category": "image",
         "description": "AI image generator specializing in text rendering and typography in images.",
         "icon": "💡",
-        "logo": "https://ideogram.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/ideogram.ai",
         "pricing": "freemium",
         "url": "https://ideogram.ai",
         "features": [
@@ -224,7 +224,7 @@
         "category": "image",
         "description": "AI design tool for creating consistent brand assets and vector graphics.",
         "icon": "🎭",
-        "logo": "https://recraft.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/recraft.ai",
         "pricing": "freemium",
         "url": "https://recraft.ai",
         "features": [
@@ -239,7 +239,7 @@
         "category": "video",
         "description": "Advanced AI video editing and generation platform. Industry-leading Gen-3 video model used by professionals.",
         "icon": "🎬",
-        "logo": "https://runwayml.com/favicon.ico",
+        "logo": "https://seeklogo.com/images/R/runway-logo-3847553E3E-seeklogo.com.png",
         "pricing": "freemium",
         "url": "https://runwayml.com",
         "features": [
@@ -255,7 +255,7 @@
         "category": "video",
         "description": "Text-to-video and image-to-video AI generation. Create stunning video content from simple prompts.",
         "icon": "🎥",
-        "logo": "https://pika.art/pika-logo.png",
+        "logo": "https://logo.clearbit.com/pika.art",
         "pricing": "freemium",
         "url": "https://pika.art",
         "features": [
@@ -271,7 +271,7 @@
         "category": "video",
         "description": "AI video generation with 140+ realistic avatars and voiceovers. Create professional videos without cameras.",
         "icon": "🎭",
-        "logo": "https://synthesia.io/assets/img/logo.svg",
+        "logo": "https://seeklogo.com/images/S/synthesia-logo-3F8F6B7A91-seeklogo.com.png",
         "pricing": "paid",
         "url": "https://synthesia.io",
         "features": [
@@ -287,7 +287,7 @@
         "category": "video",
         "description": "Create talking avatar videos with AI voices and automatic translation. Perfect for marketing and training.",
         "icon": "🗣️",
-        "logo": "https://heygen.com/favicon.ico",
+        "logo": "https://static.heygen.ai/heygen/asset/heygen-logo.svg",
         "pricing": "freemium",
         "url": "https://heygen.com",
         "features": [
@@ -303,7 +303,7 @@
         "category": "video",
         "description": "AI-powered video and podcast editing. Edit videos by editing text transcripts.",
         "icon": "📹",
-        "logo": "https://descript.com/static/images/logo.svg",
+        "logo": "https://assets-global.website-files.com/62ea40eb46c4ea08d1c76a61/62ea422fb8dffc81ee7c42b4_descript-logo-black.svg",
         "pricing": "freemium",
         "url": "https://descript.com",
         "features": [
@@ -318,7 +318,7 @@
         "category": "video",
         "description": "AI video creation tool for generating animated content from text and images.",
         "icon": "🎨",
-        "logo": "https://haiper.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/haiper.ai",
         "pricing": "freemium",
         "url": "https://haiper.ai",
         "features": [
@@ -333,7 +333,7 @@
         "category": "video",
         "description": "Create videos from text prompts with AI-powered editing and stock footage.",
         "icon": "🎞️",
-        "logo": "https://invideo.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/invideo.ai",
         "pricing": "freemium",
         "url": "https://invideo.ai",
         "features": [
@@ -348,7 +348,7 @@
         "category": "video",
         "description": "Chinese AI video generation model with impressive realism and motion.",
         "icon": "🌟",
-        "logo": "https://kling.ai/logo.png",
+        "logo": "https://logo.clearbit.com/kling.ai",
         "pricing": "freemium",
         "url": "https://kling.ai",
         "features": [
@@ -363,7 +363,7 @@
         "category": "video",
         "description": "Real-time AI image and video generation with instant feedback.",
         "icon": "⚡",
-        "logo": "https://krea.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/krea.ai",
         "pricing": "freemium",
         "url": "https://krea.ai",
         "features": [
@@ -378,7 +378,7 @@
         "category": "video",
         "description": "AI-powered filmmaking platform for creating complete video productions.",
         "icon": "🎬",
-        "logo": "https://ltx.studio/favicon.ico",
+        "logo": "https://logo.clearbit.com/ltx.studio",
         "pricing": "freemium",
         "url": "https://ltx.studio",
         "features": [
@@ -393,7 +393,7 @@
         "category": "video",
         "description": "3D capture and AI video generation. Create cinematic videos with Dream Machine.",
         "icon": "🌙",
-        "logo": "https://lumalabs.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/lumalabs.ai",
         "pricing": "freemium",
         "url": "https://lumalabs.ai",
         "features": [
@@ -408,7 +408,7 @@
         "category": "video",
         "description": "OpenAI's advanced video generation model. Create realistic videos from text.",
         "icon": "🎥",
-        "logo": "https://openai.com/static/images/logo.png",
+        "logo": "https://logo.clearbit.com/openai.com",
         "pricing": "paid",
         "url": "https://openai.com/sora",
         "features": [
@@ -423,7 +423,7 @@
         "category": "video",
         "description": "AI-enhanced video editing and automation. Subtitle, translate, and edit with AI.",
         "icon": "📹",
-        "logo": "https://veed.io/images/veed-logo.png",
+        "logo": "https://logo.clearbit.com/veed.io",
         "pricing": "freemium",
         "url": "https://veed.io",
         "features": [
@@ -438,7 +438,7 @@
         "category": "video",
         "description": "AI-powered video repurposing for social media. Turn long videos into viral clips.",
         "icon": "✂️",
-        "logo": "https://opus.pro/assets/logo.png",
+        "logo": "https://logo.clearbit.com/opus.pro",
         "pricing": "freemium",
         "url": "https://opus.pro",
         "features": [
@@ -453,7 +453,7 @@
         "category": "video",
         "description": "AI-powered video meeting insights and summaries. Automatically capture key moments.",
         "icon": "🌾",
-        "logo": "https://grain.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/grain.com",
         "pricing": "freemium",
         "url": "https://grain.com",
         "features": [
@@ -468,7 +468,7 @@
         "category": "audio",
         "description": "Most realistic AI voice generation and cloning. Industry-leading voice synthesis with emotional control.",
         "icon": "🎙️",
-        "logo": "https://elevenlabs.io/favicon.ico",
+        "logo": "https://seeklogo.com/images/E/elevenlabs-logo-8DB349FD2F-seeklogo.com.png",
         "pricing": "freemium",
         "url": "https://elevenlabs.io",
         "features": [
@@ -484,7 +484,7 @@
         "category": "audio",
         "description": "Generate complete songs with lyrics and music from text prompts. Create professional music in minutes.",
         "icon": "🎵",
-        "logo": "https://play-lh.googleusercontent.com/5UR_1gDasYzAjJYSdx9onJ5FT68TVzxcV6O_FjTS2X_95_qHgexX__mCa_23lUIgWlU",
+        "logo": "https://logo.clearbit.com/suno.ai",
         "pricing": "freemium",
         "url": "https://suno.ai",
         "features": [
@@ -500,7 +500,7 @@
         "category": "audio",
         "description": "Professional AI voiceover software for videos and presentations. 120+ voices in 20+ languages.",
         "icon": "🔊",
-        "logo": "https://murf.ai/static/images/murf-logo.svg",
+        "logo": "https://logo.clearbit.com/murf.ai",
         "pricing": "freemium",
         "url": "https://murf.ai",
         "features": [
@@ -516,7 +516,7 @@
         "category": "audio",
         "description": "AI-powered audio recording and editing for podcasts. Studio-quality sound from any microphone.",
         "icon": "🎧",
-        "logo": "https://blog.adobe.com/media_adobe/en/topics/adobe-podcast/assets/Adobe-Podcast-Logo.png",
+        "logo": "https://logo.clearbit.com/podcast.adobe.com",
         "pricing": "freemium",
         "url": "https://podcast.adobe.com",
         "features": [
@@ -596,7 +596,7 @@
         "category": "code",
         "description": "Free AI-powered autocomplete and code assistant. Supports 70+ languages.",
         "icon": "🔷",
-        "logo": "https://codeium.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/codeium.com",
         "pricing": "free",
         "url": "https://codeium.com",
         "features": [
@@ -612,7 +612,7 @@
         "category": "code",
         "description": "AI-powered real-time code assistant with agentic workflows.",
         "icon": "🏄",
-        "logo": "https://codeium.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/codeium.com",
         "pricing": "freemium",
         "url": "https://codeium.com/windsurf",
         "features": [
@@ -627,7 +627,7 @@
         "category": "code",
         "description": "AI pair programming assistant built into Replit for developers.",
         "icon": "👻",
-        "logo": "https://replit.com/public/images/ghostwriter-logo.png",
+        "logo": "https://logo.clearbit.com/replit.com",
         "pricing": "freemium",
         "url": "https://replit.com/ghostwriter",
         "features": [
@@ -642,7 +642,7 @@
         "category": "code",
         "description": "AI code testing and quality assurance. Generate tests automatically.",
         "icon": "🧪",
-        "logo": "https://www.qodo.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/qodo.ai",
         "pricing": "freemium",
         "url": "https://qodo.ai",
         "features": [
@@ -657,7 +657,7 @@
         "category": "code",
         "description": "Real-time code analysis and automated code reviews with AI.",
         "icon": "🔍",
-        "logo": "https://www.codiga.io/favicon.ico",
+        "logo": "https://logo.clearbit.com/codiga.io",
         "pricing": "freemium",
         "url": "https://codiga.io",
         "features": [
@@ -672,7 +672,7 @@
         "category": "code",
         "description": "AI coding assistant that helps you write, fix, and optimize code.",
         "icon": "💬",
-        "logo": "https://www.askcodi.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/askcodi.com",
         "pricing": "freemium",
         "url": "https://askcodi.com",
         "features": [
@@ -719,7 +719,7 @@
         "category": "writing",
         "description": "AI writing assistant for grammar, clarity, and tone. Used by 30 million people daily.",
         "icon": "📖",
-        "logo": "https://www.grammarly.com/assets/img/logo.svg",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Grammarly_logo.svg/2560px-Grammarly_logo.svg.png",
         "pricing": "freemium",
         "url": "https://grammarly.com",
         "features": [
@@ -735,7 +735,7 @@
         "category": "writing",
         "description": "AI assistant built into Notion for writing and organizing. Enhance your workspace with AI.",
         "icon": "📄",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png",
+        "logo": "https://logo.clearbit.com/notion.so",
         "pricing": "paid",
         "url": "https://notion.so",
         "features": [
@@ -751,7 +751,7 @@
         "category": "writing",
         "description": "AI paraphrasing and writing enhancement tool. Rewrite and improve your content.",
         "icon": "🪶",
-        "logo": "https://quillbot.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/quillbot.com",
         "pricing": "freemium",
         "url": "https://quillbot.com",
         "features": [
@@ -766,7 +766,7 @@
         "category": "writing",
         "description": "AI writing assistant for creating content faster. 40+ use cases and templates.",
         "icon": "✏️",
-        "logo": "https://rytr.me/favicon.svg",
+        "logo": "https://logo.clearbit.com/rytr.me",
         "pricing": "freemium",
         "url": "https://rytr.me",
         "features": [
@@ -781,7 +781,7 @@
         "category": "writing",
         "description": "AI writing partner for novelists and fiction writers. Creative storytelling assistance.",
         "icon": "📚",
-        "logo": "https://sudowrite.com/static/logo.png",
+        "logo": "https://logo.clearbit.com/sudowrite.com",
         "pricing": "paid",
         "url": "https://sudowrite.com",
         "features": [
@@ -796,7 +796,7 @@
         "category": "writing",
         "description": "AI content creation platform for articles, ads, and marketing copy.",
         "icon": "🚀",
-        "logo": "https://writesonic.com/assets/images/logo.png",
+        "logo": "https://logo.clearbit.com/writesonic.com",
         "pricing": "freemium",
         "url": "https://writesonic.com",
         "features": [
@@ -811,7 +811,7 @@
         "category": "writing",
         "description": "AI writing assistant focused on quality and creativity.",
         "icon": "✨",
-        "logo": "https://www.quarkle.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/quarkle.ai",
         "pricing": "freemium",
         "url": "https://quarkle.ai",
         "features": [
@@ -826,7 +826,7 @@
         "category": "writing",
         "description": "AI writing assistant that mimics your writing style.",
         "icon": "📝",
-        "logo": "https://myjotbot.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/jotbot.ai",
         "pricing": "freemium",
         "url": "https://jotbot.ai",
         "features": [
@@ -857,7 +857,7 @@
         "category": "productivity",
         "description": "Smart calendar assistant that optimizes your schedule automatically. Get 40% more time.",
         "icon": "📅",
-        "logo": "https://reclaim.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/reclaim.ai",
         "pricing": "freemium",
         "url": "https://reclaim.ai",
         "features": [
@@ -873,7 +873,7 @@
         "category": "productivity",
         "description": "Blazing fast email with AI triage and response suggestions. Email at the speed of thought.",
         "icon": "📧",
-        "logo": "https://superhuman.com/favicon.ico",
+        "logo": "https://seeklogo.com/images/S/superhuman-logo-45439DD32C-seeklogo.com.png",
         "pricing": "paid",
         "url": "https://superhuman.com",
         "features": [
@@ -889,7 +889,7 @@
         "category": "productivity",
         "description": "AI-powered calendar and project manager that auto-schedules your day. Save 30+ days per year.",
         "icon": "⚙️",
-        "logo": "https://usemotion.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/usemotion.com",
         "pricing": "paid",
         "url": "https://usemotion.com",
         "features": [
@@ -905,7 +905,7 @@
         "category": "productivity",
         "description": "Automated scheduling and calendar management with AI-powered features.",
         "icon": "📆",
-        "logo": "https://calendly.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/calendly.com",
         "pricing": "freemium",
         "url": "https://calendly.com",
         "features": [
@@ -920,7 +920,7 @@
         "category": "productivity",
         "description": "AI calendar optimization for focus time and productive meetings.",
         "icon": "⏰",
-        "logo": "https://www.getclockwise.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/clockwise.com",
         "pricing": "freemium",
         "url": "https://clockwise.com",
         "features": [
@@ -935,7 +935,7 @@
         "category": "productivity",
         "description": "AI task scheduler that helps you plan your day efficiently.",
         "icon": "📋",
-        "logo": "https://trevorai.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/trevorai.com",
         "pricing": "freemium",
         "url": "https://trevorai.com",
         "features": [
@@ -950,7 +950,7 @@
         "category": "productivity",
         "description": "AI-powered workspace for tasks, notes, and collaboration.",
         "icon": "✅",
-        "logo": "https://www.taskade.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/taskade.com",
         "pricing": "freemium",
         "url": "https://taskade.com",
         "features": [
@@ -965,7 +965,7 @@
         "category": "productivity",
         "description": "AI meeting assistant for notes, transcription, and insights.",
         "icon": "🎯",
-        "logo": "https://www.avoma.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/avoma.com",
         "pricing": "freemium",
         "url": "https://avoma.com",
         "features": [
@@ -980,7 +980,7 @@
         "category": "productivity",
         "description": "AI-powered meeting assistant and transcription tool.",
         "icon": "⏱️",
-        "logo": "https://www.equaltime.io/favicon.ico",
+        "logo": "https://logo.clearbit.com/equaltime.com",
         "pricing": "freemium",
         "url": "https://equaltime.com",
         "features": [
@@ -995,7 +995,7 @@
         "category": "productivity",
         "description": "Free AI meeting assistant that records, transcribes, and summarizes.",
         "icon": "🎤",
-        "logo": "https://fathom.video/favicon.ico",
+        "logo": "https://logo.clearbit.com/fathom.video",
         "pricing": "freemium",
         "url": "https://fathom.video",
         "features": [
@@ -1010,7 +1010,7 @@
         "category": "productivity",
         "description": "AI meeting management and collaborative agendas.",
         "icon": "🤝",
-        "logo": "https://fellow.app/favicon.svg",
+        "logo": "https://logo.clearbit.com/fellow.app",
         "pricing": "freemium",
         "url": "https://fellow.app",
         "features": [
@@ -1025,7 +1025,7 @@
         "category": "productivity",
         "description": "AI meeting recorder and transcription service with search.",
         "icon": "🔥",
-        "logo": "https://fireflies.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/fireflies.ai",
         "pricing": "freemium",
         "url": "https://fireflies.ai",
         "features": [
@@ -1040,7 +1040,7 @@
         "category": "productivity",
         "description": "AI-powered noise cancellation and meeting transcription.",
         "icon": "🔇",
-        "logo": "https://krisp.ai/favicon.svg",
+        "logo": "https://logo.clearbit.com/krisp.ai",
         "pricing": "freemium",
         "url": "https://krisp.ai",
         "features": [
@@ -1055,7 +1055,7 @@
         "category": "productivity",
         "description": "Automation platform with 1-click integrations. Connect apps with AI.",
         "icon": "🔗",
-        "logo": "https://integrately.com/assets/img/logo.png",
+        "logo": "https://logo.clearbit.com/integrately.com",
         "pricing": "freemium",
         "url": "https://integrately.com",
         "features": [
@@ -1070,7 +1070,7 @@
         "category": "productivity",
         "description": "Visual platform for automation and workflows. Formerly Integromat.",
         "icon": "🛠️",
-        "logo": "https://www.make.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/make.com",
         "pricing": "freemium",
         "url": "https://make.com",
         "features": [
@@ -1085,7 +1085,7 @@
         "category": "productivity",
         "description": "Work OS with AI-powered project management and automation.",
         "icon": "📊",
-        "logo": "https://monday.com/static/images/logo.png",
+        "logo": "https://logo.clearbit.com/monday.com",
         "pricing": "freemium",
         "url": "https://monday.com",
         "features": [
@@ -1100,7 +1100,7 @@
         "category": "productivity",
         "description": "Open-source workflow automation with AI capabilities.",
         "icon": "🔄",
-        "logo": "https://n8n.io/favicon.svg",
+        "logo": "https://logo.clearbit.com/n8n.io",
         "pricing": "free",
         "url": "https://n8n.io",
         "features": [
@@ -1115,7 +1115,7 @@
         "category": "productivity",
         "description": "Project management platform with AI-powered work intelligence.",
         "icon": "📈",
-        "logo": "https://www.wrike.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/wrike.com",
         "pricing": "freemium",
         "url": "https://wrike.com",
         "features": [
@@ -1130,7 +1130,7 @@
         "category": "productivity",
         "description": "Automation platform connecting 5000+ apps with AI-powered workflows.",
         "icon": "⚡",
-        "logo": "https://cdn.zapier.com/zapier/images/favicon.ico",
+        "logo": "https://logo.clearbit.com/zapier.com",
         "pricing": "freemium",
         "url": "https://zapier.com",
         "features": [
@@ -1145,7 +1145,7 @@
         "category": "productivity",
         "description": "AI email assistant for faster, smarter email management.",
         "icon": "📧",
-        "logo": "https://clippit.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/clippit.ai",
         "pricing": "freemium",
         "url": "https://clippit.ai",
         "features": [
@@ -1160,7 +1160,7 @@
         "category": "productivity",
         "description": "AI-powered work assistant for team collaboration and planning.",
         "icon": "📅",
-        "logo": "https://friday.app/favicon.svg",
+        "logo": "https://logo.clearbit.com/friday.app",
         "pricing": "freemium",
         "url": "https://friday.app",
         "features": [
@@ -1175,7 +1175,7 @@
         "category": "productivity",
         "description": "AI email assistant that writes better emails faster.",
         "icon": "✉️",
-        "logo": "https://www.mailmaestro.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/mailmaestro.com",
         "pricing": "freemium",
         "url": "https://mailmaestro.com",
         "features": [
@@ -1190,7 +1190,7 @@
         "category": "productivity",
         "description": "AI email client built for speed and intelligence.",
         "icon": "🌊",
-        "logo": "https://shortwave.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/shortwave.com",
         "pricing": "freemium",
         "url": "https://shortwave.com",
         "features": [
@@ -1205,7 +1205,7 @@
         "category": "research",
         "description": "AI-powered search engine for scientific research papers. Get evidence-based answers instantly.",
         "icon": "🔬",
-        "logo": "https://consensus.app/favicon.ico",
+        "logo": "https://logo.clearbit.com/consensus.app",
         "pricing": "freemium",
         "url": "https://consensus.app",
         "features": [
@@ -1221,7 +1221,7 @@
         "category": "research",
         "description": "AI research assistant that automates literature review. Find and analyze research papers faster.",
         "icon": "📚",
-        "logo": "https://elicit.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/elicit.org",
         "pricing": "freemium",
         "url": "https://elicit.org",
         "features": [
@@ -1237,7 +1237,7 @@
         "category": "research",
         "description": "Free AI-powered research tool from Allen Institute. Discover scientific knowledge efficiently.",
         "icon": "🧠",
-        "logo": "https://semanticscholar.org/static/images/logo.png",
+        "logo": "https://logo.clearbit.com/semanticscholar.org",
         "pricing": "free",
         "url": "https://semanticscholar.org",
         "features": [
@@ -1253,7 +1253,7 @@
         "category": "research",
         "description": "Chat with PDF documents using AI. Extract insights from research papers and documents.",
         "icon": "📄",
-        "logo": "https://www.chatpdf.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/chatpdf.com",
         "pricing": "freemium",
         "url": "https://chatpdf.com",
         "features": [
@@ -1269,7 +1269,7 @@
         "category": "research",
         "description": "AI assistant for understanding and summarizing research papers.",
         "icon": "🔬",
-        "logo": "https://scispace.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/scispace.com",
         "pricing": "freemium",
         "url": "https://scispace.com",
         "features": [
@@ -1284,7 +1284,7 @@
         "category": "research",
         "description": "Google's AI research and document organization tool.",
         "icon": "📓",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
+        "logo": "https://logo.clearbit.com/notebooklm.google",
         "pricing": "free",
         "url": "https://notebooklm.google",
         "features": [
@@ -1299,7 +1299,7 @@
         "category": "research",
         "description": "AI parenting co-pilot with expert advice and guidance.",
         "icon": "👶",
-        "logo": "https://www.goodinside.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/goodinside.com",
         "pricing": "freemium",
         "url": "https://goodinside.com",
         "features": [
@@ -1314,7 +1314,7 @@
         "category": "research",
         "description": "AI-powered knowledge management and note-taking workspace.",
         "icon": "🧠",
-        "logo": "https://get.mem.ai/favicon.svg",
+        "logo": "https://logo.clearbit.com/mem.ai",
         "pricing": "freemium",
         "url": "https://mem.ai",
         "features": [
@@ -1329,7 +1329,7 @@
         "category": "research",
         "description": "AI-powered knowledge base and documentation platform for teams.",
         "icon": "📚",
-        "logo": "https://tettra.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/tettra.com",
         "pricing": "paid",
         "url": "https://tettra.com",
         "features": [
@@ -1344,7 +1344,7 @@
         "category": "research",
         "description": "AI agent builder for interactive AI-driven engagement and research.",
         "icon": "🎭",
-        "logo": "https://persona.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/persona.ai",
         "pricing": "freemium",
         "url": "https://persona.ai",
         "features": [
@@ -1391,7 +1391,7 @@
         "category": "design",
         "description": "Transform sketches and screenshots into editable designs. Design apps and websites with AI.",
         "icon": "✨",
-        "logo": "https://uizard.io/favicon.ico",
+        "logo": "https://logo.clearbit.com/uizard.io",
         "pricing": "freemium",
         "url": "https://uizard.io",
         "features": [
@@ -1407,7 +1407,7 @@
         "category": "design",
         "description": "Google's AI drawing tool that guesses what you're trying to draw.",
         "icon": "✏️",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2560px-Google_2015_logo.svg.png",
+        "logo": "https://logo.clearbit.com/autodraw.com",
         "pricing": "free",
         "url": "https://autodraw.com",
         "features": [
@@ -1422,7 +1422,7 @@
         "category": "design",
         "description": "AI-powered logo and brand identity design platform.",
         "icon": "🎨",
-        "logo": "https://www.design.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/design.com",
         "pricing": "paid",
         "url": "https://design.com",
         "features": [
@@ -1437,7 +1437,7 @@
         "category": "design",
         "description": "Design and publish websites with AI-powered features.",
         "icon": "🖼️",
-        "logo": "https://www.framer.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/framer.com",
         "pricing": "freemium",
         "url": "https://framer.com",
         "features": [
@@ -1452,7 +1452,7 @@
         "category": "design",
         "description": "AI-powered design tool from Microsoft for creating graphics quickly.",
         "icon": "🎨",
-        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png",
+        "logo": "https://logo.clearbit.com/designer.microsoft.com",
         "pricing": "free",
         "url": "https://designer.microsoft.com",
         "features": [
@@ -1467,7 +1467,7 @@
         "category": "design",
         "description": "AI-powered presentation deck creation and design.",
         "icon": "📊",
-        "logo": "https://www.deckpilot.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/deckpilot.com",
         "pricing": "freemium",
         "url": "https://deckpilot.com",
         "features": [
@@ -1482,7 +1482,7 @@
         "category": "design",
         "description": "Data visualization and storytelling platform with AI features.",
         "icon": "📈",
-        "logo": "https://flourish.studio/favicon.svg",
+        "logo": "https://logo.clearbit.com/flourish.studio",
         "pricing": "freemium",
         "url": "https://flourish.studio",
         "features": [
@@ -1497,7 +1497,7 @@
         "category": "design",
         "description": "AI data analyst for visualization and insights.",
         "icon": "📊",
-        "logo": "https://julius.ai/favicon.svg",
+        "logo": "https://logo.clearbit.com/julius.ai",
         "pricing": "freemium",
         "url": "https://julius.ai",
         "features": [
@@ -1512,7 +1512,7 @@
         "category": "design",
         "description": "All-in-one visual content creation with AI-powered design.",
         "icon": "🎨",
-        "logo": "https://www.visme.co/favicon.svg",
+        "logo": "https://logo.clearbit.com/visme.co",
         "pricing": "freemium",
         "url": "https://visme.co",
         "features": [
@@ -1527,7 +1527,7 @@
         "category": "design",
         "description": "Mobile-first business intelligence and data visualization.",
         "icon": "📱",
-        "logo": "https://getzingdata.com/assets/logo.png",
+        "logo": "https://logo.clearbit.com/getzingdata.com",
         "pricing": "freemium",
         "url": "https://getzingdata.com",
         "features": [
@@ -1542,7 +1542,7 @@
         "category": "writing",
         "description": "AI-powered presentation software with smart templates and automatic formatting.",
         "icon": "🎯",
-        "logo": "https://beautiful.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/beautiful.ai",
         "pricing": "freemium",
         "url": "https://beautiful.ai",
         "features": [
@@ -1557,7 +1557,7 @@
         "category": "writing",
         "description": "AI-driven slide deck and presentation generator. Create beautiful decks in seconds.",
         "icon": "✨",
-        "logo": "https://gamma.app/favicon.svg",
+        "logo": "https://logo.clearbit.com/gamma.app",
         "pricing": "freemium",
         "url": "https://gamma.app",
         "features": [
@@ -1572,7 +1572,7 @@
         "category": "writing",
         "description": "Collaborative presentation software with AI-powered features.",
         "icon": "📊",
-        "logo": "https://pitch.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/pitch.com",
         "pricing": "freemium",
         "url": "https://pitch.com",
         "features": [
@@ -1587,7 +1587,7 @@
         "category": "writing",
         "description": "AI presentation maker for Google Slides. Generate slides from text.",
         "icon": "➕",
-        "logo": "https://www.plusdocs.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/plusdocs.com",
         "pricing": "freemium",
         "url": "https://plusdocs.com",
         "features": [
@@ -1602,7 +1602,7 @@
         "category": "writing",
         "description": "AI-powered presentation creation with templates and designs.",
         "icon": "🎨",
-        "logo": "https://www.popai.pro/favicon.ico",
+        "logo": "https://logo.clearbit.com/popai.pro",
         "pricing": "freemium",
         "url": "https://popai.pro",
         "features": [
@@ -1617,7 +1617,7 @@
         "category": "writing",
         "description": "AI presentation builder with intelligent design assistance.",
         "icon": "📽️",
-        "logo": "https://www.presentations.ai/favicon.ico",
+        "logo": "https://logo.clearbit.com/presentation.ai",
         "pricing": "freemium",
         "url": "https://presentation.ai",
         "features": [
@@ -1632,7 +1632,7 @@
         "category": "writing",
         "description": "Free AI-powered presentation templates for Google Slides and PowerPoint.",
         "icon": "🎭",
-        "logo": "https://slidesgo.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/slidesgo.com",
         "pricing": "free",
         "url": "https://slidesgo.com",
         "features": [
@@ -1647,7 +1647,7 @@
         "category": "writing",
         "description": "AI storytelling platform for presentations and narratives.",
         "icon": "📖",
-        "logo": "https://tome.app/favicon.svg",
+        "logo": "https://logo.clearbit.com/tome.app",
         "pricing": "freemium",
         "url": "https://tome.app",
         "features": [
@@ -1662,7 +1662,7 @@
         "category": "productivity",
         "description": "Spreadsheet with AI that creates visuals, writes formulas, and automates tasks.",
         "icon": "🧱",
-        "logo": "https://www.bricks.com/favicon.svg",
+        "logo": "https://logo.clearbit.com/bricks.com",
         "pricing": "freemium",
         "url": "https://bricks.com",
         "features": [
@@ -1677,7 +1677,7 @@
         "category": "productivity",
         "description": "AI-powered tool for generating Excel and Google Sheets formulas.",
         "icon": "🤖",
-        "logo": "https://formulabot.com/assets/formula-bot-logo.png",
+        "logo": "https://logo.clearbit.com/formulabot.com",
         "pricing": "freemium",
         "url": "https://formulabot.com",
         "features": [
@@ -1692,7 +1692,7 @@
         "category": "productivity",
         "description": "Big data spreadsheet with AI-powered analysis for massive datasets.",
         "icon": "📊",
-        "logo": "https://gigasheet.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/gigasheet.com",
         "pricing": "freemium",
         "url": "https://gigasheet.com",
         "features": [
@@ -1707,7 +1707,7 @@
         "category": "productivity",
         "description": "Next-gen spreadsheet with AI integration and data connectors.",
         "icon": "📈",
-        "logo": "https://rows.com/favicon.ico",
+        "logo": "https://logo.clearbit.com/rows.com",
         "pricing": "freemium",
         "url": "https://rows.com",
         "features": [
@@ -1722,7 +1722,7 @@
         "category": "productivity",
         "description": "AI-powered Google Sheets add-on for data analysis and automation.",
         "icon": "📊",
-        "logo": "https://www.sheetai.app/favicon.ico",
+        "logo": "https://logo.clearbit.com/sheetai.app",
         "pricing": "freemium",
         "url": "https://sheetai.app",
         "features": [
@@ -1856,7 +1856,7 @@
         "category": "dating",
         "description": "AI-powered dating assistant for better conversations",
         "icon": "💘",
-        "logo": "https://deepgram.com/assets/img/logo.svg",
+        "logo": "https://logo.clearbit.com/deepgram.com",
         "pricing": "freemium",
         "url": "https://deepgram.com/ai-apps/winggg",
         "features": [
