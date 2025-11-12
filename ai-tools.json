@@ -3064,158 +3064,6 @@
         "sponsored": false
     },
     {
-        "name": "AI Tools Directory",
-        "category": "directory",
-        "description": "AI tool directory for entrepreneurs",
-        "icon": "📚",
-        "logo": "https://logo.clearbit.com/aitoolsdirectory.com",
-        "pricing": "freemium",
-        "url": "https://aitoolsdirectory.com/",
-        "features": [
-            "Tool submissions",
-            "Featured tools",
-            "AI trends",
-            "Community exploration",
-            "AI blog"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Frameworks & Tools",
-        "category": "enterprise",
-        "description": "AI platform for hybrid cloud infrastructure",
-        "icon": "📈",
-        "logo": "https://logo.clearbit.com/intel.com",
-        "pricing": "paid",
-        "url": "https://www.intel.com/content/www/us/en/developer/topic-technology/artificial-intelligence/frameworks-tools.html",
-        "features": [
-            "End-to-end enterprise AI platform",
-            "Hybrid cloud infrastructure support",
-            "Seamless integration with Intel AI hardware",
-            "Collaboration with Red Hat OpenShift AI",
-            "Enterprise-level AI solutions"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Chatbot App",
-        "category": "productivity",
-        "description": "Access multiple AI models",
-        "icon": "💻",
-        "logo": "https://logo.clearbit.com/chatbotapp.ai",
-        "pricing": "paid",
-        "url": "https://chatbotapp.ai/",
-        "features": [
-            "Multiple large language models",
-            "Intuitive interface",
-            "Affordable membership",
-            "GPT-4o support",
-            "Google Gemini integration"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Chat",
-        "category": "writing",
-        "description": "AI chatbot for writing text",
-        "icon": "💬",
-        "logo": "https://logo.clearbit.com/deepai.org",
-        "pricing": "free",
-        "url": "https://deepai.org/chat",
-        "features": [
-            "Text generation",
-            "Story writing",
-            "Message composition",
-            "Code writing",
-            "Customizable output"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Chatbot",
-        "category": "chat",
-        "description": "Build and use AI chatbots built on Google&#x27;s leading AI technology and models like Gemini.",
-        "icon": "💬",
-        "logo": "https://logo.clearbit.com/cloud.google.com",
-        "pricing": "freemium",
-        "url": "https://cloud.google.com/use-cases/ai-chatbot",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Everything you need to create images with AI",
-        "category": "writing",
-        "description": "Use text prompts to create and edit images, generate videos, or build your own AI models.",
-        "icon": "✍️",
-        "logo": "https://logo.clearbit.com/getimg.ai",
-        "pricing": "freemium",
-        "url": "https://getimg.ai/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Free AI Image Generator: Create AI Images Online",
-        "category": "image",
-        "description": "Create your AI images with <strong>PicLumen&#x27;s AI image generator</strong>. Join the best AI image creator and turn your text to images freely.",
-        "icon": "🎨",
-        "logo": "https://logo.clearbit.com/piclumen.com",
-        "pricing": "freemium",
-        "url": "https://www.piclumen.com/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Free AI Image Generator: Text to Image Online",
-        "category": "image",
-        "description": "Generate unique AI images from a text prompt with <strong>Fotor free AI image generator</strong>. Input a prompt or upload an image, set the style, ratio and quantity, and get stunning images instantl",
-        "icon": "🎨",
-        "logo": "https://logo.clearbit.com/fotor.com",
-        "pricing": "freemium",
-        "url": "https://www.fotor.com/ai-image-generator/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "No.1 AI Video Generator",
-        "category": "video",
-        "description": "<strong>Steve AI</strong> is an AI video generation tool that converts any text or script into engaging videos within minutes. Our AI video creator is designed to make video creation fast, simple, and",
-        "icon": "🎬",
-        "logo": "https://logo.clearbit.com/steve.ai",
-        "pricing": "freemium",
-        "url": "https://www.steve.ai/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Create FREE AI Videos 10X Faster Online",
-        "category": "video",
-        "description": "<strong>Zebracat</strong> is an AI-powered platform that creates fully edited, high-performing videos automatically. It&#x27;s designed for creators, marketers, and businesses who want to grow with vi",
-        "icon": "🎬",
-        "logo": "https://logo.clearbit.com/zebracat.ai",
-        "pricing": "freemium",
-        "url": "https://www.zebracat.ai/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "Award Winning AI Video Editor: Free, Online, No Watermark",
         "category": "video",
         "description": "Create and edit videos using <strong>Vmaker AI Video Editor</strong>. Its 24 AI editing features turn raw footage into publish-ready videos. Generate shorts, add subtitles, create highlights, and more",
@@ -3230,20 +3078,6 @@
         "sponsored": false
     },
     {
-        "name": "AI Voice Generator",
-        "category": "audio",
-        "description": "Discover Respeecher’s AI voice generator for realistic text-to-speech. Explore free AI voice tools and AI-generated text solutions for creative and professional projects.",
-        "icon": "🎙️",
-        "logo": "https://logo.clearbit.com/respeecher.com",
-        "pricing": "freemium",
-        "url": "https://www.respeecher.com/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
         "name": "WellSaid Home",
         "category": "audio",
         "description": "Create professional-quality voice overs in any dialect or production style with our secure AI voices. Try WellSaid’s text-to-speech AI voices for free today.",
@@ -3251,76 +3085,6 @@
         "logo": "https://logo.clearbit.com/wellsaid.io",
         "pricing": "freemium",
         "url": "https://www.wellsaid.io/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Top 11 AI Music Generators to Try in 2025",
-        "category": "audio",
-        "description": "Overall, if you need background music for your presentations, projects, social media content, etc, Mubert could be an interesting tool for you. Pricing: The free plan lets you generate 25 soundtracks ",
-        "icon": "🎙️",
-        "logo": "https://logo.clearbit.com/kripeshadwani.com",
-        "pricing": "freemium",
-        "url": "https://kripeshadwani.com/ai-music-generators/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Generate Free AI Music Online with MusicHero.ai’s AI Music Generator",
-        "category": "audio",
-        "description": "Easily generate AI music from text with <strong>MusicHero</strong>. Try the AI music generator free online with no sign-up required. Create royalty-free music, remove vocals, generate AI lyrics, and c",
-        "icon": "🎙️",
-        "logo": "https://logo.clearbit.com/musichero.ai",
-        "pricing": "freemium",
-        "url": "https://musichero.ai/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "AI Tools For Designers",
-        "category": "design",
-        "description": "<strong>Luma AI</strong> - 3D Scan and generate 3D models a... by ... Spline - 3D Design Tool in the Browser wit...",
-        "icon": "🎯",
-        "logo": "https://logo.clearbit.com/awwwards.com",
-        "pricing": "freemium",
-        "url": "https://www.awwwards.com/awwwards/collections/ai-tools-for-designers/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "14 AI Design Tools for Creative Professionals",
-        "category": "code",
-        "description": "AI design tools are <strong>software applications that use artificial intelligence to assist and enhance design processes</strong>, leveraging machine learning, natural language processing, and other ",
-        "icon": "💻",
-        "logo": "https://logo.clearbit.com/digitalocean.com",
-        "pricing": "freemium",
-        "url": "https://www.digitalocean.com/resources/articles/ai-design-tools",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "I tested 8 AI tools for graphic design — here are my prompts, results, and recommendations",
-        "category": "image",
-        "description": "38% of marketers use AI to create image-based and video content for social media, print, and more. Tools like <strong>ChatGPT, Veo-3, Canva</strong>, etc., can render scenes faster, create assets, and",
-        "icon": "🎨",
-        "logo": "https://logo.clearbit.com/blog.hubspot.com",
-        "pricing": "freemium",
-        "url": "https://blog.hubspot.com/marketing/ai-for-graphic-design",
         "features": [
             "AI-powered",
             "Easy to use"
@@ -3419,20 +3183,6 @@
         "logo": "https://logo.clearbit.com/schoolai.com",
         "pricing": "freemium",
         "url": "https://schoolai.com/",
-        "features": [
-            "AI-powered",
-            "Easy to use"
-        ],
-        "sponsored": false
-    },
-    {
-        "name": "Free AI Tools for Teachers and Educators – Brisk Teaching",
-        "category": "education",
-        "description": "<strong>Brisk</strong> is the best AI for teachers and schools, offering free AI tools for education that fit seamlessly into your routine. With an AI lesson plan generator and tools for instruction, ",
-        "icon": "📚",
-        "logo": "https://logo.clearbit.com/briskteaching.com",
-        "pricing": "freemium",
-        "url": "https://www.briskteaching.com/",
         "features": [
             "AI-powered",
             "Easy to use"
