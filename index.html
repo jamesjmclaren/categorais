@@ -20,6 +20,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%23667eea'/><stop offset='100%25' style='stop-color:%23764ba2'/></linearGradient></defs><circle cx='50' cy='50' r='48' fill='url(%23g)'/><text x='50' y='70' font-family='Arial' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>AI</text></svg>">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="force-layout.css">
 </head>
 <body>
     <!-- Header -->
@@ -125,7 +126,13 @@
                 <path d="m21 21-4.35-4.35"></path>
             </svg>
             <h3>No tools found</h3>
-            <p>Try a different search or category</p>
+            <p>Can't find what you're looking for? Submit a tool!</p>
+            <button onclick="showSubmitForm()" class="submit-tool-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12h14"></path>
+                </svg>
+                Submit a Tool
+            </button>
         </div>
     </main>
 
@@ -158,6 +165,83 @@
         <div class="modal-dialog">
             <button class="modal-close" onclick="closeInfoModal()" aria-label="Close">×</button>
             <div id="infoContent"></div>
+        </div>
+    </div>
+
+    <!-- Submit Tool Modal -->
+    <div class="modal" id="submitModal">
+        <div class="modal-backdrop" onclick="closeSubmitModal()"></div>
+        <div class="modal-dialog" style="max-width: 600px;">
+            <button class="modal-close" onclick="closeSubmitModal()" aria-label="Close">×</button>
+            <div id="submitContent">
+                <h2 style="margin-bottom: 24px;">Submit an AI Tool</h2>
+                <form id="submitToolForm" onsubmit="handleToolSubmit(event)">
+                    <div class="form-group">
+                        <label for="toolName">Tool Name *</label>
+                        <input type="text" id="toolName" name="toolName" required placeholder="e.g., ChatGPT">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="toolUrl">Website URL *</label>
+                        <input type="text" id="toolUrl" name="toolUrl" required placeholder="example.com or https://example.com">
+                        <small style="color: var(--text-tertiary); font-size: 12px; margin-top: 4px; display: block;">Enter the website address (we'll add https:// if needed)</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="toolCategory">Category *</label>
+                        <select id="toolCategory" name="toolCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="chat">Chat & AI Assistants</option>
+                            <option value="image">Image Generation</option>
+                            <option value="video">Video Creation</option>
+                            <option value="audio">Audio & Music</option>
+                            <option value="code">Code & Development</option>
+                            <option value="writing">Writing & Content</option>
+                            <option value="productivity">Productivity</option>
+                            <option value="research">Research</option>
+                            <option value="design">Design</option>
+                            <option value="dating">Dating</option>
+                            <option value="health">Health</option>
+                            <option value="education">Education</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="finance">Finance</option>
+                            <option value="travel">Travel</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="toolDescription">Brief Description *</label>
+                        <textarea id="toolDescription" name="toolDescription" required rows="3" placeholder="Describe what this tool does in 1-2 sentences"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="toolPricing">Pricing *</label>
+                        <select id="toolPricing" name="toolPricing" required>
+                            <option value="">Select pricing</option>
+                            <option value="free">Free</option>
+                            <option value="freemium">Freemium</option>
+                            <option value="paid">Paid</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="toolFeatures">Key Features (Optional)</label>
+                        <textarea id="toolFeatures" name="toolFeatures" rows="3" placeholder="List 3-5 key features, one per line"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="submitterEmail">Your Email (Optional)</label>
+                        <input type="email" id="submitterEmail" name="submitterEmail" placeholder="For follow-up questions">
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                        </svg>
+                        Submit Tool
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 

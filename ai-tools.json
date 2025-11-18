@@ -2866,7 +2866,7 @@
     },
     {
         "name": "Generative Design AI Software",
-        "category": "code",
+        "category": "design",
         "description": "Generative design AI tools like <strong>Autodesk Fusion</strong>, help you explore design possibilities that may not have been considered otherwise. This leads to more efficient, and creative solution",
         "icon": "💻",
         "logo": "https://logo.clearbit.com/autodesk.com",
@@ -3050,8 +3050,8 @@
         "sponsored": false
     },
     {
-        "name": "Artificial Intelligence",
-        "category": "code",
+        "name": "ClearBit Artificial Intelligence",
+        "category": "gaming",
         "description": "The future of AI in healthcare is bright, especially with clinicians leading the way.” - Stephanie Klein Nagelvoort Schuit, Vice President, Board of Directors and Professor of Health Care Innovation, ",
         "icon": "💻",
         "logo": "https://logo.clearbit.com/epic.com",
@@ -3331,7 +3331,7 @@
     },
     {
         "name": "Aleph",
-        "category": "code",
+        "category": "finance",
         "description": "&quot;I&#x27;ve been born and bred in FP&amp;A for almost 20 years, and kudos to Aleph who built the tool I&#x27;ve always wanted.&quot; ... Unlock the confidence and process improvements you need to ",
         "icon": "💻",
         "logo": "https://logo.clearbit.com/getaleph.com",
@@ -3345,7 +3345,7 @@
     },
     {
         "name": "FinanceGPT",
-        "category": "code",
+        "category": "finance",
         "description": "<strong>FinanceGPT&#x27;s financial analysis software and AI financial tools suite</strong> accelerate financial data analytics, investment portfolio optimization, financial workflow automation and ad",
         "icon": "💻",
         "logo": "https://logo.clearbit.com/financegpt.uk",

@@ -112,6 +112,25 @@ function renderTools() {
     
     toolsContainer.innerHTML = html;
     
+    // FORCE CORRECT LAYOUT
+    setTimeout(() => {
+        document.querySelectorAll('.tool-scroll').forEach(scroll => {
+            scroll.style.display = 'flex';
+            scroll.style.flexDirection = 'row';
+            scroll.style.flexWrap = 'nowrap';
+            scroll.style.alignItems = 'flex-start';
+        });
+        
+        document.querySelectorAll('.tool-card').forEach(card => {
+            card.style.width = '280px';
+            card.style.minWidth = '280px';
+            card.style.maxWidth = '280px';
+            card.style.height = '340px';
+            card.style.minHeight = '340px';
+            card.style.flex = '0 0 280px';
+        });
+    }, 50);
+    
     // Add click handlers
     document.querySelectorAll('.tool-card').forEach(card => {
         card.addEventListener('click', () => {
@@ -125,8 +144,9 @@ function renderTools() {
 // Create tool card
 function createToolCard(tool) {
     const badgeClass = `badge-${tool.pricing}`;
+    const sponsoredBadge = tool.sponsored ? '<span class="sponsored-badge">⭐ Featured</span>' : '';
     return `
-        <article class="tool-card" data-tool="${tool.name}">
+        <article class="tool-card ${tool.sponsored ? 'sponsored' : ''}" data-tool="${tool.name}">
             <div class="card-image">
                 <div class="card-logo">
                     <img src="${tool.logo}" 
@@ -134,6 +154,7 @@ function createToolCard(tool) {
                          onerror="this.style.display='none'; this.parentElement.innerHTML='${tool.icon}';">
                 </div>
                 <span class="card-badge ${badgeClass}">${tool.pricing}</span>
+                ${sponsoredBadge}
             </div>
             <div class="card-content">
                 <h3 class="card-title">${tool.name}</h3>
@@ -460,5 +481,133 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// Show submit form modal
+function showSubmitForm() {
+    const submitModal = document.getElementById('submitModal');
+    submitModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+// Close submit form modal
+function closeSubmitModal() {
+    const submitModal = document.getElementById('submitModal');
+    submitModal.classList.remove('active');
+    document.body.style.overflow = '';
+    // Reset form
+    document.getElementById('submitToolForm').reset();
+}
+
+// Handle tool submission
+async function handleToolSubmit(event) {
+    event.preventDefault();
+    
+    const submitBtn = document.getElementById('submitBtn');
+    const originalHTML = submitBtn.innerHTML;
+    
+    // Show loading state
+    submitBtn.disabled = true;
+    submitBtn.classList.add('loading');
+    submitBtn.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+        </svg>
+        Sending...
+    `;
+    
+    // Get form data
+    const formData = new FormData(event.target);
+    
+    // Auto-fix URL if missing protocol
+    let url = formData.get('toolUrl').trim();
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+        url = 'https://' + url;
+    }
+    
+    const toolData = {
+        name: formData.get('toolName'),
+        url: url,
+        category: formData.get('toolCategory'),
+        description: formData.get('toolDescription'),
+        pricing: formData.get('toolPricing'),
+        features: formData.get('toolFeatures')?.split('\n').filter(f => f.trim()) || [],
+        submitterEmail: formData.get('submitterEmail') || 'Not provided'
+    };
+    
+    try {
+        // Send email using FormSubmit.co (free service)
+        const response = await fetch('https://formsubmit.co/ajax/jamesjmclaren@gmail.com', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                _subject: `New AI Tool Submission: ${toolData.name}`,
+                _template: 'table',
+                'Tool Name': toolData.name,
+                'Website URL': toolData.url,
+                'Category': toolData.category,
+                'Description': toolData.description,
+                'Pricing': toolData.pricing,
+                'Features': toolData.features.join(', '),
+                'Submitter Email': toolData.submitterEmail
+            })
+        });
+        
+        if (response.ok) {
+            // Show success message
+            document.getElementById('submitContent').innerHTML = `
+                <div class="success-message">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <h2 style="color: #22c55e; margin-bottom: 12px;">Thank You!</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                        Your tool submission has been received. We'll review it and add it to the directory soon!
+                    </p>
+                    <button onclick="closeSubmitModal()" class="submit-btn">
+                        Close
+                    </button>
+                </div>
+            `;
+        } else {
+            throw new Error('Submission failed');
+        }
+    } catch (error) {
+        console.error('Submission error:', error);
+        alert('Sorry, there was an error submitting your tool. Please try again or email us directly at jamesjmclaren@gmail.com');
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('loading');
+        submitBtn.innerHTML = originalHTML;
+    }
+}
+
 // Initialize
 loadTools();
+
+// NUCLEAR LAYOUT FIX - Force correct layout after render
+function enforceLayout() {
+    document.querySelectorAll('.tool-scroll').forEach(scroll => {
+        scroll.style.display = 'flex';
+        scroll.style.flexDirection = 'row';
+        scroll.style.flexWrap = 'nowrap';
+        scroll.style.alignItems = 'flex-start';
+    });
+    
+    document.querySelectorAll('.tool-card').forEach(card => {
+        card.style.width = '280px';
+        card.style.minWidth = '280px';
+        card.style.maxWidth = '280px';
+        card.style.flex = '0 0 280px';
+        card.style.flexShrink = '0';
+        card.style.flexGrow = '0';
+    });
+}
+
+// Run layout enforcement after DOM updates
+window.addEventListener('load', () => {
+    enforceLayout();
+    setTimeout(enforceLayout, 500);
+    setTimeout(enforceLayout, 1000);
+});
