@@ -12,6 +12,29 @@ const path = require('path');
 const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const BRAVE_API_KEY = process.env.BRAVE_API_KEY;
 const AI_TOOLS_FILE = path.join(__dirname, 'ai-tools.json');
+const LEARNED_CATEGORIES_FILE = path.join(__dirname, 'learned-categories.json');
+
+// Known good logos for popular tools
+const KNOWN_LOGOS = {
+    'ChatGPT': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png',
+    'Claude': 'https://claude.ai/images/claude_app_icon.png',
+    'Gemini': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2560px-Google_Gemini_logo.svg.png',
+    'Perplexity AI': 'https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/perplexity-ai-icon.png',
+    'Midjourney': 'https://seeklogo.com/images/M/midjourney-logo-3BAF817FF7-seeklogo.com.png',
+    'DALL-E': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png',
+    'Stable Diffusion': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Stability_AI_logo.svg/2560px-Stability_AI_logo.svg.png',
+    'Runway': 'https://seeklogo.com/images/R/runway-logo-3847553E3E-seeklogo.com.png',
+    'Synthesia': 'https://seeklogo.com/images/S/synthesia-logo-3F8F6B7A91-seeklogo.com.png',
+    'ElevenLabs': 'https://seeklogo.com/images/E/elevenlabs-logo-8DB349FD2F-seeklogo.com.png',
+    'GitHub Copilot': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/2048px-GitHub_Invertocat_Logo.svg.png',
+    'Cursor': 'https://cursor.sh/favicon.svg',
+    'Grammarly': 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Grammarly_logo.svg/2560px-Grammarly_logo.svg.png',
+    'Canva': 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Canva_icon_2021.svg/2048px-Canva_icon_2021.svg.png',
+    'Figma': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png',
+    'Notion AI': 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png',
+    'Copy.ai': 'https://avatars.githubusercontent.com/u/74709768',
+    'Jasper': 'https://www.jasper.ai/favicon.ico'
+};
 
 // Search queries for finding AI tools (inspired by existing tools)
 const SEARCH_QUERIES = [
@@ -136,6 +159,118 @@ function extractDomain(url) {
 }
 
 /**
+ * Detect bad tools (articles, directories, tutorials)
+ */
+function detectBadTool(name, url, description) {
+    const lowerName = name.toLowerCase();
+    const lowerUrl = url.toLowerCase();
+    const lowerDesc = description.toLowerCase();
+
+    // Bad patterns in name
+    const badPatterns = [
+        /^top \d+/i,
+        /^best \d+/i,
+        /^\d+ best/i,
+        /tools? for/i,
+        /discover top/i,
+        /build a.*app/i,
+        /free ai.*online$/i,
+        /everything you need/i,
+        /no\.\d+/i,
+        /i tested/i,
+        /introducing/i,
+        /tools? directory/i,
+        /frameworks? & tools/i,
+        /review:/i,
+        /guide:/i,
+        /how to/i,
+        /tutorial/i,
+        /comparison/i,
+    ];
+
+    for (const pattern of badPatterns) {
+        if (pattern.test(lowerName)) {
+            return true;
+        }
+    }
+
+    // Generic names
+    const genericNames = [
+        'ai chat', 'ai chatbot', 'chatbot app', 'free ai chat',
+        'ai image generator', 'ai video generator', 'ai voice generator',
+        'ai music generator', 'free ai', 'ai tools', 'ai assistant',
+        'ai tool', 'online ai', 'free ai tool'
+    ];
+
+    if (genericNames.includes(lowerName)) {
+        return true;
+    }
+
+    // Bad URL patterns
+    const badUrlPatterns = [
+        '/blog/', '/article/', '/review', '/best-',
+        '/top-', '/guide/', '/tutorial/', '/how-to/',
+        '/vs-', '/comparison', '/alternatives'
+    ];
+
+    for (const pattern of badUrlPatterns) {
+        if (lowerUrl.includes(pattern)) {
+            return true;
+        }
+    }
+
+    // Check for directory/marketplace indicators
+    if ((lowerName.includes('directory') || lowerName.includes('marketplace')) &&
+        !lowerUrl.match(/\.(ai|io)$/)) {
+        return true;
+    }
+
+    return false;
+}
+
+/**
+ * Get best logo for a tool
+ */
+async function getBestLogo(toolName, toolUrl, currentLogo = '') {
+    // Check known logos first
+    if (KNOWN_LOGOS[toolName]) {
+        return KNOWN_LOGOS[toolName];
+    }
+
+    // If current logo is from a trusted source, keep it
+    const trustedSources = [
+        'wikipedia.org',
+        'seeklogo.com',
+        'upload.wikimedia.org',
+        'uxwing.com',
+        'cloudflare.com'
+    ];
+
+    for (const source of trustedSources) {
+        if (currentLogo && currentLogo.includes(source)) {
+            return currentLogo;
+        }
+    }
+
+    // Try Clearbit Logo API
+    try {
+        const domain = extractDomain(toolUrl);
+        if (domain) {
+            const clearbitUrl = `https://logo.clearbit.com/${domain}`;
+            // Test if logo exists
+            const response = await fetch(clearbitUrl, { method: 'HEAD' });
+            if (response.ok) {
+                return clearbitUrl;
+            }
+        }
+    } catch (error) {
+        // Silently fail, will use current logo
+    }
+
+    return currentLogo;
+}
+
+/**
  * Check if tool already exists
  */
 function isDuplicate(toolUrl, toolName, existingTools) {
@@ -180,12 +315,24 @@ function determineCategory(name, description) {
  */
 async function normalizeWithGroq(toolCandidate) {
     try {
+        // Pre-check for bad tools
+        if (detectBadTool(toolCandidate.name, toolCandidate.url, toolCandidate.description)) {
+            console.log(`   ⏭️  Skipping bad tool: ${toolCandidate.name}`);
+            return null;
+        }
+
         const prompt = `You are an AI tool curator. Analyze this potential AI tool and return ONLY a valid JSON object (no markdown, no explanation, just JSON).
 
 Tool to analyze:
 - Name: ${toolCandidate.name}
 - URL: ${toolCandidate.url}
 - Description: ${toolCandidate.description}
+
+IMPORTANT: Return isValidAITool: false if this is:
+- An article, blog post, or review
+- A directory or marketplace (unless it IS an AI tool itself)
+- A tutorial or guide
+- A generic description without a specific product
 
 Return a JSON object with these exact fields:
 {
@@ -197,7 +344,7 @@ Return a JSON object with these exact fields:
     "suggestedCategory": "one of: chat, image, video, audio, code, writing, productivity, research, design, dating, health, education, gaming, finance, travel, customer-service, directory, enterprise"
 }
 
-Make sure the tool is actually an AI tool. Return isValidAITool: false if it's not.`;
+Make sure the tool is actually an AI tool with a real product/service. Return isValidAITool: false if it's not.`;
 
         const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
             method: 'POST',
@@ -240,12 +387,19 @@ Make sure the tool is actually an AI tool. Return isValidAITool: false if it's n
             return null;
         }
 
+        // Get best logo
+        const bestLogo = await getBestLogo(
+            normalized.name,
+            toolCandidate.url,
+            toolCandidate.logo
+        );
+
         return {
             name: normalized.name,
             category: normalized.suggestedCategory || determineCategory(normalized.name, normalized.description),
             description: normalized.description,
             icon: getIconForCategory(normalized.suggestedCategory),
-            logo: toolCandidate.logo || '',
+            logo: bestLogo,
             pricing: normalized.pricing,
             url: toolCandidate.url,
             features: normalized.features || []
@@ -291,9 +445,9 @@ function extractCandidates(searchResults) {
     const candidates = [];
 
     for (const result of searchResults) {
-        // Filter out non-tool pages
         const url = result.url.toLowerCase();
-        const title = result.title.toLowerCase();
+        const title = result.title;
+        const description = result.description || '';
 
         // Skip certain domains
         if (url.includes('wikipedia.org') ||
@@ -301,22 +455,24 @@ function extractCandidates(searchResults) {
             url.includes('reddit.com') ||
             url.includes('linkedin.com') ||
             url.includes('twitter.com') ||
-            url.includes('facebook.com')) {
+            url.includes('facebook.com') ||
+            url.includes('quora.com') ||
+            url.includes('medium.com')) {
             continue;
         }
 
-        // Skip list/directory pages unless they're actual tools
-        if ((title.includes('best') ||
-             title.includes('top') ||
-             title.includes('list')) &&
-            !url.match(/\.(ai|io|com)$/)) {
+        // Clean up title
+        const cleanName = title.replace(/[^\w\s-]/g, '').trim();
+
+        // Use detectBadTool to filter out articles, directories, etc.
+        if (detectBadTool(cleanName, result.url, description)) {
             continue;
         }
 
         candidates.push({
-            name: result.title.replace(/[^\w\s-]/g, '').trim(),
+            name: cleanName,
             url: result.url,
-            description: result.description || '',
+            description: description,
             logo: result.thumbnail?.src || ''
         });
     }

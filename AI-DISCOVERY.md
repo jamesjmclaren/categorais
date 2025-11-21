@@ -7,6 +7,8 @@ Automated tool for discovering, verifying, and categorizing new AI tools using B
 - **Automated Discovery**: Uses Brave Search API to find new AI tools across multiple categories
 - **Smart Deduplication**: Automatically filters out tools that already exist in your database
 - **AI-Powered Verification**: Uses Groq's LLM to verify, normalize, and enrich tool data
+- **Bad Tool Detection**: Filters out articles, directories, tutorials, and generic pages
+- **Intelligent Logo Fetching**: Uses Clearbit API and known logo sources for high-quality logos
 - **Auto-Categorization**: Intelligently categorizes tools based on their features and description
 - **GitHub Actions Integration**: Runs automatically on a schedule or manually via workflow dispatch
 
@@ -83,17 +85,23 @@ The agent uses 25+ carefully crafted search queries to find AI tools:
 
 For each search result:
 - Extracts tool candidates
-- Filters out non-tool pages (Wikipedia, Reddit, lists, etc.)
+- Filters out non-tool pages (Wikipedia, Reddit, Medium, Quora, etc.)
+- Detects and skips articles, directories, tutorials using pattern matching
 - Checks for duplicates by domain and name
+- Validates against bad tool patterns (e.g., "Top 10", "Best X", "How to")
 
 ### 3. Normalization Phase
 
 For each unique candidate, Groq LLM:
-- Verifies it's actually an AI tool
+- Verifies it's actually an AI tool (not an article or directory)
 - Normalizes the name and description
 - Determines pricing tier (free/freemium/paid)
 - Extracts 5 key features
 - Suggests the best category
+- Fetches best logo from:
+  1. Known logos database (17+ popular tools)
+  2. Clearbit Logo API
+  3. Search result thumbnail (fallback)
 
 ### 4. Categorization Phase
 
@@ -221,15 +229,17 @@ Make sure both API keys are set in GitHub Secrets or environment variables.
 ```
 🔍 Starting AI tool discovery...
 
-📚 Loaded 453 existing tools
+📚 Loaded 235 existing tools
 
 [1/25] Searching: "new AI chatbot 2025"
    Found 20 search results
    Extracted 8 tool candidates
    ⏭️  Skipping duplicate: ChatGPT
+   ⏭️  Skipping bad tool: Top 10 AI Chatbots for 2025
    🔄 Normalizing: SuperChat AI...
    ✅ Added: SuperChat AI [chat]
    🔄 Normalizing: ThinkBot...
+   ⚠️  Skipping "Best AI Tools Directory" - not a valid AI tool
    ✅ Added: ThinkBot [chat]
    ⏭️  Reached max 3 tools per query
 
