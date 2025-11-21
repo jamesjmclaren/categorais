@@ -7,7 +7,8 @@
     "discover": "node ai-discovery-agent.js",
     "discover:fast": "node ai-discovery-agent.js 2",
     "discover:deep": "node ai-discovery-agent.js 5",
-    "backfill-dates": "node backfill-dates.js"
+    "backfill-dates": "node backfill-dates.js",
+    "cleanup-descriptions": "node cleanup-descriptions.js"
   },
   "keywords": [
     "ai",
