@@ -1,0 +1,79 @@
+name: Discover New AI Tools
+
+on:
+  # Run daily at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      max_per_query:
+        description: 'Max tools to discover per search query'
+        required: false
+        default: '3'
+        type: string
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run AI Discovery Agent
+        env:
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          node ai-discovery-agent.js ${{ github.event.inputs.max_per_query || '3' }}
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet ai-tools.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add ai-tools.json
+          git commit -m "🤖 Automated: Discover new AI tools
+
+          Found and added new AI tools via automated discovery.
+
+          - Searched using Brave Search API
+          - Normalized and verified with Groq LLM
+          - Filtered duplicates
+          - Auto-categorized"
+          git push
+
+      - name: Create summary
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "✅ New AI tools discovered and committed!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "The ai-tools.json file has been updated with newly discovered tools." >> $GITHUB_STEP_SUMMARY
+
+      - name: No changes summary
+        if: steps.check_changes.outputs.changed == 'false'
+        run: |
+          echo "ℹ️ No new tools discovered in this run" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "All discovered tools were either duplicates or not valid AI tools." >> $GITHUB_STEP_SUMMARY
