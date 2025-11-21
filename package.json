@@ -1,0 +1,24 @@
+{
+  "name": "categorais",
+  "version": "1.0.0",
+  "description": "CategorAIs - Comprehensive AI Tools Directory with automated discovery",
+  "main": "app.js",
+  "scripts": {
+    "discover": "node ai-discovery-agent.js",
+    "discover:fast": "node ai-discovery-agent.js 2",
+    "discover:deep": "node ai-discovery-agent.js 5"
+  },
+  "keywords": [
+    "ai",
+    "tools",
+    "directory",
+    "discovery",
+    "brave-search",
+    "groq"
+  ],
+  "author": "James McLaren",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
