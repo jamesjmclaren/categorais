@@ -402,7 +402,8 @@ Make sure the tool is actually an AI tool with a real product/service. Return is
             logo: bestLogo,
             pricing: normalized.pricing,
             url: toolCandidate.url,
-            features: normalized.features || []
+            features: normalized.features || [],
+            dateAdded: new Date().toISOString()
         };
 
     } catch (error) {

@@ -6,7 +6,8 @@
   "scripts": {
     "discover": "node ai-discovery-agent.js",
     "discover:fast": "node ai-discovery-agent.js 2",
-    "discover:deep": "node ai-discovery-agent.js 5"
+    "discover:deep": "node ai-discovery-agent.js 5",
+    "backfill-dates": "node backfill-dates.js"
   },
   "keywords": [
     "ai",

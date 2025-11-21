@@ -426,6 +426,35 @@ body {
     cursor: not-allowed;
 }
 
+/* Recently Added Section - Special Styling */
+.tool-row.recently-added {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 64px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tool-row.recently-added::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
+}
+
+.tool-row.recently-added .row-title {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 26px;
+}
+
 .tool-scroll {
     display: flex;
     flex-direction: row;

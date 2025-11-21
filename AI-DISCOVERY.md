@@ -10,6 +10,8 @@ Automated tool for discovering, verifying, and categorizing new AI tools using B
 - **Bad Tool Detection**: Filters out articles, directories, tutorials, and generic pages
 - **Intelligent Logo Fetching**: Uses Clearbit API and known logo sources for high-quality logos
 - **Auto-Categorization**: Intelligently categorizes tools based on their features and description
+- **Date Tracking**: Automatically adds discovery date to new tools for "Recently Added" features
+- **Dynamic Categories**: UI auto-generates display names for new categories
 - **GitHub Actions Integration**: Runs automatically on a schedule or manually via workflow dispatch
 
 ## 📋 Prerequisites
@@ -273,6 +275,29 @@ To improve the discovery agent:
 2. Improve category detection keywords
 3. Enhance filtering logic
 4. Add new tool categories
+
+## 🎨 UI Integration
+
+### Recently Added Section
+
+New tools discovered by the agent automatically appear in a special "Recently Added" section at the top of the UI:
+
+- Shows tools discovered in the last 24 hours
+- Highlighted with gradient styling
+- Auto-updates when new tools are added
+
+### Dynamic Categories
+
+When the agent discovers tools in new categories:
+- UI automatically generates display names (e.g., "ai-video-editing" → "AI Video Editing")
+- No code changes needed for new categories
+- Custom display names can be added in `app.js` if desired
+
+### Date Tracking
+
+All tools have a `dateAdded` field:
+- New tools: Set to actual discovery date
+- Existing tools: Run `npm run backfill-dates` to add dates (set to 30 days ago)
 
 ## 📄 License
 

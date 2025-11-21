@@ -49,27 +49,9 @@ function filterTools() {
     });
 }
 
-// Render tools
-function renderTools() {
-    const filtered = filterTools();
-    
-    if (filtered.length === 0) {
-        toolsContainer.innerHTML = '';
-        emptyState.style.display = 'block';
-        return;
-    }
-    
-    emptyState.style.display = 'none';
-    
-    // Group by category
-    const grouped = {};
-    filtered.forEach(tool => {
-        if (!grouped[tool.category]) grouped[tool.category] = [];
-        grouped[tool.category].push(tool);
-    });
-    
-    // Category names
-    const categoryNames = {
+// Auto-generate category display name
+function getCategoryDisplayName(category) {
+    const customNames = {
         chat: 'Chat & AI Assistants',
         image: 'AI Image Generation',
         video: 'AI Video Creation',
@@ -89,15 +71,79 @@ function renderTools() {
         directory: 'AI Directories',
         enterprise: 'Enterprise AI'
     };
-    
+
+    // Return custom name if exists, otherwise auto-generate
+    if (customNames[category]) {
+        return customNames[category];
+    }
+
+    // Auto-generate: "some-category" -> "AI Some Category"
+    return 'AI ' + category
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+// Get recently added tools (last 24 hours)
+function getRecentlyAddedTools() {
+    const oneDayAgo = new Date();
+    oneDayAgo.setHours(oneDayAgo.getHours() - 24);
+
+    return allTools.filter(tool => {
+        if (!tool.dateAdded) return false;
+        const toolDate = new Date(tool.dateAdded);
+        return toolDate >= oneDayAgo;
+    });
+}
+
+// Render tools
+function renderTools() {
+    const filtered = filterTools();
+
+    if (filtered.length === 0) {
+        toolsContainer.innerHTML = '';
+        emptyState.style.display = 'block';
+        return;
+    }
+
+    emptyState.style.display = 'none';
+
     // Render rows
     let html = '';
+
+    // Add "Recently Added" row at the top if there are new tools
+    const recentTools = getRecentlyAddedTools();
+    if (recentTools.length > 0) {
+        html += `
+            <div class="tool-row recently-added">
+                <div class="row-header">
+                    <h2 class="row-title">🆕 Recently Added (Last 24 Hours)</h2>
+                    <div class="row-nav">
+                        <button class="nav-btn" onclick="scrollRow('row-recent', -300)" aria-label="Scroll left">‹</button>
+                        <button class="nav-btn" onclick="scrollRow('row-recent', 300)" aria-label="Scroll right">›</button>
+                    </div>
+                </div>
+                <div class="tool-scroll" id="row-recent">
+                    ${recentTools.map(tool => createToolCard(tool)).join('')}
+                </div>
+            </div>
+        `;
+    }
+
+    // Group by category
+    const grouped = {};
+    filtered.forEach(tool => {
+        if (!grouped[tool.category]) grouped[tool.category] = [];
+        grouped[tool.category].push(tool);
+    });
+
+    // Render category rows
     Object.entries(grouped).forEach(([category, tools]) => {
         const rowId = `row-${category}`;
         html += `
             <div class="tool-row">
                 <div class="row-header">
-                    <h2 class="row-title">${categoryNames[category] || category}</h2>
+                    <h2 class="row-title">${getCategoryDisplayName(category)}</h2>
                     <div class="row-nav">
                         <button class="nav-btn" onclick="scrollRow('${rowId}', -300)" aria-label="Scroll left">‹</button>
                         <button class="nav-btn" onclick="scrollRow('${rowId}', 300)" aria-label="Scroll right">›</button>
@@ -109,7 +155,7 @@ function renderTools() {
             </div>
         `;
     });
-    
+
     toolsContainer.innerHTML = html;
     
     // FORCE CORRECT LAYOUT
