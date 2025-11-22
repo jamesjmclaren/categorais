@@ -13,9 +13,17 @@
  *   # Test with first 10 tools only
  *   BRAVE_API_KEY=your_key MAX_TOOLS=10 node backfill-popularity.js
  *
+ *   # Debug mode - see full API responses
+ *   BRAVE_API_KEY=your_key MAX_TOOLS=3 DEBUG=true node backfill-popularity.js
+ *
+ *   # Increase delay to avoid rate limits (default 2000ms)
+ *   BRAVE_API_KEY=your_key DELAY=5000 node backfill-popularity.js
+ *
  * Environment Variables:
  *   BRAVE_API_KEY - Required. Your Brave Search API key
  *   MAX_TOOLS - Optional. Limit number of tools to process (for testing)
+ *   DELAY - Optional. Milliseconds between requests (default: 2000)
+ *   DEBUG - Optional. Set to 'true' to see full API responses
  */
 
 const fs = require('fs');
@@ -25,8 +33,9 @@ const path = require('path');
 const BRAVE_API_KEY = process.env.BRAVE_API_KEY;
 const BRAVE_SEARCH_URL = 'https://api.search.brave.com/res/v1/web/search';
 const TOOLS_FILE = path.join(__dirname, 'ai-tools.json');
-const DELAY_BETWEEN_REQUESTS = 2000; // 2 seconds to avoid rate limits
+const DELAY_BETWEEN_REQUESTS = process.env.DELAY ? parseInt(process.env.DELAY) : 2000; // milliseconds between requests
 const MAX_TOOLS = process.env.MAX_TOOLS ? parseInt(process.env.MAX_TOOLS) : null; // Limit for testing
+const DEBUG = process.env.DEBUG === 'true'; // Show full API responses
 
 // Popularity calculation (same as in ai-discovery-agent.js)
 function calculatePopularity(searchCount) {
@@ -54,11 +63,28 @@ async function searchBrave(toolName) {
         });
 
         if (!response.ok) {
-            throw new Error(`Brave API error: ${response.status} ${response.statusText}`);
+            const errorText = await response.text();
+            console.error(`   ⚠️  Brave API ${response.status}: ${errorText.substring(0, 100)}`);
+            return 0;
         }
 
         const data = await response.json();
+
+        // Debug mode: show full response for first few requests
+        if (DEBUG) {
+            console.log(`   🔍 Debug - Full API response:`, JSON.stringify(data, null, 2));
+        }
+
         const totalCount = data.web?.totalCount || 0;
+
+        // Debug: log if we're not getting expected data
+        if (totalCount === 0) {
+            if (!data.web) {
+                console.error(`   ⚠️  No web results in response. Keys: ${Object.keys(data).join(', ')}`);
+            } else if (data.web.results && data.web.results.length > 0) {
+                console.error(`   ⚠️  Has results but totalCount is 0. Results: ${data.web.results.length}`);
+            }
+        }
 
         return totalCount;
     } catch (error) {
@@ -74,7 +100,8 @@ function delay(ms) {
 
 // Main backfill function
 async function backfillPopularity() {
-    console.log('🚀 Starting popularity backfill...\n');
+    console.log('🚀 Starting popularity backfill...');
+    console.log(`⏱️  Delay between requests: ${DELAY_BETWEEN_REQUESTS}ms\n`);
 
     // Read existing tools
     let tools;
