@@ -340,9 +340,19 @@ Return a JSON object with these exact fields:
     "description": "Clear 1-2 sentence description (max 150 chars)",
     "pricing": "free" or "freemium" or "paid",
     "features": ["feature1", "feature2", "feature3", "feature4", "feature5"],
+    "pricingTiers": [
+        {"name": "Free/Starter", "price": "$0" or actual price, "features": "key limits/features"},
+        {"name": "Pro/Plus", "price": "$X/mo", "features": "key features"}
+    ],
     "isValidAITool": true or false,
     "suggestedCategory": "one of: chat, image, video, audio, code, writing, productivity, research, design, dating, health, education, gaming, finance, travel, customer-service, directory, enterprise"
 }
+
+For pricingTiers:
+- Include 1-3 main tiers if known (Free, Pro, Enterprise, etc.)
+- Use actual pricing if you know it (e.g., Claude has Free, Pro $20/mo, Team $30/mo)
+- If pricing unknown, set pricingTiers to empty array []
+- Keep features brief (e.g., "Limited messages" or "Unlimited access")
 
 Make sure the tool is actually an AI tool with a real product/service. Return isValidAITool: false if it's not.`;
 
@@ -365,7 +375,7 @@ Make sure the tool is actually an AI tool with a real product/service. Return is
                     }
                 ],
                 temperature: 0.3,
-                max_tokens: 500
+                max_tokens: 700
             })
         });
 
@@ -394,7 +404,7 @@ Make sure the tool is actually an AI tool with a real product/service. Return is
             toolCandidate.logo
         );
 
-        return {
+        const toolData = {
             name: normalized.name,
             category: normalized.suggestedCategory || determineCategory(normalized.name, normalized.description),
             description: normalized.description,
@@ -405,6 +415,13 @@ Make sure the tool is actually an AI tool with a real product/service. Return is
             features: normalized.features || [],
             dateAdded: new Date().toISOString()
         };
+
+        // Add pricing tiers if available
+        if (normalized.pricingTiers && normalized.pricingTiers.length > 0) {
+            toolData.pricingTiers = normalized.pricingTiers;
+        }
+
+        return toolData;
 
     } catch (error) {
         console.error(`Error normalizing with Groq for "${toolCandidate.name}":`, error.message);

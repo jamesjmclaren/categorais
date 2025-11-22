@@ -223,15 +223,41 @@ function scrollRow(rowId, amount) {
 
 // Show tool modal
 function showToolModal(tool) {
+    const badgeClass = `badge-${tool.pricing}`;
+
+    // Generate pricing details HTML if available
+    let pricingDetailsHTML = '';
+    if (tool.pricingTiers && tool.pricingTiers.length > 0) {
+        pricingDetailsHTML = `
+            <div class="modal-pricing">
+                <h3>Pricing Plans</h3>
+                <div class="pricing-tiers">
+                    ${tool.pricingTiers.map(tier => `
+                        <div class="pricing-tier">
+                            <div class="tier-name">${tier.name}</div>
+                            <div class="tier-price">${tier.price}</div>
+                            ${tier.features ? `<div class="tier-features">${tier.features}</div>` : ''}
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+
     const content = `
         <div class="modal-header">
             <div class="modal-logo">
-                <img src="${tool.logo}" 
+                <img src="${tool.logo}"
                      alt="${tool.name} logo"
                      onerror="this.style.display='none'; this.parentElement.innerHTML='${tool.icon}';">
             </div>
-            <h2 class="modal-title">${tool.name}</h2>
-            <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="modal-url">${tool.url}</a>
+            <div class="modal-header-text">
+                <div class="modal-title-row">
+                    <h2 class="modal-title">${tool.name}</h2>
+                    <span class="modal-badge ${badgeClass}">${tool.pricing}</span>
+                </div>
+                <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="modal-url">${tool.url}</a>
+            </div>
         </div>
         <div class="modal-body">
             <p>${tool.description}</p>
@@ -242,11 +268,12 @@ function showToolModal(tool) {
                 ${tool.features.map(f => `<span class="tag">${f}</span>`).join('')}
             </div>
         </div>
+        ${pricingDetailsHTML}
         <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="modal-cta">
             Visit ${tool.name} →
         </a>
     `;
-    
+
     document.getElementById('modalContent').innerHTML = content;
     toolModal.classList.add('active');
     document.body.style.overflow = 'hidden';
