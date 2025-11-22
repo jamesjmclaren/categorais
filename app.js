@@ -189,8 +189,8 @@ function renderTools() {
             card.style.width = '280px';
             card.style.minWidth = '280px';
             card.style.maxWidth = '280px';
-            card.style.height = '360px';
-            card.style.minHeight = '360px';
+            card.style.height = '380px';
+            card.style.minHeight = '380px';
             card.style.flex = '0 0 280px';
         });
     }, 50);
