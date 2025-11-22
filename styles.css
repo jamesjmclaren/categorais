@@ -844,6 +844,9 @@ body {
 }
 
 .modal-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
     margin-bottom: 32px;
 }
 
@@ -855,7 +858,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    flex-shrink: 0;
     font-size: 40px;
 }
 
@@ -868,7 +871,6 @@ body {
 .modal-title {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 12px;
 }
 
 .modal-url {
@@ -913,6 +915,80 @@ body {
 .modal-cta:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* ===== MODAL PRICING ===== */
+.modal-header-text {
+    flex: 1;
+}
+
+.modal-title-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.modal-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.modal-pricing {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-pricing h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.pricing-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.pricing-tier {
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+}
+
+.pricing-tier:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.tier-name {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--accent);
+}
+
+.tier-price {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.tier-features {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* ===== FOOTER ===== */
