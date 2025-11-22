@@ -1,0 +1,261 @@
+#!/usr/bin/env node
+
+/**
+ * Backfill Popularity Script
+ *
+ * This script populates popularity scores for all existing tools in ai-tools.json
+ * by searching Brave for each tool and calculating a score based on search result quality.
+ *
+ * Scoring Algorithm:
+ *   - Well-known tools (ChatGPT, Claude, etc.): Fixed high scores (80-100)
+ *   - Other tools: Base score of 50, +20 if in first result, +10 if has own domain, +10 for quality results
+ *   - Score range: 50-100
+ *
+ * Usage:
+ *   # Backfill all tools (will take ~12 minutes for 347 tools at 2s/tool)
+ *   BRAVE_API_KEY=your_key node backfill-popularity.js
+ *
+ *   # Test with first 10 tools only
+ *   BRAVE_API_KEY=your_key MAX_TOOLS=10 node backfill-popularity.js
+ *
+ *   # Debug mode - see full API responses
+ *   BRAVE_API_KEY=your_key MAX_TOOLS=3 DEBUG=true node backfill-popularity.js
+ *
+ *   # Increase delay to avoid rate limits (default 2000ms)
+ *   BRAVE_API_KEY=your_key DELAY=5000 node backfill-popularity.js
+ *
+ * Environment Variables:
+ *   BRAVE_API_KEY - Required. Your Brave Search API key
+ *   MAX_TOOLS - Optional. Limit number of tools to process (for testing)
+ *   DELAY - Optional. Milliseconds between requests (default: 2000)
+ *   DEBUG - Optional. Set to 'true' to see full API responses
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+// Configuration
+const BRAVE_API_KEY = process.env.BRAVE_API_KEY;
+const BRAVE_SEARCH_URL = 'https://api.search.brave.com/res/v1/web/search';
+const TOOLS_FILE = path.join(__dirname, 'ai-tools.json');
+const DELAY_BETWEEN_REQUESTS = process.env.DELAY ? parseInt(process.env.DELAY) : 2000; // milliseconds between requests
+const MAX_TOOLS = process.env.MAX_TOOLS ? parseInt(process.env.MAX_TOOLS) : null; // Limit for testing
+const DEBUG = process.env.DEBUG === 'true'; // Show full API responses
+
+// Well-known tools that should have high popularity scores
+const WELL_KNOWN_TOOLS = {
+    'ChatGPT': 100,
+    'Claude': 100,
+    'Gemini': 95,
+    'GitHub Copilot': 95,
+    'Midjourney': 95,
+    'DALL·E 3': 95,
+    'Stable Diffusion': 90,
+    'Perplexity': 90,
+    'Cursor': 90,
+    'ElevenLabs': 85,
+    'Suno': 85,
+    'Runway': 85,
+    'Meta AI': 85,
+    'Bing AI': 85,
+    'Jasper': 80,
+    'Copy.ai': 80,
+    'Grammarly': 80,
+    'Notion AI': 80,
+    'Canva AI': 80
+};
+
+// Calculate popularity based on search result quality
+function calculatePopularity(toolName, results) {
+    // Check if it's a well-known tool first
+    if (WELL_KNOWN_TOOLS[toolName]) {
+        return WELL_KNOWN_TOOLS[toolName];
+    }
+
+    if (!results || results.length === 0) return 50;
+
+    let score = 50;
+    const toolNameLower = toolName.toLowerCase();
+
+    // Check if tool appears in first result (strong signal)
+    const firstResult = results[0];
+    if (firstResult) {
+        const titleLower = (firstResult.title || '').toLowerCase();
+        const urlLower = (firstResult.url || '').toLowerCase();
+        const descLower = (firstResult.description || '').toLowerCase();
+
+        // Exact or very close match in first result = popular tool
+        if (titleLower.includes(toolNameLower) || urlLower.includes(toolNameLower.replace(/\s+/g, ''))) {
+            score += 20;
+        }
+
+        // Tool has its own domain in first result
+        if (urlLower.match(/^https?:\/\/[^\/]*\.(com|ai|io|app)/)) {
+            score += 10;
+        }
+    }
+
+    // Number of quality results
+    const qualityResults = results.filter(r => {
+        const text = `${r.title} ${r.url} ${r.description}`.toLowerCase();
+        return text.includes(toolNameLower.split(' ')[0].toLowerCase());
+    }).length;
+
+    if (qualityResults >= 4) score += 10;
+    else if (qualityResults >= 2) score += 5;
+
+    return Math.min(Math.round(score), 95); // Cap at 95 for non-well-known tools
+}
+
+// Legacy function for compatibility (if totalCount is available)
+function calculatePopularityFromCount(searchCount) {
+    if (!searchCount || searchCount === 0) return 50;
+    const score = Math.min(50 + Math.log10(searchCount) * 10, 100);
+    return Math.round(score);
+}
+
+// Search Brave for a tool and get results
+async function searchBrave(toolName) {
+    if (!BRAVE_API_KEY) {
+        throw new Error('BRAVE_API_KEY environment variable is required');
+    }
+
+    const query = `${toolName} AI tool`;
+    const url = `${BRAVE_SEARCH_URL}?q=${encodeURIComponent(query)}&count=10`;
+
+    try {
+        const response = await fetch(url, {
+            headers: {
+                'Accept': 'application/json',
+                'Accept-Encoding': 'gzip',
+                'X-Subscription-Token': BRAVE_API_KEY
+            }
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            console.error(`   ⚠️  Brave API ${response.status}: ${errorText.substring(0, 100)}`);
+            return { results: [], totalCount: 0 };
+        }
+
+        const data = await response.json();
+
+        // Debug mode: show full response for first few requests
+        if (DEBUG) {
+            console.log(`   🔍 Debug - Full API response:`, JSON.stringify(data, null, 2));
+        }
+
+        const results = data.web?.results || [];
+        const totalCount = data.web?.totalCount || 0;
+
+        return { results, totalCount };
+    } catch (error) {
+        console.error(`   ❌ Error searching for "${toolName}":`, error.message);
+        return { results: [], totalCount: 0 };
+    }
+}
+
+// Delay helper
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Main backfill function
+async function backfillPopularity() {
+    console.log('🚀 Starting popularity backfill...');
+    console.log(`⏱️  Delay between requests: ${DELAY_BETWEEN_REQUESTS}ms\n`);
+
+    // Read existing tools
+    let tools;
+    try {
+        const data = fs.readFileSync(TOOLS_FILE, 'utf-8');
+        tools = JSON.parse(data);
+        console.log(`📚 Found ${tools.length} tools in database\n`);
+    } catch (error) {
+        console.error('❌ Error reading ai-tools.json:', error.message);
+        process.exit(1);
+    }
+
+    // Filter tools that need popularity scores
+    let toolsNeedingScores = tools.filter(tool =>
+        !tool.popularity || tool.popularity === 50
+    );
+
+    // Limit for testing if MAX_TOOLS is set
+    if (MAX_TOOLS && MAX_TOOLS > 0) {
+        console.log(`🔍 Limiting to first ${MAX_TOOLS} tools (MAX_TOOLS=${MAX_TOOLS})\n`);
+        toolsNeedingScores = toolsNeedingScores.slice(0, MAX_TOOLS);
+    }
+
+    console.log(`🔍 ${toolsNeedingScores.length} tools need popularity scores\n`);
+
+    if (toolsNeedingScores.length === 0) {
+        console.log('✅ All tools already have popularity scores!');
+        return;
+    }
+
+    let updated = 0;
+    let failed = 0;
+
+    // Process each tool
+    for (let i = 0; i < toolsNeedingScores.length; i++) {
+        const tool = toolsNeedingScores[i];
+        const progress = `[${i + 1}/${toolsNeedingScores.length}]`;
+
+        console.log(`${progress} Processing: ${tool.name}`);
+
+        try {
+            // Search Brave for this tool
+            const { results, totalCount } = await searchBrave(tool.name);
+
+            // Calculate popularity based on results quality
+            const popularity = calculatePopularity(tool.name, results);
+
+            // Find the tool in the original array and update it
+            const toolIndex = tools.findIndex(t => t.name === tool.name);
+            if (toolIndex !== -1) {
+                tools[toolIndex].popularity = popularity;
+                const resultInfo = results.length > 0 ? `${results.length} results` : 'no results';
+                console.log(`   ✅ Popularity: ${popularity} (${resultInfo}${WELL_KNOWN_TOOLS[tool.name] ? ' - well-known' : ''})`);
+                updated++;
+            }
+
+            // Add delay to avoid rate limits
+            if (i < toolsNeedingScores.length - 1) {
+                await delay(DELAY_BETWEEN_REQUESTS);
+            }
+        } catch (error) {
+            console.error(`   ❌ Failed:`, error.message);
+            failed++;
+        }
+    }
+
+    // Save updated tools
+    try {
+        fs.writeFileSync(TOOLS_FILE, JSON.stringify(tools, null, 2));
+        console.log(`\n✅ Successfully updated ${updated} tools`);
+        if (failed > 0) {
+            console.log(`⚠️  Failed to update ${failed} tools`);
+        }
+
+        // Show top 10 most popular tools
+        const topTools = [...tools]
+            .sort((a, b) => (b.popularity || 0) - (a.popularity || 0))
+            .slice(0, 10);
+
+        console.log('\n🏆 Top 10 Most Popular Tools:');
+        topTools.forEach((tool, idx) => {
+            console.log(`   ${idx + 1}. ${tool.name} - Popularity: ${tool.popularity || 50}`);
+        });
+
+    } catch (error) {
+        console.error('\n❌ Error saving ai-tools.json:', error.message);
+        process.exit(1);
+    }
+}
+
+// Run the backfill
+backfillPopularity().catch(error => {
+    console.error('❌ Fatal error:', error);
+    process.exit(1);
+});
