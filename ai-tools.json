@@ -689,7 +689,24 @@
             "Code interpreter",
             "Custom GPTs"
         ],
-        "dateAdded": "2025-10-22T23:44:44.550Z"
+        "dateAdded": "2025-10-22T23:44:44.550Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0/month",
+                "features": "Limited access to reasoning, messages, and image generation"
+            },
+            {
+                "name": "Plus",
+                "price": "$20/month",
+                "features": "Advanced reasoning with GPT-5.1, expanded messaging, faster image creation"
+            },
+            {
+                "name": "Pro",
+                "price": "$200/month",
+                "features": "Pro reasoning, unlimited messages and uploads, maximum deep research"
+            }
+        ]
     },
     {
         "name": "Claude",
