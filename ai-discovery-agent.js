@@ -165,6 +165,30 @@ function calculatePopularity(searchCount) {
 }
 
 /**
+ * Search for pricing information for a specific tool
+ */
+async function searchPricingInfo(toolName) {
+    try {
+        const query = `${toolName} pricing plans tiers`;
+        const searchData = await searchBrave(query, 5);
+
+        if (searchData.results.length === 0) return null;
+
+        // Combine descriptions from top results
+        const pricingContext = searchData.results
+            .slice(0, 3)
+            .map(r => r.description || '')
+            .join(' ')
+            .substring(0, 800); // Limit to avoid token overflow
+
+        return pricingContext;
+    } catch (error) {
+        console.log(`   ⚠️  Could not fetch pricing info: ${error.message}`);
+        return null;
+    }
+}
+
+/**
  * Extract domain from URL
  */
 function extractDomain(url) {
@@ -342,12 +366,19 @@ async function normalizeWithGroq(toolCandidate, searchCount = 0) {
         // Calculate popularity score from search volume
         const popularity = calculatePopularity(searchCount);
 
+        // Search for pricing information
+        console.log(`   🔍 Searching pricing info...`);
+        const pricingContext = await searchPricingInfo(toolCandidate.name);
+        const pricingSection = pricingContext
+            ? `\n\nPricing information from web search:\n${pricingContext}\n\nUse this pricing info to populate pricingTiers with actual prices and plan names.`
+            : '';
+
         const prompt = `You are an AI tool curator. Analyze this potential AI tool and return ONLY a valid JSON object (no markdown, no explanation, just JSON).
 
 Tool to analyze:
 - Name: ${toolCandidate.name}
 - URL: ${toolCandidate.url}
-- Description: ${toolCandidate.description}
+- Description: ${toolCandidate.description}${pricingSection}
 
 IMPORTANT: Return isValidAITool: false if this is:
 - An article, blog post, or review
@@ -370,9 +401,9 @@ Return a JSON object with these exact fields:
 }
 
 For pricingTiers:
-- Include 1-3 main tiers if known (Free, Pro, Enterprise, etc.)
-- Use actual pricing if you know it (e.g., Claude has Free, Pro $20/mo, Team $30/mo)
-- If pricing unknown, set pricingTiers to empty array []
+- Extract pricing from the "Pricing information from web search" section above if available
+- Include 1-3 main tiers with actual plan names and prices (Free, Pro, Enterprise, etc.)
+- If no pricing info available, set pricingTiers to empty array []
 - Keep features brief (e.g., "Limited messages" or "Unlimited access")
 
 Make sure the tool is actually an AI tool with a real product/service. Return isValidAITool: false if it's not.`;
