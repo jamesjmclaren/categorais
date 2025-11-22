@@ -142,11 +142,26 @@ async function searchBrave(query, count = 20) {
         }
 
         const data = await response.json();
-        return data.web?.results || [];
+        return {
+            results: data.web?.results || [],
+            totalCount: data.web?.totalCount || 0
+        };
     } catch (error) {
         console.error(`Error searching Brave for "${query}":`, error.message);
-        return [];
+        return { results: [], totalCount: 0 };
     }
+}
+
+/**
+ * Calculate popularity score based on search result count
+ */
+function calculatePopularity(searchCount) {
+    if (!searchCount || searchCount === 0) return 50; // Default score
+
+    // Logarithmic scale: more results = higher score
+    // 1M results = ~60, 10M = ~70, 100M = ~80, 1B = ~90
+    const score = Math.min(50 + Math.log10(searchCount) * 10, 100);
+    return Math.round(score);
 }
 
 /**
@@ -155,12 +170,12 @@ async function searchBrave(query, count = 20) {
 async function searchPricingInfo(toolName) {
     try {
         const query = `${toolName} pricing plans tiers`;
-        const results = await searchBrave(query, 5);
+        const searchData = await searchBrave(query, 5);
 
-        if (results.length === 0) return null;
+        if (searchData.results.length === 0) return null;
 
         // Combine descriptions from top results
-        const pricingContext = results
+        const pricingContext = searchData.results
             .slice(0, 3)
             .map(r => r.description || '')
             .join(' ')
@@ -340,13 +355,16 @@ function determineCategory(name, description) {
 /**
  * Use Groq to normalize and verify tool information
  */
-async function normalizeWithGroq(toolCandidate) {
+async function normalizeWithGroq(toolCandidate, searchCount = 0) {
     try {
         // Pre-check for bad tools
         if (detectBadTool(toolCandidate.name, toolCandidate.url, toolCandidate.description)) {
             console.log(`   ⏭️  Skipping bad tool: ${toolCandidate.name}`);
             return null;
         }
+
+        // Calculate popularity score from search volume
+        const popularity = calculatePopularity(searchCount);
 
         // Search for pricing information
         console.log(`   🔍 Searching pricing info...`);
@@ -447,13 +465,16 @@ Make sure the tool is actually an AI tool with a real product/service. Return is
             pricing: normalized.pricing,
             url: toolCandidate.url,
             features: normalized.features || [],
-            dateAdded: new Date().toISOString()
+            dateAdded: new Date().toISOString(),
+            popularity: popularity
         };
 
         // Add pricing tiers if available
         if (normalized.pricingTiers && normalized.pricingTiers.length > 0) {
             toolData.pricingTiers = normalized.pricingTiers;
         }
+
+        console.log(`   📊 Popularity score: ${popularity}`);
 
         return toolData;
 
@@ -554,10 +575,10 @@ async function discoverNewTools(maxPerQuery = 3) {
         const query = SEARCH_QUERIES[i];
         console.log(`\n[${i + 1}/${SEARCH_QUERIES.length}] Searching: "${query}"`);
 
-        const results = await searchBrave(query);
-        console.log(`   Found ${results.length} search results`);
+        const searchData = await searchBrave(query);
+        console.log(`   Found ${searchData.results.length} search results`);
 
-        const candidates = extractCandidates(results);
+        const candidates = extractCandidates(searchData.results);
         totalCandidates += candidates.length;
         console.log(`   Extracted ${candidates.length} tool candidates`);
 
@@ -578,8 +599,11 @@ async function discoverNewTools(maxPerQuery = 3) {
 
             console.log(`   🔄 Normalizing: ${candidate.name}...`);
 
+            // Get popularity score from search volume
+            const searchCount = searchData.totalCount || 0;
+
             // Normalize with Groq
-            const normalized = await normalizeWithGroq(candidate);
+            const normalized = await normalizeWithGroq(candidate, searchCount);
 
             if (normalized) {
                 newTools.push(normalized);
