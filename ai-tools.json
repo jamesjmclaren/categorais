@@ -294,6 +294,21 @@
         "dateAdded": "2025-11-22T14:35:27.508Z"
     },
     {
+        "name": "Controlla Voice",
+        "category": "audio",
+        "description": "AI singing voice generator",
+        "icon": "🎵",
+        "logo": "https://logo.clearbit.com/voice.controlla.xyz",
+        "pricing": "paid",
+        "url": "https://voice.controlla.xyz/",
+        "features": [
+            "iconic voice generation",
+            "vocal transformation",
+            "pitch perfection"
+        ],
+        "dateAdded": "2025-11-22T17:15:42.682Z"
+    },
+    {
         "name": "ElevenLabs",
         "category": "audio",
         "description": "Most realistic AI voice generation and cloning. Industry-leading voice synthesis with emotional control.",
