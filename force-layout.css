@@ -50,9 +50,9 @@ body {
     width: 280px !important;
     min-width: 280px !important;
     max-width: 280px !important;
-    height: 340px !important;
-    min-height: 340px !important;
-    max-height: 340px !important;
+    height: 360px !important;
+    min-height: 360px !important;
+    max-height: 360px !important;
     -webkit-box-flex: 0 !important;
     -ms-flex: 0 0 280px !important;
     flex: 0 0 280px !important;
@@ -63,10 +63,11 @@ body {
 
 /* Prevent card content from affecting layout */
 .card-content {
-    min-height: 120px !important;
-    max-height: none !important;
+    min-height: 170px !important;
+    max-height: 200px !important;
     display: flex !important;
     flex-direction: column !important;
+    overflow: hidden !important;
 }
 
 .card-desc {
@@ -82,4 +83,7 @@ body {
     display: flex !important;
     flex-wrap: wrap !important;
     gap: 6px !important;
+    max-height: 70px !important;
+    overflow: hidden !important;
+    align-content: flex-start !important;
 }
