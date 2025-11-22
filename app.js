@@ -2,6 +2,9 @@
 let allTools = [];
 let currentCategory = 'all';
 let searchQuery = '';
+let displayedTools = 0;
+const TOOLS_PER_PAGE = 50;
+let scrollObserver = null;
 
 // DOM Elements
 const searchInput = document.getElementById('searchInput');
@@ -39,8 +42,18 @@ async function loadTools() {
 // Filter tools
 function filterTools() {
     return allTools.filter(tool => {
-        const matchesCategory = currentCategory === 'all' || tool.category === currentCategory;
-        const matchesSearch = !searchQuery || 
+        // Handle "recently-added" as special category
+        let matchesCategory;
+        if (currentCategory === 'recently-added') {
+            const oneDayAgo = new Date();
+            oneDayAgo.setHours(oneDayAgo.getHours() - 24);
+            const toolDate = tool.dateAdded ? new Date(tool.dateAdded) : null;
+            matchesCategory = toolDate && toolDate >= oneDayAgo;
+        } else {
+            matchesCategory = currentCategory === 'all' || tool.category === currentCategory;
+        }
+
+        const matchesSearch = !searchQuery ||
             tool.name.toLowerCase().includes(searchQuery) ||
             tool.description.toLowerCase().includes(searchQuery) ||
             tool.category.toLowerCase().includes(searchQuery) ||
@@ -106,7 +119,7 @@ function getRecentlyAddedTools() {
 }
 
 // Render tools
-function renderTools() {
+function renderTools(loadMore = false) {
     const filtered = filterTools();
 
     if (filtered.length === 0) {
@@ -117,85 +130,41 @@ function renderTools() {
 
     emptyState.style.display = 'none';
 
-    // Render rows
-    let html = '';
+    // Sort all filtered tools by popularity
+    const sorted = filtered.sort((a, b) => {
+        const popA = a.popularity || 50;
+        const popB = b.popularity || 50;
+        return popB - popA; // Higher popularity first
+    });
 
-    // Add "Recently Added" row at the top if there are new tools
-    const recentTools = getRecentlyAddedTools();
-    if (recentTools.length > 0) {
-        html += `
-            <div class="tool-row recently-added">
-                <div class="row-header">
-                    <h2 class="row-title">🆕 Recently Added (Last 24 Hours)</h2>
-                    <div class="row-nav">
-                        <button class="nav-btn" onclick="scrollRow('row-recent', -300)" aria-label="Scroll left">‹</button>
-                        <button class="nav-btn" onclick="scrollRow('row-recent', 300)" aria-label="Scroll right">›</button>
-                    </div>
-                </div>
-                <div class="tool-scroll" id="row-recent">
-                    ${recentTools.map(tool => createToolCard(tool)).join('')}
-                </div>
-            </div>
-        `;
+    // Reset or increment displayed count
+    if (!loadMore) {
+        displayedTools = 0;
     }
 
-    // Group by category
-    const grouped = {};
-    filtered.forEach(tool => {
-        if (!grouped[tool.category]) grouped[tool.category] = [];
-        grouped[tool.category].push(tool);
-    });
+    const toolsToShow = sorted.slice(0, displayedTools + TOOLS_PER_PAGE);
+    displayedTools = toolsToShow.length;
 
-    // Sort tools by popularity within each category
-    Object.keys(grouped).forEach(category => {
-        grouped[category].sort((a, b) => {
-            const popA = a.popularity || 50; // Default to 50 if no popularity score
-            const popB = b.popularity || 50;
-            return popB - popA; // Higher popularity first
-        });
-    });
+    // Create grid
+    const html = `
+        <div class="tools-grid">
+            ${toolsToShow.map(tool => createToolCard(tool)).join('')}
+        </div>
+    `;
 
-    // Render category rows
-    Object.entries(grouped).forEach(([category, tools]) => {
-        const rowId = `row-${category}`;
-        html += `
-            <div class="tool-row">
-                <div class="row-header">
-                    <h2 class="row-title">${getCategoryDisplayName(category)}</h2>
-                    <div class="row-nav">
-                        <button class="nav-btn" onclick="scrollRow('${rowId}', -300)" aria-label="Scroll left">‹</button>
-                        <button class="nav-btn" onclick="scrollRow('${rowId}', 300)" aria-label="Scroll right">›</button>
-                    </div>
-                </div>
-                <div class="tool-scroll" id="${rowId}">
-                    ${tools.map(tool => createToolCard(tool)).join('')}
-                </div>
-            </div>
-        `;
-    });
+    if (loadMore) {
+        // Append to existing grid
+        const grid = toolsContainer.querySelector('.tools-grid');
+        if (grid) {
+            const newTools = sorted.slice(displayedTools - TOOLS_PER_PAGE, displayedTools);
+            grid.innerHTML += newTools.map(tool => createToolCard(tool)).join('');
+        }
+    } else {
+        // Replace entire container
+        toolsContainer.innerHTML = html;
+    }
 
-    toolsContainer.innerHTML = html;
-    
-    // FORCE CORRECT LAYOUT
-    setTimeout(() => {
-        document.querySelectorAll('.tool-scroll').forEach(scroll => {
-            scroll.style.display = 'flex';
-            scroll.style.flexDirection = 'row';
-            scroll.style.flexWrap = 'nowrap';
-            scroll.style.alignItems = 'flex-start';
-        });
-        
-        document.querySelectorAll('.tool-card').forEach(card => {
-            card.style.width = '280px';
-            card.style.minWidth = '280px';
-            card.style.maxWidth = '280px';
-            card.style.height = '380px';
-            card.style.minHeight = '380px';
-            card.style.flex = '0 0 280px';
-        });
-    }, 50);
-    
-    // Add click handlers
+    // Add click handlers to all cards
     document.querySelectorAll('.tool-card').forEach(card => {
         card.addEventListener('click', () => {
             const toolName = card.dataset.tool;
@@ -203,6 +172,11 @@ function renderTools() {
             if (tool) showToolModal(tool);
         });
     });
+
+    // Check if we need to show more tools indicator
+    if (displayedTools < sorted.length) {
+        checkInfiniteScroll();
+    }
 }
 
 // Create tool card
@@ -231,11 +205,36 @@ function createToolCard(tool) {
     `;
 }
 
-// Scroll row
-function scrollRow(rowId, amount) {
-    const row = document.getElementById(rowId);
-    if (row) {
-        row.scrollBy({ left: amount, behavior: 'smooth' });
+// Infinite scroll check
+function checkInfiniteScroll() {
+    // Disconnect previous observer
+    if (scrollObserver) {
+        scrollObserver.disconnect();
+    }
+
+    scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const filtered = filterTools();
+                const sorted = filtered.sort((a, b) => {
+                    const popA = a.popularity || 50;
+                    const popB = b.popularity || 50;
+                    return popB - popA;
+                });
+
+                if (displayedTools < sorted.length) {
+                    renderTools(true);
+                }
+            }
+        });
+    }, {
+        rootMargin: '400px'
+    });
+
+    // Observe the last card
+    const cards = document.querySelectorAll('.tool-card');
+    if (cards.length > 0) {
+        scrollObserver.observe(cards[cards.length - 1]);
     }
 }
 

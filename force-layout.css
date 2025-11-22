@@ -1,6 +1,6 @@
 /* NUCLEAR OPTION - Emergency Layout Fix */
 /* Add this AFTER your main styles.css */
-/* Updated: 2025-11-22 */
+/* Updated: 2025-11-22 - Grid Layout */
 
 * {
     box-sizing: border-box !important;
@@ -15,27 +15,10 @@ body {
     overflow: visible !important;
 }
 
-.tool-row {
-    display: block !important;
-    width: 100% !important;
-    overflow: visible !important;
-    margin-bottom: 56px !important;
-}
-
-.tool-scroll {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-    -ms-flex-direction: row !important;
-    flex-direction: row !important;
-    -ms-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    gap: 20px !important;
-    align-items: flex-start !important;
+.tools-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    gap: 24px !important;
     width: 100% !important;
 }
 
@@ -47,18 +30,10 @@ body {
     -webkit-box-direction: normal !important;
     -ms-flex-direction: column !important;
     flex-direction: column !important;
-    width: 280px !important;
-    min-width: 280px !important;
-    max-width: 280px !important;
+    width: 100% !important;
     height: 380px !important;
     min-height: 380px !important;
     max-height: 380px !important;
-    -webkit-box-flex: 0 !important;
-    -ms-flex: 0 0 280px !important;
-    flex: 0 0 280px !important;
-    -ms-flex-negative: 0 !important;
-    flex-shrink: 0 !important;
-    flex-grow: 0 !important;
 }
 
 /* Prevent card content from affecting layout */

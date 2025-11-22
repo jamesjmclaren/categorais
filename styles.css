@@ -375,134 +375,47 @@ body {
     padding: var(--spacing) var(--spacing) 80px;
 }
 
-/* ===== TOOL ROWS ===== */
-.tool-row {
-    margin-bottom: 56px;
+/* ===== TOOLS GRID ===== */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
     width: 100%;
-    max-width: none;
-    overflow: visible;
+    padding: 8px 0;
 }
 
-.row-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+@media (min-width: 1920px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 28px;
+    }
 }
 
-.row-title {
-    font-size: 24px;
-    font-weight: 600;
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 16px;
+    }
 }
 
-.row-nav {
-    display: flex;
-    gap: 8px;
-}
-
-.nav-btn {
-    width: 36px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-
-.nav-btn:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: var(--accent);
-    transform: scale(1.1);
-}
-
-.nav-btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-/* Recently Added Section - Special Styling */
-.tool-row.recently-added {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
-    border: 1px solid rgba(102, 126, 234, 0.2);
-    border-radius: 16px;
-    padding: 24px;
-    margin-bottom: 64px;
-    position: relative;
-    overflow: hidden;
-}
-
-.tool-row.recently-added::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-dark) 100%);
-}
-
-.tool-row.recently-added .row-title {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 26px;
-}
-
-.tool-scroll {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    padding: 8px 0 20px;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(102, 126, 234, 0.5) rgba(255, 255, 255, 0.05);
-    align-items: flex-start;
-}
-
-.tool-scroll::-webkit-scrollbar {
-    height: 6px;
-}
-
-.tool-scroll::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 3px;
-}
-
-.tool-scroll::-webkit-scrollbar-thumb {
-    background: rgba(102, 126, 234, 0.5);
-    border-radius: 3px;
-}
-
-.tool-scroll::-webkit-scrollbar-thumb:hover {
-    background: rgba(102, 126, 234, 0.7);
+@media (max-width: 480px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 12px;
+    }
 }
 
 /* ===== TOOL CARDS ===== */
 .tool-card {
     position: relative;
-    min-width: 280px;
-    width: 280px;
-    max-width: 280px;
+    width: 100%;
     height: 380px;
-    min-height: 380px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    flex-shrink: 0;
-    flex-grow: 0;
     display: flex;
     flex-direction: column;
 }
@@ -1107,30 +1020,17 @@ body {
     .categories {
         top: 72px;
     }
-    
-    .tool-card {
-        width: 240px !important;
-        min-width: 240px;
-        max-width: 240px;
-        height: 380px;
-    }
-    
+
     .modal-dialog {
         padding: 32px 24px;
     }
-    
+
     .modal-title {
         font-size: 24px;
     }
 }
 
 @media (max-width: 480px) {
-    .tool-card {
-        width: 220px !important;
-        min-width: 220px;
-        max-width: 220px;
-        height: 360px;
-    }
     
     .card-image {
         height: 140px;
@@ -1177,32 +1077,19 @@ body {
     }
 }
 
-/* ===== CRITICAL LAYOUT FIX ===== */
-/* Must be at the very end to override everything */
-.tool-scroll {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+/* ===== GRID LAYOUT FIX ===== */
+/* Ensure grid layout is maintained */
+.tools-grid {
+    display: grid !important;
 }
 
 .tool-card {
-    flex: 0 0 280px !important;
+    width: 100% !important;
     height: 380px !important;
-    min-height: 380px !important;
-}
-
-@media (max-width: 768px) {
-    .tool-card {
-        flex: 0 0 240px !important;
-        height: 380px !important;
-        min-height: 380px !important;
-    }
 }
 
 @media (max-width: 480px) {
     .tool-card {
-        flex: 0 0 220px !important;
         height: 360px !important;
-        min-height: 360px !important;
     }
 }
