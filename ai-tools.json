@@ -45,6 +45,23 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "ACE Studio AI Singing Voice Generator",
+        "category": "audio",
+        "description": "AI singing voice generator",
+        "icon": "🎵",
+        "logo": "",
+        "pricing": "paid",
+        "url": "https://acestudio.ai/",
+        "features": [
+            "AI singing voice",
+            "voice generator",
+            "music creation",
+            "audio editing",
+            "customization"
+        ],
+        "dateAdded": "2025-11-22T14:35:16.351Z"
+    },
+    {
         "name": "Adobe Podcast",
         "category": "audio",
         "description": "AI-powered audio recording and editing for podcasts. Studio-quality sound from any microphone.",
@@ -75,6 +92,38 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "AI Music Generator",
+        "category": "audio",
+        "description": "Royalty-free text to song generator",
+        "icon": "🎵",
+        "logo": "https://logo.clearbit.com/tad.ai",
+        "pricing": "paid",
+        "url": "https://tad.ai/ai-music-generator",
+        "features": [
+            "text to song",
+            "royalty-free music",
+            "professional-grade songs"
+        ],
+        "dateAdded": "2025-11-22T16:37:17.429Z"
+    },
+    {
+        "name": "AI Music Generator By SongAI",
+        "category": "audio",
+        "description": "Generate music from audio files",
+        "icon": "🎵",
+        "logo": "https://imgs.search.brave.com/AG6imaOlu9jMQv3dPZiBjAd_irpKSCP8pYxRZGOgxXI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pbG92/ZXNvbmcuYWkvb3Bl/bmdyYXBoLWltYWdl/LnBuZw",
+        "pricing": "freemium",
+        "url": "https://ilovesong.ai/",
+        "features": [
+            "Music Generation",
+            "Audio File Upload",
+            "MP4 Video Creation",
+            "MP3 Song Download",
+            "Custom Voice/Audio"
+        ],
+        "dateAdded": "2025-11-22T14:35:29.156Z"
     },
     {
         "name": "AI Music Generator Online (Free, No Sign",
@@ -170,6 +219,48 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "AI Voiceover",
+        "category": "audio",
+        "description": "AI generator for human voices",
+        "icon": "🎵",
+        "logo": "https://logo.clearbit.com/epidemicsound.com",
+        "pricing": "paid",
+        "url": "https://www.epidemicsound.com/voices/",
+        "features": [
+            "Customizable voices",
+            "Wide range of voices",
+            "AI-powered"
+        ],
+        "dateAdded": "2025-11-22T16:37:08.939Z",
+        "pricingTiers": [
+            {
+                "name": "Personal",
+                "price": "$15/mo",
+                "features": "Limited access"
+            },
+            {
+                "name": "Commercial",
+                "price": "$49/mo",
+                "features": "Unlimited access"
+            }
+        ]
+    },
+    {
+        "name": "Animaker Voice Generator",
+        "category": "audio",
+        "description": "AI voice generator for voiceovers",
+        "icon": "🎵",
+        "logo": "https://logo.clearbit.com/animaker.com",
+        "pricing": "paid",
+        "url": "https://www.animaker.com/voice-generator",
+        "features": [
+            "Ultra-realistic voiceovers",
+            "200+ voices",
+            "40+ global languages"
+        ],
+        "dateAdded": "2025-11-22T14:35:19.298Z"
+    },
+    {
         "name": "Beatoven.ai: Royalty Free AI Music Generator",
         "category": "audio",
         "description": "AI-powered tool for beatovenai royalty free ai music generator",
@@ -186,6 +277,21 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Brev AI Music Generator",
+        "category": "audio",
+        "description": "Generate high-quality sound effects and music",
+        "icon": "🎵",
+        "logo": "",
+        "pricing": "free",
+        "url": "https://brev.ai/",
+        "features": [
+            "AI Sound Effects Generator",
+            "Music Generation",
+            "No sign-up required"
+        ],
+        "dateAdded": "2025-11-22T14:35:27.508Z"
     },
     {
         "name": "ElevenLabs",
@@ -310,6 +416,38 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Lami AI Music Generator",
+        "category": "audio",
+        "description": "AI-generated song creation",
+        "icon": "🎵",
+        "logo": "",
+        "pricing": "freemium",
+        "url": "https://lami.ai/",
+        "features": [
+            "AI-generated music",
+            "vocal remover",
+            "stem splitter",
+            "AI song cover"
+        ],
+        "dateAdded": "2025-11-22T16:37:18.923Z"
+    },
+    {
+        "name": "MiniMax AudioMusic",
+        "category": "audio",
+        "description": "Generate lifelike voices and music",
+        "icon": "🎵",
+        "logo": "https://imgs.search.brave.com/7QlWojoDtOtURPwSZlclucYt6DrGxJONDXkuiZPgACM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/bWluaW1heC5pby9h/dWRpby9mYXZpY29u/Lmljbw",
+        "pricing": "paid",
+        "url": "https://www.minimax.io/audio",
+        "features": [
+            "Voice Generation",
+            "Music Generation",
+            "Lifelike Voices",
+            "Customizable"
+        ],
+        "dateAdded": "2025-11-22T14:35:17.891Z"
+    },
+    {
         "name": "Murf AI",
         "category": "audio",
         "description": "Professional AI voiceover software for videos and presentations. 120+ voices in 20+ languages.",
@@ -389,6 +527,22 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Suno AI Music",
+        "category": "audio",
+        "description": "Create original music using AI",
+        "icon": "🎵",
+        "logo": "https://logo.clearbit.com/suno.com",
+        "pricing": "free",
+        "url": "https://suno.com/home",
+        "features": [
+            "AI music generation",
+            "original music creation",
+            "music sharing",
+            "music discovery"
+        ],
+        "dateAdded": "2025-11-22T14:35:25.937Z"
+    },
+    {
         "name": "Udio",
         "category": "audio",
         "description": "Udio | AI Music Generator - Official Website",
@@ -402,6 +556,33 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Voicemod TTS",
+        "category": "audio",
+        "description": "AI voice generator for text-to-speech",
+        "icon": "🎵",
+        "logo": "https://logo.clearbit.com/voicemod.net",
+        "pricing": "freemium",
+        "url": "https://www.voicemod.net/en/ai-voice-generator-tts-text-to-speech/",
+        "features": [
+            "Text-To-Speech",
+            "Audio Effects",
+            "Unique Characters"
+        ],
+        "dateAdded": "2025-11-22T16:37:10.438Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited access"
+            }
+        ]
     },
     {
         "name": "WellSaid Home",
@@ -924,6 +1105,22 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "AI Code",
+        "category": "code",
+        "description": "AI coding assistant",
+        "icon": "💻",
+        "logo": "https://logo.clearbit.com/deepai.org",
+        "pricing": "free",
+        "url": "https://deepai.org/chat/ai-code",
+        "features": [
+            "code snippets",
+            "debugging",
+            "explaining concepts",
+            "guiding code logic"
+        ],
+        "dateAdded": "2025-11-22T14:34:54.060Z"
+    },
+    {
         "name": "Askcodi",
         "category": "code",
         "description": "AI coding assistant that helps you write, fix, and optimize code.",
@@ -1036,6 +1233,27 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Gemini Code Assist",
+        "category": "code",
+        "description": "AI-powered code completions and reviews",
+        "icon": "💻",
+        "logo": "https://imgs.search.brave.com/IQee2haQwCXG20sv_JLV7FLNyuhLk-nhhPFcTwgkJQU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdG9y/YWdlLmdvb2dsZWFw/aXMuY29tL2d3ZWIt/dW5pYmxvZy1wdWJs/aXNoLXByb2QvaW1h/Z2VzL0dlbWluaS1D/b2RlLUFzc2lzdF92/NF8xLndpZHRoLTEz/MDAucG5n",
+        "pricing": "free",
+        "url": "https://blog.google/technology/developers/gemini-code-assist-free/",
+        "features": [
+            "code completions",
+            "AI-powered code reviews"
+        ],
+        "dateAdded": "2025-11-22T16:36:51.434Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "up to 180,000 code completions per month"
+            }
+        ]
+    },
+    {
         "name": "GitHub Copilot",
         "category": "code",
         "description": "AI pair programmer that suggests code and functions as you type. Powered by OpenAI Codex.",
@@ -1051,6 +1269,21 @@
             "Chat interface"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "IBM Watsonx Code Assistant",
+        "category": "code",
+        "description": "AI-powered coding assistant",
+        "icon": "💻",
+        "logo": "https://imgs.search.brave.com/SyS63t2rgCxPzCVdlX2BQ8d0xhhtsarGBjHSWw9HoWA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/aWJtLmNvbS9jb250/ZW50L2RhbS9jb25u/ZWN0ZWRhc3NldHMt/YWRvYmUtY21zL3dv/cmxkd2lkZS1jb250/ZW50L2NyZWF0aXZl/LWFzc2V0cy9zLW1p/Z3IvdWwvZy9iNy8x/Mi9XQ0EtTGVhZHNw/YWNlLnBuZy9famNy/X2NvbnRlbnQvcmVu/ZGl0aW9ucy9jcTVk/YW0ud2ViLjEyODAu/MTI4MC5wbmc",
+        "pricing": "paid",
+        "url": "https://www.ibm.com/products/watsonx-code-assistant",
+        "features": [
+            "Generative AI",
+            "Coding automation",
+            "Modernization efforts"
+        ],
+        "dateAdded": "2025-11-22T16:36:54.388Z"
     },
     {
         "name": "JetBrains AI",
@@ -1150,6 +1383,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Workik AI Code Assistant",
+        "category": "code",
+        "description": "Automates code tasks and workflows",
+        "icon": "💻",
+        "logo": "https://logo.clearbit.com/workik.com",
+        "pricing": "free",
+        "url": "https://workik.com/ai-code-assistant",
+        "features": [
+            "code formatting",
+            "automated testing",
+            "customizable workflows"
+        ],
+        "dateAdded": "2025-11-22T14:34:55.512Z"
+    },
+    {
         "name": "AI Customer Service",
         "category": "customer-service",
         "description": "AI-powered customer support solution",
@@ -1165,6 +1413,21 @@
             "Machine Learning"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Attentive AI",
+        "category": "customer-service",
+        "description": "AI-powered marketing campaign automation",
+        "icon": "📞",
+        "logo": "https://logo.clearbit.com/attentive.com",
+        "pricing": "paid",
+        "url": "https://www.attentive.com/ai-marketing-campaign-automation",
+        "features": [
+            "advanced segmentation",
+            "AI-powered optimization",
+            "real-time targeting"
+        ],
+        "dateAdded": "2025-11-22T14:37:42.356Z"
     },
     {
         "name": "Conversational AI Platform for Enterprise",
@@ -1183,6 +1446,167 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Decagon",
+        "category": "customer-service",
+        "description": "Conversational AI for CX",
+        "icon": "📞",
+        "logo": "https://logo.clearbit.com/decagon.ai",
+        "pricing": "paid",
+        "url": "https://decagon.ai",
+        "features": [
+            "Conversational AI",
+            "Iterative Prompting",
+            "Knowledge Base Integration",
+            "Workflow Automation",
+            "Data Source Connection"
+        ],
+        "dateAdded": "2025-11-22T14:37:58.460Z"
+    },
+    {
+        "name": "Emplifi",
+        "category": "customer-service",
+        "description": "AI-powered social media management",
+        "icon": "📞",
+        "logo": "https://logo.clearbit.com/emplifi.io",
+        "pricing": "paid",
+        "url": "https://emplifi.io/",
+        "features": [
+            "social media management",
+            "marketing",
+            "commerce",
+            "care",
+            "AI-powered"
+        ],
+        "dateAdded": "2025-11-22T14:37:23.614Z"
+    },
+    {
+        "name": "Fin",
+        "category": "customer-service",
+        "description": "AI customer service agent",
+        "icon": "📞",
+        "logo": "https://logo.clearbit.com/fin.ai",
+        "pricing": "paid",
+        "url": "https://fin.ai/",
+        "features": [
+            "simulated conversations",
+            "multi-channel support",
+            "consistent customer support"
+        ],
+        "dateAdded": "2025-11-22T14:37:52.916Z"
+    },
+    {
+        "name": "Gorgias",
+        "category": "customer-service",
+        "description": "AI-powered customer support platform",
+        "icon": "📞",
+        "logo": "https://logo.clearbit.com/gorgias.com",
+        "pricing": "paid",
+        "url": "https://www.gorgias.com",
+        "features": [
+            "AI Agent",
+            "Shopify order editing",
+            "Real-time product info",
+            "Promotional campaigns",
+            "Customer conversation management"
+        ],
+        "dateAdded": "2025-11-22T16:39:25.337Z"
+    },
+    {
+        "name": "Klaviyo",
+        "category": "customer-service",
+        "description": "AI-powered email marketing and SMS",
+        "icon": "📞",
+        "logo": "https://logo.clearbit.com/klaviyo.com",
+        "pricing": "paid",
+        "url": "https://www.klaviyo.com",
+        "features": [
+            "AI email marketing",
+            "SMS marketing",
+            "B2C CRM",
+            "Omnichannel experiences",
+            "Personalization"
+        ],
+        "dateAdded": "2025-11-22T14:37:15.085Z",
+        "pricingTiers": [
+            {
+                "name": "Email",
+                "price": "$25/mo",
+                "features": "Up to 150 contacts"
+            },
+            {
+                "name": "Pro",
+                "price": "$50/mo",
+                "features": "Up to 1000 contacts, automation"
+            },
+            {
+                "name": "Growth",
+                "price": "custom",
+                "features": "Unlimited contacts, advanced automation"
+            }
+        ]
+    },
+    {
+        "name": "LiveChatAI",
+        "category": "customer-service",
+        "description": "AI chatbot for customer support",
+        "icon": "📞",
+        "logo": "https://imgs.search.brave.com/w6NgLnyzEwMOOaIBe5TexRJruiUIkeB18-oShKwJppQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/NDVhNWMxOTBkNzQy/NjIxNzk2ZWVkZDEv/NjgzNzI2ODZhMDE2/ZjdmMzg3MDgxZWJh/X2FpLWNoYXRib3Qt/ZXhhbXBsZS1mb3It/Y3VzdG9tZXItc3Vw/cG9ydC5wbmc",
+        "pricing": "freemium",
+        "url": "https://livechatai.com/",
+        "features": [
+            "instant query resolution",
+            "custom data training",
+            "quick deployment"
+        ],
+        "dateAdded": "2025-11-22T16:39:22.634Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited queries"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited queries"
+            }
+        ]
+    },
+    {
+        "name": "Sendbird",
+        "category": "customer-service",
+        "description": "AI concierge for customer experience",
+        "icon": "📞",
+        "logo": "https://logo.clearbit.com/sendbird.com",
+        "pricing": "paid",
+        "url": "https://sendbird.com/",
+        "features": [
+            "hyper-personalized experiences",
+            "customer journey management",
+            "AI-powered chat",
+            "automation",
+            "analytics"
+        ],
+        "dateAdded": "2025-11-22T14:37:54.524Z",
+        "pricingTiers": [
+            {
+                "name": "Starter",
+                "price": "custom quote",
+                "features": "limited features"
+            },
+            {
+                "name": "Pro",
+                "price": "custom quote",
+                "features": "additional features"
+            },
+            {
+                "name": "Enterprise",
+                "price": "custom quote",
+                "features": "full features"
+            }
+        ]
     },
     {
         "name": "Zobot™",
@@ -1309,6 +1733,28 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "AI Art Generator",
+        "category": "design",
+        "description": "Transform ideas into art",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/magicstudio.com",
+        "pricing": "free",
+        "url": "https://magicstudio.com/ai-art-generator/",
+        "features": [
+            "Text-to-Art",
+            "Vibrant Art",
+            "Lifelike Images"
+        ],
+        "dateAdded": "2025-11-22T14:34:37.812Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited use"
+            }
+        ]
     },
     {
         "name": "AutoDraw",
@@ -1527,6 +1973,23 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Genies",
+        "category": "design",
+        "description": "Create AI companions and experiences",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/genies.com",
+        "pricing": "paid",
+        "url": "https://genies.com/",
+        "features": [
+            "AI companions",
+            "UGC tools",
+            "Avatar Framework",
+            "machine learning",
+            "computer graphics"
+        ],
+        "dateAdded": "2025-11-22T16:37:59.868Z"
+    },
+    {
         "name": "Home",
         "category": "design",
         "description": "Generalist AI travel planner at your command, with real-time, user-centric recommendations. .",
@@ -1625,6 +2088,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Relume",
+        "category": "design",
+        "description": "AI website builder",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/relume.io",
+        "pricing": "paid",
+        "url": "https://www.relume.io/",
+        "features": [
+            "AI design ally",
+            "Sitemap generation",
+            "Wireframe generation"
+        ],
+        "dateAdded": "2025-11-22T14:35:55.756Z"
+    },
+    {
         "name": "Stitch",
         "category": "design",
         "description": "AI-powered UI design tool",
@@ -1660,6 +2138,23 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Tooolsdesign",
+        "category": "design",
+        "description": "AI-powered design platform",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/toools.design",
+        "pricing": "freemium",
+        "url": "https://www.toools.design",
+        "features": [
+            "logo design",
+            "branding",
+            "website creation",
+            "AI marketing tool",
+            "ad creation"
+        ],
+        "dateAdded": "2025-11-22T14:35:52.950Z"
+    },
+    {
         "name": "Uizard",
         "category": "design",
         "description": "Transform sketches and screenshots into editable designs. Design apps and websites with AI.",
@@ -1677,6 +2172,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "UX Pilot",
+        "category": "design",
+        "description": "AI-powered UX/UI design tool",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/uxpilot.ai",
+        "pricing": "paid",
+        "url": "https://uxpilot.ai/",
+        "features": [
+            "Wireframe generation",
+            "UI design",
+            "AI model"
+        ],
+        "dateAdded": "2025-11-22T14:35:54.386Z"
+    },
+    {
         "name": "Visme",
         "category": "design",
         "description": "All-in-one visual content creation with AI-powered design.",
@@ -1691,6 +2201,21 @@
             "Animations"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Wonderslide",
+        "category": "design",
+        "description": "AI-powered presentation designer",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/wonderslide.com",
+        "pricing": "paid",
+        "url": "https://wonderslide.com/",
+        "features": [
+            "AI templates",
+            "Instant design",
+            "Professional slides"
+        ],
+        "dateAdded": "2025-11-22T14:36:26.362Z"
     },
     {
         "name": "Zing Data",
@@ -1815,6 +2340,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Thesify",
+        "category": "education",
+        "description": "AI tool for academic writing improvement",
+        "icon": "📚",
+        "logo": "https://logo.clearbit.com/thesify.ai",
+        "pricing": "paid",
+        "url": "https://www.thesify.ai/",
+        "features": [
+            "Real-time feedback",
+            "Academic integrity",
+            "Writing improvement"
+        ],
+        "dateAdded": "2025-11-22T14:35:09.359Z"
+    },
+    {
         "name": "Agentic Automation Platform",
         "category": "enterprise",
         "description": "Enterprise-grade AI management",
@@ -1832,6 +2372,33 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Alteryx One",
+        "category": "enterprise",
+        "description": "AI analytics platform",
+        "icon": "🏢",
+        "logo": "https://logo.clearbit.com/alteryx.com",
+        "pricing": "paid",
+        "url": "https://www.alteryx.com/",
+        "features": [
+            "AI-ready data",
+            "automation",
+            "analytics"
+        ],
+        "dateAdded": "2025-11-22T14:38:46.700Z",
+        "pricingTiers": [
+            {
+                "name": "Free Trial",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Starter",
+                "price": "unknown",
+                "features": "Basic features"
+            }
+        ]
+    },
+    {
         "name": "DX Developer Intelligence Platform",
         "category": "enterprise",
         "description": "Measures developer productivity",
@@ -1846,6 +2413,73 @@
             "AI-augmented engineering"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Google AI Studio",
+        "category": "enterprise",
+        "description": "AI tool for production",
+        "icon": "🏢",
+        "logo": "https://logo.clearbit.com/aistudio.google.com",
+        "pricing": "freemium",
+        "url": "https://aistudio.google.com/welcome",
+        "features": [
+            "Gemini",
+            "AI production",
+            "Prompt to production"
+        ],
+        "dateAdded": "2025-11-22T14:38:25.323Z"
+    },
+    {
+        "name": "Insider",
+        "category": "enterprise",
+        "description": "AI marketing automation",
+        "icon": "🏢",
+        "logo": "https://logo.clearbit.com/useinsider.com",
+        "pricing": "paid",
+        "url": "https://useinsider.com/ai-marketing-automation/",
+        "features": [
+            "AI-powered marketing",
+            "Customer behavior analysis",
+            "Personalization",
+            "Automation",
+            "Predictive analytics"
+        ],
+        "dateAdded": "2025-11-22T14:37:39.800Z"
+    },
+    {
+        "name": "Leapwork",
+        "category": "enterprise",
+        "description": "Codeless test automation platform",
+        "icon": "🏢",
+        "logo": "https://logo.clearbit.com/leapwork.com",
+        "pricing": "paid",
+        "url": "https://www.leapwork.com",
+        "features": [
+            "Test Automation",
+            "Codeless Platform",
+            "End-to-End Automation",
+            "Scalability",
+            "Ease of Maintenance"
+        ],
+        "dateAdded": "2025-11-22T14:38:43.898Z"
+    },
+    {
+        "name": "Swimlane Turbine",
+        "category": "enterprise",
+        "description": "AI automation platform",
+        "icon": "🏢",
+        "logo": "https://logo.clearbit.com/swimlane.com",
+        "pricing": "paid",
+        "url": "https://swimlane.com/swimlane-turbine/",
+        "features": [
+            "infinite integrations",
+            "AI",
+            "low-code playbooks",
+            "case management",
+            "dashboards",
+            "reporting"
+        ],
+        "dateAdded": "2025-11-22T14:38:45.248Z"
     },
     {
         "name": "Vertex AI",
@@ -1891,6 +2525,35 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Nansen",
+        "category": "finance",
+        "description": "On-chain analytics for crypto investors",
+        "icon": "💰",
+        "logo": "https://logo.clearbit.com/nansen.ai",
+        "pricing": "paid",
+        "url": "https://www.nansen.ai",
+        "features": [
+            "on-chain analytics",
+            "blockchain data insights",
+            "informed decision making",
+            "easy interface",
+            "in-depth analysis"
+        ],
+        "dateAdded": "2025-11-22T16:38:17.708Z",
+        "pricingTiers": [
+            {
+                "name": "Starter",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "$0",
+                "features": "Full access, in-depth analysis"
+            }
+        ]
     },
     {
         "name": "Rogo",
@@ -2048,6 +2711,92 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "AI Avatar",
+        "category": "image",
+        "description": "Create custom avatars",
+        "icon": "🎨",
+        "logo": "",
+        "pricing": "free",
+        "url": "https://deevid.ai/ai-avatar",
+        "features": [
+            "Custom Avatar Creation",
+            "Photo Upload",
+            "Recording Guide"
+        ],
+        "dateAdded": "2025-11-22T14:36:15.067Z"
+    },
+    {
+        "name": "AI Avatar Generator",
+        "category": "image",
+        "description": "Convert photo to talking avatar",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/fotor.com",
+        "pricing": "freemium",
+        "url": "https://www.fotor.com/features/ai-avatar-generator/",
+        "features": [
+            "AI-powered avatar generation",
+            "Image animation",
+            "Talking avatar creation"
+        ],
+        "dateAdded": "2025-11-22T14:36:16.622Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited features"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited access"
+            }
+        ]
+    },
+    {
+        "name": "AI Avatar Generator",
+        "category": "image",
+        "description": "Generate lifelike images and videos",
+        "icon": "🎨",
+        "logo": "",
+        "pricing": "freemium",
+        "url": "https://ai-avatar-generator.com/",
+        "features": [
+            "100+ filters",
+            "customizable",
+            "text prompts"
+        ],
+        "dateAdded": "2025-11-22T14:36:18.130Z"
+    },
+    {
+        "name": "AI Image Generator",
+        "category": "image",
+        "description": "Generate images with AI",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/create.microsoft.com",
+        "pricing": "free",
+        "url": "https://create.microsoft.com/en-us/features/ai-image-generator",
+        "features": [
+            "Text-to-image generation",
+            "AI-powered image creation"
+        ],
+        "dateAdded": "2025-11-22T16:36:33.625Z"
+    },
+    {
+        "name": "DALL-E",
+        "category": "image",
+        "description": "AI image generator",
+        "icon": "🎨",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
+        "pricing": "free",
+        "url": "https://www.dall-efree.com",
+        "features": [
+            "text-to-image",
+            "AI image creation",
+            "custom prompts"
+        ],
+        "dateAdded": "2025-11-22T16:36:36.164Z"
+    },
+    {
         "name": "DALL-E 3",
         "category": "image",
         "description": "OpenAI's image generator with exceptional prompt following and detail. Integrated with ChatGPT Plus.",
@@ -2079,6 +2828,36 @@
             "API access"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "GanAI",
+        "category": "image",
+        "description": "AI avatar creator",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/gan.ai",
+        "pricing": "free",
+        "url": "https://www.gan.ai/create-your-free-realistic-ai-avatar-generator-maker-online",
+        "features": [
+            "AI avatar generation",
+            "personalized video pitches",
+            "step-by-step instructions"
+        ],
+        "dateAdded": "2025-11-22T16:37:58.421Z"
+    },
+    {
+        "name": "Gemini AI image generator",
+        "category": "image",
+        "description": "AI image generator and photo editor",
+        "icon": "🎨",
+        "logo": "https://imgs.search.brave.com/k-QZWObK8vwxB-KCv1iPsqtlw-9ZcLDHOCoelHBo8UA/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9saDMu/Z29vZ2xldXNlcmNv/bnRlbnQuY29tLzFF/NTAwcmtTaDhHcWt6/MmwxMnRrcktrTWdz/RG1iUW90MGgzYWZl/aVJ1a1hOZmljcGhi/MnpFRThvNkozZFNL/a2lER09PQ2NROFd0/Ull6RVl1ZGdpWUs5/RmtvUWVZZ19TUDky/LUM9ZTM2NS1wYS1u/dS13MTIwMA",
+        "pricing": "paid",
+        "url": "https://gemini.google/overview/image-generation/",
+        "features": [
+            "image generation",
+            "photo editing",
+            "high-quality images"
+        ],
+        "dateAdded": "2025-11-22T14:34:34.987Z"
     },
     {
         "name": "Ideogram",
@@ -2147,6 +2926,38 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "PicLumen",
+        "category": "image",
+        "description": "AI image generator",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/piclumen.com",
+        "pricing": "free",
+        "url": "https://www.piclumen.com/",
+        "features": [
+            "AI image creation",
+            "text-to-image",
+            "online generator"
+        ],
+        "dateAdded": "2025-11-22T14:34:36.387Z"
+    },
+    {
+        "name": "Pollo AI",
+        "category": "image",
+        "description": "AI image & video generator",
+        "icon": "🎨",
+        "logo": "https://logo.clearbit.com/pollo.ai",
+        "pricing": "free",
+        "url": "https://pollo.ai/",
+        "features": [
+            "text prompts",
+            "image generation",
+            "video generation",
+            "high resolution",
+            "quality output"
+        ],
+        "dateAdded": "2025-11-22T16:36:43.006Z"
+    },
+    {
         "name": "Recraft",
         "category": "image",
         "description": "AI design tool for creating consistent brand assets and vector graphics.",
@@ -2195,6 +3006,40 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "AI Assistant for Meetings",
+        "category": "productivity",
+        "description": "Automated meeting summaries and reports",
+        "icon": "⚡",
+        "logo": "https://imgs.search.brave.com/y6CXUBQHcrfuksinCm2TUZGIiwhMmPUALTyCTFExv2E/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mcmFt/ZXJ1c2VyY29udGVu/dC5jb20vaW1hZ2Vz/L3hzVW00V25jSUlF/UU5lUlluVFN2ODRP/YXcwLnBuZw",
+        "pricing": "paid",
+        "url": "https://mymeet.ai/",
+        "features": [
+            "Meeting Summaries",
+            "Task Assignment",
+            "Report Preparation",
+            "Multi-language Support",
+            "Automated Action Items"
+        ],
+        "dateAdded": "2025-11-22T14:36:51.913Z"
+    },
+    {
+        "name": "AI Email Assistant",
+        "category": "productivity",
+        "description": "AI assistant for Gmail",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/heyhelp.ai",
+        "pricing": "paid",
+        "url": "https://www.heyhelp.ai/ai-email-assistant/",
+        "features": [
+            "sorting",
+            "tagging",
+            "drafting",
+            "summarizing",
+            "following up"
+        ],
+        "dateAdded": "2025-11-22T14:37:13.461Z"
+    },
+    {
         "name": "AI for Educators",
         "category": "productivity",
         "description": "AI for educators: MagicSchool is the leading AI for teachers, schools, and students. Loved by over 6 million teachers and their students, MagicScho...",
@@ -2208,6 +3053,57 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "AI Note Taker",
+        "category": "productivity",
+        "description": "AI meeting note taker",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/notta.ai",
+        "pricing": "free",
+        "url": "https://www.notta.ai/en/",
+        "features": [
+            "meeting summary",
+            "decision capture",
+            "action items",
+            "customer insights",
+            "transcription"
+        ],
+        "dateAdded": "2025-11-22T14:37:06.646Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited transcription time"
+            }
+        ]
+    },
+    {
+        "name": "AI Presentation Maker",
+        "category": "productivity",
+        "description": "Generate engaging slides and designs",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/jotform.com",
+        "pricing": "freemium",
+        "url": "https://www.jotform.com/ai/presentation-agent/presentation-maker/",
+        "features": [
+            "engaging slides",
+            "scripts",
+            "designs"
+        ],
+        "dateAdded": "2025-11-22T14:36:27.795Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited access"
+            }
+        ]
     },
     {
         "name": "Avoma",
@@ -2258,6 +3154,50 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Canary Mail",
+        "category": "productivity",
+        "description": "AI-powered email client",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/canarymail.io",
+        "pricing": "paid",
+        "url": "https://canarymail.io/",
+        "features": [
+            "AI-powered features",
+            "Integrated calendar",
+            "Multiple account access",
+            "Email prioritization",
+            "Productivity boost"
+        ],
+        "dateAdded": "2025-11-22T16:38:47.706Z"
+    },
+    {
+        "name": "ChatGPT",
+        "category": "productivity",
+        "description": "AI assistant for answers and productivity",
+        "icon": "⚡",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
+        "pricing": "freemium",
+        "url": "https://chatgpt.com/g/g-HMNcP6w7d-data-analyst",
+        "features": [
+            "conversational AI",
+            "answer generation",
+            "productivity assistance"
+        ],
+        "dateAdded": "2025-11-22T14:36:39.176Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited messages"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited access"
+            }
+        ]
+    },
+    {
         "name": "ClickUp Brain",
         "category": "productivity",
         "description": "Replace multiple productivity tools and subscriptions with one AI super app.",
@@ -2305,6 +3245,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Continue",
+        "category": "productivity",
+        "description": "Launch background agents in seconds",
+        "icon": "⚡",
+        "logo": "https://imgs.search.brave.com/j2qRr57DIUHtaa1HY9KsDqUzbVHEIyKnyfAYtMGmtfw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/NjNlMDZjNTY4NDEz/NjM2NjNmZmJiY2Yv/Njg4YzI3Yzg2OWNi/ZDE4ODM4MmQ4YmNh/X3NvY2lhbCUyMGNh/cmQlNDAyeC5wbmc",
+        "pricing": "paid",
+        "url": "https://www.continue.dev/",
+        "features": [
+            "background agents",
+            "battle-tested workflows",
+            "integration with GitHub, Sentry, Snyk, Linear"
+        ],
+        "dateAdded": "2025-11-22T14:34:57.000Z"
+    },
+    {
         "name": "Corti",
         "category": "productivity",
         "description": "Get started fast in Python, Node, and more. .",
@@ -2318,6 +3273,23 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "DataGPT",
+        "category": "productivity",
+        "description": "Conversational AI data analyst",
+        "icon": "⚡",
+        "logo": "https://imgs.search.brave.com/np2H0ViXKiV5wclurhOH9l7MWOVPT1QYchtAP9d4Ytw/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWRzLXNzbC53ZWJm/bG93LmNvbS82NDEz/M2MwYjUwMjMyZWRj/M2Y0ZThhMDEvNjUz/OTkwMWI3YmI3YWJm/YmE1OTc3MDM1X2Rh/dGFncHQtaWxsdXN0/cmF0aW9uLnBuZw",
+        "pricing": "paid",
+        "url": "https://datagpt.com/",
+        "features": [
+            "Conversational AI",
+            "Data Analysis",
+            "BI Tool",
+            "Dashboard",
+            "Personal Data Analyst"
+        ],
+        "dateAdded": "2025-11-22T16:38:19.260Z"
     },
     {
         "name": "Equal Time",
@@ -2383,6 +3355,34 @@
             "OKRs"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Fellowai",
+        "category": "productivity",
+        "description": "AI meeting note taker",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/fellow.ai",
+        "pricing": "freemium",
+        "url": "https://fellow.ai/",
+        "features": [
+            "Meeting note taker",
+            "Transcription",
+            "Summarization",
+            "Insights"
+        ],
+        "dateAdded": "2025-11-22T14:37:01.603Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited features"
+            },
+            {
+                "name": "Pro",
+                "price": "Unknown",
+                "features": "Unlimited access"
+            }
+        ]
     },
     {
         "name": "Fireflies",
@@ -2466,6 +3466,33 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Granola",
+        "category": "productivity",
+        "description": "AI notepad for meeting notes",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/granola.ai",
+        "pricing": "freemium",
+        "url": "https://www.granola.ai/",
+        "features": [
+            "meeting notes",
+            "note organization",
+            "team collaboration"
+        ],
+        "dateAdded": "2025-11-22T14:36:53.367Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited access"
+            }
+        ]
+    },
+    {
         "name": "Grok",
         "category": "productivity",
         "description": "Elon Musk's AI assistant integrated with X (Twitter). Real-time access to social media data.",
@@ -2547,6 +3574,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Machine Translation",
+        "category": "productivity",
+        "description": "AI-powered translation tool",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/machinetranslation.com",
+        "pricing": "paid",
+        "url": "https://www.machinetranslation.com/",
+        "features": [
+            "AI Translation Agent",
+            "Key Term Translations",
+            "Memory"
+        ],
+        "dateAdded": "2025-11-22T16:39:33.448Z"
+    },
+    {
         "name": "Mailmaestro",
         "category": "productivity",
         "description": "AI email assistant that writes better emails faster.",
@@ -2579,6 +3621,104 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "MeetGeek",
+        "category": "productivity",
+        "description": "AI note taker and meeting assistant",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/meetgeek.ai",
+        "pricing": "paid",
+        "url": "https://meetgeek.ai/",
+        "features": [
+            "context-aware summaries",
+            "workflow automation",
+            "coaching insights"
+        ],
+        "dateAdded": "2025-11-22T16:38:39.376Z"
+    },
+    {
+        "name": "Mem",
+        "category": "productivity",
+        "description": "AI meeting notes",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/get.mem.ai",
+        "pricing": "freemium",
+        "url": "https://get.mem.ai/",
+        "features": [
+            "meeting notes",
+            "transcription",
+            "recording"
+        ],
+        "dateAdded": "2025-11-22T16:38:29.883Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited features"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited access"
+            }
+        ]
+    },
+    {
+        "name": "Mentimeter AI Builder",
+        "category": "productivity",
+        "description": "AI-powered presentation maker",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/mentimeter.com",
+        "pricing": "freemium",
+        "url": "https://www.mentimeter.com/features/ai-builder",
+        "features": [
+            "AI-generated slides",
+            "Interactive presentations",
+            "Customizable templates",
+            "Real-time feedback",
+            "Collaboration tools"
+        ],
+        "dateAdded": "2025-11-22T14:36:24.940Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited features"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Unlimited presentations, advanced features"
+            }
+        ]
+    },
+    {
+        "name": "METRICOOL",
+        "category": "productivity",
+        "description": "Social media management tool",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/metricool.com",
+        "pricing": "freemium",
+        "url": "https://metricool.com/",
+        "features": [
+            "content planning",
+            "auto publishing",
+            "message management"
+        ],
+        "dateAdded": "2025-11-22T16:38:58.682Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "1 brand, limited features"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "additional features"
+            }
+        ]
+    },
+    {
         "name": "Microsoft AI Tools and Solutions",
         "category": "productivity",
         "description": "AI tools for task automation",
@@ -2595,6 +3735,23 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Minutes",
+        "category": "productivity",
+        "description": "AI note taking and transcription",
+        "icon": "⚡",
+        "logo": "https://imgs.search.brave.com/57d5Xj8aJ1-5ABVS9Q-6iwtxVz2t4OZDTrJHt0tNjD4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9mcmFt/ZXJ1c2VyY29udGVu/dC5jb20vaW1hZ2Vz/L1J1Zm5Cam1ETHBq/S0FFRUwxYjd0akM2/R2FkVS5qcGc",
+        "pricing": "paid",
+        "url": "https://myminutes.ai/",
+        "features": [
+            "AI transcription",
+            "formatted notes",
+            "live audio support",
+            "YouTube import",
+            "chat with audio"
+        ],
+        "dateAdded": "2025-11-22T16:38:37.994Z"
     },
     {
         "name": "Monday.com",
@@ -2646,6 +3803,54 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Noteshelf",
+        "category": "productivity",
+        "description": "AI-powered note-taking app",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/noteshelf.net",
+        "pricing": "freemium",
+        "url": "https://www.noteshelf.net/",
+        "features": [
+            "handwriting recognition",
+            "annotation",
+            "paper templates",
+            "diary & journal creation"
+        ],
+        "dateAdded": "2025-11-22T14:37:05.188Z"
+    },
+    {
+        "name": "Notion",
+        "category": "productivity",
+        "description": "AI workspace for teams",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/notion.com",
+        "pricing": "freemium",
+        "url": "https://www.notion.com/",
+        "features": [
+            "custom agents",
+            "search",
+            "automation"
+        ],
+        "dateAdded": "2025-11-22T14:35:44.763Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "$8/user/mo",
+                "features": "Full access"
+            },
+            {
+                "name": "Enterprise",
+                "price": "custom",
+                "features": "Advanced features"
+            }
+        ]
+    },
+    {
         "name": "Ocoya",
         "category": "productivity",
         "description": "AI-powered social media scheduling and content creation",
@@ -2660,6 +3865,22 @@
             "creative tools"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "OpenL Translate",
+        "category": "productivity",
+        "description": "AI translation in 100 languages",
+        "icon": "⚡",
+        "logo": "https://imgs.search.brave.com/lbJYTZrnEpPmKI66-Le70-QPynWO_n-ggAkEofOqM5o/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9vcGVu/bC5pby9vZy1pbWFn/ZS5wbmc",
+        "pricing": "paid",
+        "url": "https://openl.io/",
+        "features": [
+            "Translation",
+            "100 languages",
+            "AI-powered",
+            "Professional translations"
+        ],
+        "dateAdded": "2025-11-22T14:38:08.042Z"
     },
     {
         "name": "Ortto",
@@ -2709,6 +3930,36 @@
             "Smarter Decisions"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Quadratic",
+        "category": "productivity",
+        "description": "AI analysis in spreadsheets",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/quadratichq.com",
+        "pricing": "paid",
+        "url": "https://www.quadratichq.com/",
+        "features": [
+            "AI analysis",
+            "editable cells",
+            "seamless integration"
+        ],
+        "dateAdded": "2025-11-22T14:36:36.198Z"
+    },
+    {
+        "name": "Read",
+        "category": "productivity",
+        "description": "AI speaker coaching metrics",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/read.ai",
+        "pricing": "paid",
+        "url": "https://www.read.ai/assistant",
+        "features": [
+            "Meeting Timer",
+            "Talk Time Notes",
+            "Private Speaker Coaching"
+        ],
+        "dateAdded": "2025-11-22T14:36:47.762Z"
     },
     {
         "name": "Reclaim AI",
@@ -2776,6 +4027,116 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Simplified AI",
+        "category": "productivity",
+        "description": "AI powered Social Media Management",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/simplified.com",
+        "pricing": "paid",
+        "url": "https://simplified.com",
+        "features": [
+            "Social Media Management",
+            "AI powered",
+            "Drafting",
+            "Scheduling",
+            "Monitoring",
+            "Replying"
+        ],
+        "dateAdded": "2025-11-22T16:39:00.182Z"
+    },
+    {
+        "name": "Sintra",
+        "category": "productivity",
+        "description": "Virtual Assistant for business owners",
+        "icon": "⚡",
+        "logo": "https://imgs.search.brave.com/7LPeux1HeMR-aQ6qEJwbh_GuzfV-amqfItOvbDSBo4Q/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/NjFkNGY2ZDgxYWMx/MDQyYjcyMTM5NmMv/NjY0NGJiODY4NzM2/NjNmMWRiM2E2OGNk/X3NpbnRyYS1ob21l/LW9wZW5ncmFwaC5q/cGc",
+        "pricing": "paid",
+        "url": "https://sintra.ai/",
+        "features": [
+            "Calendar management",
+            "Meeting scheduling",
+            "Trip planning",
+            "Cold call scripts",
+            "Cold emails"
+        ],
+        "dateAdded": "2025-11-22T16:38:46.286Z"
+    },
+    {
+        "name": "SlidesGPT",
+        "category": "productivity",
+        "description": "AI PowerPoint Generator",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/slidesgpt.com",
+        "pricing": "paid",
+        "url": "https://slidesgpt.com/",
+        "features": [
+            "AI-powered slides",
+            "Presentation creation",
+            "Customizable templates"
+        ],
+        "dateAdded": "2025-11-22T16:38:06.516Z"
+    },
+    {
+        "name": "Smartcat",
+        "category": "productivity",
+        "description": "AI translation platform",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/smartcat.com",
+        "pricing": "paid",
+        "url": "https://www.smartcat.com/",
+        "features": [
+            "AI translation",
+            "AI localization",
+            "AI content generation",
+            "AI-human workflows"
+        ],
+        "dateAdded": "2025-11-22T16:39:32.089Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "custom",
+                "features": "Unlimited access"
+            }
+        ]
+    },
+    {
+        "name": "SocialBee",
+        "category": "productivity",
+        "description": "AI-powered social media management",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/socialbee.com",
+        "pricing": "paid",
+        "url": "https://socialbee.com/",
+        "features": [
+            "social media scheduling",
+            "content creation",
+            "analytics"
+        ],
+        "dateAdded": "2025-11-22T14:37:26.677Z",
+        "pricingTiers": [
+            {
+                "name": "Bootstrap",
+                "price": "$19/mo",
+                "features": "1 user, 5 social profiles"
+            },
+            {
+                "name": "Accelerate",
+                "price": "$39/mo",
+                "features": "3 users, 10 social profiles"
+            },
+            {
+                "name": "Pro",
+                "price": "$79/mo",
+                "features": "10 users, 20 social profiles"
+            }
+        ]
+    },
+    {
         "name": "Superhuman",
         "category": "productivity",
         "description": "Blazing fast email with AI triage and response suggestions. Email at the speed of thought.",
@@ -2791,6 +4152,23 @@
             "Snippets"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Tana",
+        "category": "productivity",
+        "description": "AI-powered productivity tool",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/tana.inc",
+        "pricing": "paid",
+        "url": "https://tana.inc/",
+        "features": [
+            "outliner text editor",
+            "Supertags",
+            "AI automation",
+            "daily notes",
+            "knowledge graph"
+        ],
+        "dateAdded": "2025-11-22T14:35:43.235Z"
     },
     {
         "name": "Taskade",
@@ -2840,6 +4218,37 @@
             "Daily planning"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Twistly",
+        "category": "productivity",
+        "description": "AI presentation maker for PowerPoint",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/twistly.ai",
+        "pricing": "paid",
+        "url": "https://twistly.ai/",
+        "features": [
+            "AI-powered presentation creation",
+            "Conversion",
+            "Enhancement"
+        ],
+        "dateAdded": "2025-11-22T16:38:08.143Z"
+    },
+    {
+        "name": "Wordly",
+        "category": "productivity",
+        "description": "Real-time AI translation and captions",
+        "icon": "⚡",
+        "logo": "https://logo.clearbit.com/wordly.ai",
+        "pricing": "paid",
+        "url": "https://www.wordly.ai/",
+        "features": [
+            "real-time translation",
+            "captions",
+            "transcripts",
+            "summaries"
+        ],
+        "dateAdded": "2025-11-22T14:38:06.454Z"
     },
     {
         "name": "Wrike",
@@ -3008,6 +4417,33 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Hex",
+        "category": "research",
+        "description": "AI-powered data analysis platform",
+        "icon": "🔬",
+        "logo": "https://logo.clearbit.com/hex.tech",
+        "pricing": "paid",
+        "url": "https://hex.tech/",
+        "features": [
+            "natural language queries",
+            "AI-powered agents",
+            "data curation"
+        ],
+        "dateAdded": "2025-11-22T14:36:37.732Z",
+        "pricingTiers": [
+            {
+                "name": "Starter",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "unknown",
+                "features": "Full access to AI agents"
+            }
+        ]
+    },
+    {
         "name": "Mem",
         "category": "research",
         "description": "AI-powered knowledge management and note-taking workspace.",
@@ -3024,6 +4460,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Nature Research Assistant",
+        "category": "research",
+        "description": "AI support for research",
+        "icon": "🔬",
+        "logo": "",
+        "pricing": "freemium",
+        "url": "https://natureresearchassistant.com/",
+        "features": [
+            "AI support",
+            "research assistance",
+            "critical thinking enhancement"
+        ],
+        "dateAdded": "2025-11-22T14:36:05.410Z"
+    },
+    {
         "name": "NotebookLM",
         "category": "research",
         "description": "Google's AI research and document organization tool.",
@@ -3038,6 +4489,33 @@
             "Free"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Papers AI Assistant",
+        "category": "research",
+        "description": "AI-powered research assistant for scholarly articles",
+        "icon": "🔬",
+        "logo": "https://logo.clearbit.com/papersapp.com",
+        "pricing": "paid",
+        "url": "https://www.papersapp.com/ai-assistant/",
+        "features": [
+            "real-time analysis",
+            "in-depth summarization",
+            "contextual understanding"
+        ],
+        "dateAdded": "2025-11-22T14:36:08.249Z",
+        "pricingTiers": [
+            {
+                "name": "Individual",
+                "price": "$9.99/mo",
+                "features": "full access"
+            },
+            {
+                "name": "Institutional",
+                "price": "custom",
+                "features": "multi-user support"
+            }
+        ]
     },
     {
         "name": "Perplexity AI",
@@ -3120,6 +4598,23 @@
             "Integrations"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Web of Science Research Assistant",
+        "category": "research",
+        "description": "AI-powered research assistant",
+        "icon": "🔬",
+        "logo": "https://logo.clearbit.com/clarivate.com",
+        "pricing": "paid",
+        "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-research-assistant/",
+        "features": [
+            "AI-powered search",
+            "Research recommendations",
+            "Citation analysis",
+            "Research discovery",
+            "Referencing tools"
+        ],
+        "dateAdded": "2025-11-22T14:36:02.507Z"
     },
     {
         "name": "Your AI Research Assistant – Scite",
@@ -3293,6 +4788,23 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "D-ID",
+        "category": "video",
+        "description": "AI video creation platform",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/d-id.com",
+        "pricing": "paid",
+        "url": "https://www.d-id.com/",
+        "features": [
+            "AI video integrations",
+            "Microsoft PowerPoint integration",
+            "Canva integration",
+            "Google Slides integration",
+            "Third-party platform support"
+        ],
+        "dateAdded": "2025-11-22T14:34:44.641Z"
+    },
+    {
         "name": "Descript",
         "category": "video",
         "description": "AI-powered video and podcast editing. Edit videos by editing text transcripts.",
@@ -3424,6 +4936,23 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Google Vids",
+        "category": "video",
+        "description": "AI-powered video creator and editor",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/workspace.google.com",
+        "pricing": "paid",
+        "url": "https://workspace.google.com/products/vids/",
+        "features": [
+            "AI video editing",
+            "Content creation",
+            "Video sharing",
+            "Collaboration",
+            "Google Workspace integration"
+        ],
+        "dateAdded": "2025-11-22T14:34:47.421Z"
     },
     {
         "name": "Grain",
@@ -3587,6 +5116,38 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Lumen5",
+        "category": "video",
+        "description": "AI video creation platform",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/lumen5.com",
+        "pricing": "paid",
+        "url": "https://lumen5.com/",
+        "features": [
+            "AI-powered video creation",
+            "Social video content",
+            "Brand customization"
+        ],
+        "dateAdded": "2025-11-22T16:36:44.536Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "Limited videos"
+            },
+            {
+                "name": "Pro",
+                "price": "$29/mo",
+                "features": "Unlimited videos, custom branding"
+            },
+            {
+                "name": "Business",
+                "price": "$99/mo",
+                "features": "Advanced features, priority support"
+            }
+        ]
+    },
+    {
         "name": "OpusClip",
         "category": "video",
         "description": "AI-powered video repurposing for social media. Turn long videos into viral clips.",
@@ -3671,6 +5232,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Steve AI",
+        "category": "video",
+        "description": "AI video generation tool",
+        "icon": "🎬",
+        "logo": "https://logo.clearbit.com/steve.ai",
+        "pricing": "paid",
+        "url": "https://www.steve.ai/",
+        "features": [
+            "text-to-video",
+            "script-to-video",
+            "instant video creation"
+        ],
+        "dateAdded": "2025-11-22T14:34:45.998Z"
+    },
+    {
         "name": "Synthesia",
         "category": "video",
         "description": "AI video generation with 140+ realistic avatars and voiceovers. Create professional videos without cameras.",
@@ -3737,6 +5313,30 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "AI Writer",
+        "category": "writing",
+        "description": "Generate high-quality text instantly",
+        "icon": "✍️",
+        "logo": "",
+        "pricing": "free",
+        "url": "https://www.wrizzle.ai/ai-writer",
+        "features": [
+            "blog generation",
+            "ad copy",
+            "website copy",
+            "social posts",
+            "instant text"
+        ],
+        "dateAdded": "2025-11-22T14:35:05.234Z",
+        "pricingTiers": [
+            {
+                "name": "Free",
+                "price": "$0",
+                "features": "limited access"
+            }
+        ]
+    },
+    {
         "name": "Beautiful.ai",
         "category": "writing",
         "description": "AI-powered presentation software with smart templates and automatic formatting.",
@@ -3785,6 +5385,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Creaitor",
+        "category": "writing",
+        "description": "AI-driven content and SEO enhancement",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/creaitor.ai",
+        "pricing": "paid",
+        "url": "https://www.creaitor.ai/",
+        "features": [
+            "AI content generation",
+            "SEO optimization",
+            "Content analysis"
+        ],
+        "dateAdded": "2025-11-22T14:38:35.829Z"
+    },
+    {
         "name": "Create hit games with the power of AI with Ludo.ai",
         "category": "writing",
         "description": "Ludo.ai&#x27;s Game Concept tool isn&#x27;t just a document editor – it&#x27;s your AI-powered co-writer. Structure your game&#x27;s details with c...",
@@ -3798,6 +5413,23 @@
         ],
         "sponsored": false,
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Friday Email AI",
+        "category": "writing",
+        "description": "AI-powered email writing assistant",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/friday-email.ai",
+        "pricing": "paid",
+        "url": "https://friday-email.ai/",
+        "features": [
+            "personalized suggestions",
+            "storytelling",
+            "proofreading",
+            "improvement suggestions",
+            "content creation"
+        ],
+        "dateAdded": "2025-11-22T14:37:16.853Z"
     },
     {
         "name": "Gamma",
@@ -3879,6 +5511,33 @@
             "Source citations"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "Lately",
+        "category": "writing",
+        "description": "AI content creation assistant",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/lately.ai",
+        "pricing": "paid",
+        "url": "https://www.lately.ai/",
+        "features": [
+            "content creation",
+            "AI-powered",
+            "social media optimization"
+        ],
+        "dateAdded": "2025-11-22T14:37:25.090Z",
+        "pricingTiers": [
+            {
+                "name": "Starter",
+                "price": "$0",
+                "features": "Limited access"
+            },
+            {
+                "name": "Pro",
+                "price": "custom",
+                "features": "Full access"
+            }
+        ]
     },
     {
         "name": "Notion AI",
@@ -4109,6 +5768,21 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Wordvice AI",
+        "category": "writing",
+        "description": "AI English translation tool",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/wordvice.ai",
+        "pricing": "free",
+        "url": "https://wordvice.ai/tools/translate",
+        "features": [
+            "Translation",
+            "Language support",
+            "Natural phrasing"
+        ],
+        "dateAdded": "2025-11-22T14:38:05.102Z"
+    },
+    {
         "name": "WriteMe AI",
         "category": "writing",
         "description": "AI writing tool for content generation",
@@ -4122,6 +5796,22 @@
             "40+ use cases"
         ],
         "dateAdded": "2025-10-22T23:44:44.550Z"
+    },
+    {
+        "name": "WRITER",
+        "category": "writing",
+        "description": "AI platform for enterprise content creation",
+        "icon": "✍️",
+        "logo": "https://logo.clearbit.com/writer.com",
+        "pricing": "paid",
+        "url": "https://writer.com/",
+        "features": [
+            "campaign creation",
+            "RFP automation",
+            "personalized comms",
+            "research assistance"
+        ],
+        "dateAdded": "2025-11-22T14:35:06.671Z"
     },
     {
         "name": "Writesonic",
