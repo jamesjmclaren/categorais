@@ -125,6 +125,9 @@ function saveTools(tools) {
  */
 async function searchBrave(query, count = 20) {
     try {
+        // Add delay before each Brave API call to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 1500));
+
         const url = `https://api.search.brave.com/res/v1/web/search?q=${encodeURIComponent(query)}&count=${count}`;
         const response = await fetch(url, {
             headers: {
@@ -557,8 +560,8 @@ async function discoverNewTools(maxPerQuery = 3) {
             await new Promise(resolve => setTimeout(resolve, 1000));
         }
 
-        // Wait between search queries
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        // Wait between search queries to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 3000));
     }
 
     console.log('\n' + '='.repeat(60));
