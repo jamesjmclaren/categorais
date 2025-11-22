@@ -4,7 +4,12 @@
  * Backfill Popularity Script
  *
  * This script populates popularity scores for all existing tools in ai-tools.json
- * by searching Brave for each tool and calculating a score based on search volume.
+ * by searching Brave for each tool and calculating a score based on search result quality.
+ *
+ * Scoring Algorithm:
+ *   - Well-known tools (ChatGPT, Claude, etc.): Fixed high scores (80-100)
+ *   - Other tools: Base score of 50, +20 if in first result, +10 if has own domain, +10 for quality results
+ *   - Score range: 50-100
  *
  * Usage:
  *   # Backfill all tools (will take ~12 minutes for 347 tools at 2s/tool)
@@ -37,21 +42,86 @@ const DELAY_BETWEEN_REQUESTS = process.env.DELAY ? parseInt(process.env.DELAY) :
 const MAX_TOOLS = process.env.MAX_TOOLS ? parseInt(process.env.MAX_TOOLS) : null; // Limit for testing
 const DEBUG = process.env.DEBUG === 'true'; // Show full API responses
 
-// Popularity calculation (same as in ai-discovery-agent.js)
-function calculatePopularity(searchCount) {
+// Well-known tools that should have high popularity scores
+const WELL_KNOWN_TOOLS = {
+    'ChatGPT': 100,
+    'Claude': 100,
+    'Gemini': 95,
+    'GitHub Copilot': 95,
+    'Midjourney': 95,
+    'DALL·E 3': 95,
+    'Stable Diffusion': 90,
+    'Perplexity': 90,
+    'Cursor': 90,
+    'ElevenLabs': 85,
+    'Suno': 85,
+    'Runway': 85,
+    'Meta AI': 85,
+    'Bing AI': 85,
+    'Jasper': 80,
+    'Copy.ai': 80,
+    'Grammarly': 80,
+    'Notion AI': 80,
+    'Canva AI': 80
+};
+
+// Calculate popularity based on search result quality
+function calculatePopularity(toolName, results) {
+    // Check if it's a well-known tool first
+    if (WELL_KNOWN_TOOLS[toolName]) {
+        return WELL_KNOWN_TOOLS[toolName];
+    }
+
+    if (!results || results.length === 0) return 50;
+
+    let score = 50;
+    const toolNameLower = toolName.toLowerCase();
+
+    // Check if tool appears in first result (strong signal)
+    const firstResult = results[0];
+    if (firstResult) {
+        const titleLower = (firstResult.title || '').toLowerCase();
+        const urlLower = (firstResult.url || '').toLowerCase();
+        const descLower = (firstResult.description || '').toLowerCase();
+
+        // Exact or very close match in first result = popular tool
+        if (titleLower.includes(toolNameLower) || urlLower.includes(toolNameLower.replace(/\s+/g, ''))) {
+            score += 20;
+        }
+
+        // Tool has its own domain in first result
+        if (urlLower.match(/^https?:\/\/[^\/]*\.(com|ai|io|app)/)) {
+            score += 10;
+        }
+    }
+
+    // Number of quality results
+    const qualityResults = results.filter(r => {
+        const text = `${r.title} ${r.url} ${r.description}`.toLowerCase();
+        return text.includes(toolNameLower.split(' ')[0].toLowerCase());
+    }).length;
+
+    if (qualityResults >= 4) score += 10;
+    else if (qualityResults >= 2) score += 5;
+
+    return Math.min(Math.round(score), 95); // Cap at 95 for non-well-known tools
+}
+
+// Legacy function for compatibility (if totalCount is available)
+function calculatePopularityFromCount(searchCount) {
     if (!searchCount || searchCount === 0) return 50;
     const score = Math.min(50 + Math.log10(searchCount) * 10, 100);
     return Math.round(score);
 }
 
-// Search Brave for a tool and get result count
+// Search Brave for a tool and get results
 async function searchBrave(toolName) {
     if (!BRAVE_API_KEY) {
         throw new Error('BRAVE_API_KEY environment variable is required');
     }
 
     const query = `${toolName} AI tool`;
-    const url = `${BRAVE_SEARCH_URL}?q=${encodeURIComponent(query)}&count=5`;
+    const url = `${BRAVE_SEARCH_URL}?q=${encodeURIComponent(query)}&count=10`;
 
     try {
         const response = await fetch(url, {
@@ -65,7 +135,7 @@ async function searchBrave(toolName) {
         if (!response.ok) {
             const errorText = await response.text();
             console.error(`   ⚠️  Brave API ${response.status}: ${errorText.substring(0, 100)}`);
-            return 0;
+            return { results: [], totalCount: 0 };
         }
 
         const data = await response.json();
@@ -75,21 +145,13 @@ async function searchBrave(toolName) {
             console.log(`   🔍 Debug - Full API response:`, JSON.stringify(data, null, 2));
         }
 
+        const results = data.web?.results || [];
         const totalCount = data.web?.totalCount || 0;
 
-        // Debug: log if we're not getting expected data
-        if (totalCount === 0) {
-            if (!data.web) {
-                console.error(`   ⚠️  No web results in response. Keys: ${Object.keys(data).join(', ')}`);
-            } else if (data.web.results && data.web.results.length > 0) {
-                console.error(`   ⚠️  Has results but totalCount is 0. Results: ${data.web.results.length}`);
-            }
-        }
-
-        return totalCount;
+        return { results, totalCount };
     } catch (error) {
         console.error(`   ❌ Error searching for "${toolName}":`, error.message);
-        return 0;
+        return { results: [], totalCount: 0 };
     }
 }
 
@@ -144,14 +206,17 @@ async function backfillPopularity() {
 
         try {
             // Search Brave for this tool
-            const searchCount = await searchBrave(tool.name);
-            const popularity = calculatePopularity(searchCount);
+            const { results, totalCount } = await searchBrave(tool.name);
+
+            // Calculate popularity based on results quality
+            const popularity = calculatePopularity(tool.name, results);
 
             // Find the tool in the original array and update it
             const toolIndex = tools.findIndex(t => t.name === tool.name);
             if (toolIndex !== -1) {
                 tools[toolIndex].popularity = popularity;
-                console.log(`   ✅ Popularity: ${popularity} (${searchCount.toLocaleString()} results)`);
+                const resultInfo = results.length > 0 ? `${results.length} results` : 'no results';
+                console.log(`   ✅ Popularity: ${popularity} (${resultInfo}${WELL_KNOWN_TOOLS[tool.name] ? ' - well-known' : ''})`);
                 updated++;
             }
 
