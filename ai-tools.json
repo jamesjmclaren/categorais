@@ -2071,6 +2071,22 @@
         "dateAdded": "2025-10-22T23:44:44.550Z"
     },
     {
+        "name": "Microsoft 365 Copilot",
+        "category": "design",
+        "description": "AI image generator",
+        "icon": "🎨",
+        "logo": "",
+        "pricing": "paid",
+        "url": "https://m365.cloud.microsoft/ai-image-generator",
+        "features": [
+            "text-to-image generation",
+            "image creation",
+            "AI-powered"
+        ],
+        "dateAdded": "2025-11-22T17:57:44.960Z",
+        "popularity": 50
+    },
+    {
         "name": "Microsoft Designer",
         "category": "design",
         "description": "AI-powered design tool from Microsoft for creating graphics quickly.",
