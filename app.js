@@ -89,11 +89,20 @@ function getRecentlyAddedTools() {
     const oneDayAgo = new Date();
     oneDayAgo.setHours(oneDayAgo.getHours() - 24);
 
-    return allTools.filter(tool => {
+    const recentTools = allTools.filter(tool => {
         if (!tool.dateAdded) return false;
         const toolDate = new Date(tool.dateAdded);
         return toolDate >= oneDayAgo;
     });
+
+    // Sort by popularity (highest first)
+    recentTools.sort((a, b) => {
+        const popA = a.popularity || 50;
+        const popB = b.popularity || 50;
+        return popB - popA;
+    });
+
+    return recentTools;
 }
 
 // Render tools
@@ -135,6 +144,15 @@ function renderTools() {
     filtered.forEach(tool => {
         if (!grouped[tool.category]) grouped[tool.category] = [];
         grouped[tool.category].push(tool);
+    });
+
+    // Sort tools by popularity within each category
+    Object.keys(grouped).forEach(category => {
+        grouped[category].sort((a, b) => {
+            const popA = a.popularity || 50; // Default to 50 if no popularity score
+            const popB = b.popularity || 50;
+            return popB - popA; // Higher popularity first
+        });
     });
 
     // Render category rows
