@@ -1,10 +1,25 @@
 /* NUCLEAR OPTION - Emergency Layout Fix */
 /* Add this AFTER your main styles.css */
+/* Updated: 2025-11-22 */
+
+* {
+    box-sizing: border-box !important;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+#toolsContainer {
+    width: 100% !important;
+    overflow: visible !important;
+}
 
 .tool-row {
     display: block !important;
     width: 100% !important;
     overflow: visible !important;
+    margin-bottom: 56px !important;
 }
 
 .tool-scroll {
@@ -21,10 +36,17 @@
     overflow-y: hidden !important;
     gap: 20px !important;
     align-items: flex-start !important;
+    width: 100% !important;
 }
 
 .tool-card {
-    display: block !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
     width: 280px !important;
     min-width: 280px !important;
     max-width: 280px !important;
@@ -43,6 +65,8 @@
 .card-content {
     min-height: 120px !important;
     max-height: none !important;
+    display: flex !important;
+    flex-direction: column !important;
 }
 
 .card-desc {
@@ -51,4 +75,11 @@
     display: -webkit-box !important;
     -webkit-line-clamp: 2 !important;
     -webkit-box-orient: vertical !important;
+    line-clamp: 2 !important;
+}
+
+.card-tags {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
 }
